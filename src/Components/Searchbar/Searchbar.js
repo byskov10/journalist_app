@@ -11,7 +11,10 @@ function SearchBar({placeholder, data}) {
   //    filteredData = Ny variabel
   //    setFilteredData = navn på funktion, som kan ændrer filteredData
   //    useState([]) = default for variablen filteredData er en tom array []
+
+  // filteredData = En array med det data der ligger matcher de bogstaver brugeren har skrevet i søgeboksen med ord fra vores dataset.
   const [filteredData, setFilteredData] = useState([]);
+  // selectedKategori = det ord brugeren klikker på fra dropdown.
   const [selectedKategori, setSelectedKategori] = useState(null);
 
   // handleFilter er en funktion vi anvender i <input>, når brugeren skriver et ord ind.
@@ -27,7 +30,8 @@ function SearchBar({placeholder, data}) {
       // tager højde for store og små bogstaver med .toLowerCase
       return value.kategori.toLowerCase().includes(searchWord.toLowerCase());
     });
-
+    
+    // Hvis der ikke er skrevet noget ind – dvs. searchWord er tomt - vil dropdownen ikke vise nogen forslag
     if (searchWord === "") {
       setFilteredData([])
     } else {
@@ -44,11 +48,14 @@ function SearchBar({placeholder, data}) {
   };
   return (
     <div className='search'>
+      <div>
+        <h3>Søg på emne</h3>
+      </div>
       <div className='searchInputs'>
         <input type="text" placeholder={placeholder} onChange={handleFilter}/>
         <div className='searcIcon'></div>
       </div>
-      {filteredData.length != 0 && (
+      {filteredData.length !== 0 && (
       <div className='dataResult'>
         { //slice(0, 15) gør at den kun viser de 15 bedste matches i dropdown
         // .map
