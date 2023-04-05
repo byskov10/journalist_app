@@ -3,6 +3,7 @@ import './Searchbar.css'
 
 function SearchBar({placeholder, data}) {
   const [filteredData, setFilteredData] = useState([]);
+  const [selectedKategori, setSelectedKategori] = useState(null);
   const handleFilter = (event) => {
     const searchWord = event.target.value;
     const newFilter = data.filter((value) => {
@@ -15,6 +16,14 @@ function SearchBar({placeholder, data}) {
       setFilteredData(newFilter);
     }
   }
+  const handleSelect = (kategori) => {
+    setSelectedKategori(kategori); // save selected kategori to state
+    setFilteredData([]);
+    const searchInput = document.querySelector('.searchInputs input');
+    if (searchInput) {
+      searchInput.value = '';
+    }
+  };
   return (
     <div className='search'>
       <div className='searchInputs'>
@@ -26,14 +35,14 @@ function SearchBar({placeholder, data}) {
         { //slice(0, 15) gør at den kun viser de 15 bedste matches i dropdown
         filteredData.slice(0, 15).map((value, key) => {
           return (
-            <a className='dataItem' href={value.overskrift} target="_blank">
+            <a className='dataItem' onClick={() => handleSelect(value.kategori)}>
               <p>{value.kategori}</p>
             </a>
           );
         })}
       </div>
-      )
-      }
+      )}
+      {selectedKategori && <p>You selected {selectedKategori}</p>}
     </div>
   )
 }
