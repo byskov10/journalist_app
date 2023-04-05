@@ -8,9 +8,11 @@ import nyheder from './Components/Searchbar/nyheder_i_dk.json';
 function Layout() {
   return (
     <Container fluid className='vh-100'>
-      <Row style={{ height: '13%'}}>
+      <Row style={{ height: '13%'}} className='bg-primary'>
         <Col lg={8}>
-          <Row><SearchBar placeholder="Skriv et emne" data={nyheder}/></Row>
+          <Row>
+            <SearchBar placeholder="Skriv et emne" data={nyheder}/>
+          </Row>
         </Col>
         <Col lg={4} className="bg-secondary">
           <Row>Dragbar</Row>
