@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
+import Bubble from './Components/Bubble_viz/Bubble_chart/bubblechart';
 
 function Layout() {
   return (
@@ -23,8 +24,8 @@ function Layout() {
             Trendline
           </Row>
         </Col>
-        <Col lg={8} className='bg-info'>
-          <Row>Bubblechart</Row>
+        <Col lg={8} className=''>
+          <Row><Bubble /></Row>
         </Col>
       </Row>
     </Container>
