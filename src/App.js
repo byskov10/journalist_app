@@ -1,12 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import nyheder from './Components/Searchbar/nyheder_i_dk.json';
 import { useState } from 'react';
 import Bubble from './Components/Bubble_viz/Bubble_chart/bubblechart';
 import data_emne from './Components/Bubble_viz/Bubble_chart/data.json';
-import SearchBar from './Components/Searchbar/Searchbar';
+import MetricSelector from './Components/Metric_selector/MetricSelector';
 
 function Layout() {
 
@@ -26,9 +26,7 @@ function Layout() {
             <Container>Du har valgt: {selectedTopic}</Container>
           </Row>
         </Col>
-        <Col lg={4} className="bg-secondary">
-          <Row>Dragbar</Row>
-        </Col>
+        <Col xs={4}></Col>
       </Row>
       <Row style={{ height: '87%'}}>
         <Col lg={4}>
@@ -48,4 +46,8 @@ function Layout() {
   );
 }
 
-export default Layout;
+export default GridExample;
+
+
+
+
