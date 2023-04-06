@@ -5,6 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import SearchBar from './Components/Searchbar/Searchbar';
 import nyheder from './Components/Searchbar/nyheder_i_dk.json';
 import { useState } from 'react';
+import Bubble from './Components/Bubble_viz/Bubble_chart/bubblechart';
 
 function Layout() {
   const [selectedTopic, setSelectedTopic] = useState(null);
@@ -31,8 +32,8 @@ function Layout() {
             Trendline
           </Row>
         </Col>
-        <Col lg={8} className='bg-info'>
-          <Row>Bubblechart</Row>
+        <Col lg={8} className=''>
+          <Row><Bubble /></Row>
         </Col>
       </Row>
     </Container>
