@@ -1,0 +1,33 @@
+[  {    "name": "Hovedemne",    "data": [      {        "name": "Krigen i Ukraine",        "value": 10000      }    ]
+  },
+  {
+    "name": "Antal artikler",
+    "data": [
+      {
+        "name": "Ukraine",
+        "value": 2304,
+        "Clicks": 2102
+      },
+      {
+        "name": "Nato",
+        "value": 4953,
+        "Clicks": 3023
+      },
+      {
+        "name": "Wagnergruppen",
+        "value": 5032,
+        "Clicks": 4053
+      },
+      {
+        "name": "krigsstrategi",
+        "value": 1023,
+        "Clicks": 5069
+      },
+      {
+        "name": "tanks",
+        "value": 3045,
+        "Clicks": 7039
+      }
+    ]
+  }
+]
