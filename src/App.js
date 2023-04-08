@@ -4,13 +4,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import Bubble from './Components/Bubble_viz/Bubble_chart/bubblechart';
 import { useState } from 'react';
-import data_vis from './Components/Bubble_viz/Bubble_chart/data.json';
+import data_emne from './Components/Bubble_viz/Bubble_chart/data.json';
 
 function Layout() {
-  const [selectedword, setSelectedword] = useState("");
-  const [data, setData] = useState(data_vis);
 
-    
+  // Hook for det data vi skal bruge
+  const [data, setData] = useState(data_emne);
+  // Hook for det ord, brugeren har trykket på i bubble chart
+  const [selectedword, setSelectedword] = useState("");
 
   return (
     <Container fluid className='vh-100'>
