@@ -1,0 +1,8 @@
+.highcharts-point {
+    stroke-width: 0px;
+}
+
+.highcharts-point-hover {
+    stroke-width: 0;
+    fill-opacity: 0;
+}
