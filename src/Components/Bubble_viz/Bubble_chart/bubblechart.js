@@ -4,11 +4,14 @@ import _ from 'lodash';
 import HighchartsExporting from 'highcharts/modules/exporting';
 import HighchartsAccessibility from 'highcharts/modules/accessibility';
 import HighchartsMore from 'highcharts/highcharts-more';
-import data_vis from './data.json'
+
 
 HighchartsExporting(Highcharts);
 HighchartsAccessibility(Highcharts);
 HighchartsMore(Highcharts);
+
+var selectedwordfunc;
+var data_used;
 
 const getOptions = () => ({
   chart: {
@@ -31,23 +34,31 @@ const getOptions = () => ({
       },
       enableMouseTracking: true,
       events:  {
-                click: function (event) {
-                  if (event.point.name ==='Krigen i Ukraine') {
-                    return
-                  } else {
-                  return console.log(event.point.name)
-                }}
+                click: selectedwordfunc
 
       }
     },
   },
-  series: data_vis,
+  series: data_used,
   credits: {
     enabled: false,
   },
 });
 
-function Bubble() {
+function Bubble({setSelectedword, data}) {
+  function word_func (event) {
+    if (event.point.name ==='Krigen i Ukraine') {
+      return
+    } else {
+    return (
+      setSelectedword(event.point.name)
+      )
+  }}
+
+  data_used = data
+
+  selectedwordfunc = word_func
+
   return (
     <HighchartsReact highcharts={Highcharts} options={getOptions()} />
   );

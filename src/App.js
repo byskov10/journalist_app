@@ -6,8 +6,15 @@ import SearchBar from './Components/Searchbar/Searchbar';
 import nyheder from './Components/Searchbar/nyheder_i_dk.json';
 import { useState } from 'react';
 import Bubble from './Components/Bubble_viz/Bubble_chart/bubblechart';
+import { useState } from 'react';
+import data_vis from './Components/Bubble_viz/Bubble_chart/data.json';
 
 function Layout() {
+  const [selectedword, setSelectedword] = useState("");
+  const [data, setData] = useState(data_vis);
+
+    
+
   const [selectedTopic, setSelectedTopic] = useState(null);
   
   return (
@@ -33,7 +40,8 @@ function Layout() {
           </Row>
         </Col>
         <Col lg={8} className=''>
-          <Row><Bubble /></Row>
+          <Row><Bubble setSelectedword={setSelectedword} data={data} /></Row>
+          <Row>{selectedword}</Row>
         </Col>
       </Row>
     </Container>
