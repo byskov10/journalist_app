@@ -3,8 +3,15 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import Bubble from './Components/Bubble_viz/Bubble_chart/bubblechart';
+import { useState } from 'react';
+import data_vis from './Components/Bubble_viz/Bubble_chart/data.json';
 
 function Layout() {
+  const [selectedword, setSelectedword] = useState("");
+  const [data, setData] = useState(data_vis);
+
+    
+
   return (
     <Container fluid className='vh-100'>
       <Row style={{ height: '13%'}}>
@@ -25,7 +32,8 @@ function Layout() {
           </Row>
         </Col>
         <Col lg={8} className=''>
-          <Row><Bubble /></Row>
+          <Row><Bubble setSelectedword={setSelectedword} data={data} /></Row>
+          <Row>{selectedword}</Row>
         </Col>
       </Row>
     </Container>
