@@ -1,37 +1,37 @@
 import React from 'react';
-import Dropdown from 'react-bootstrap/Dropdown';
+import { Dropdown } from 'react-bootstrap';
 
-class DropdownMenu extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { selectedOption: null };
-    this.handleSelect = this.handleSelect.bind(this);
+// Define metrics
+const metrics = [
+  { name: 'Visits', min: 0, max: 100000 },
+  { name: 'Bounce rates', min: 0, max: 100 },
+  { name: 'Visit duration', min: 0, max: 3600 }
+];
+
+// MetricDropdown component
+function MetricDropdown(props) {
+  const { selectedMetric, onMetricChange } = props;
+
+  // Handle metric selection
+  function handleMetricSelect(metric) {
+    onMetricChange(metric);
   }
 
-  handleSelect(selectedOption) {
-    this.setState({ selectedOption });
-  }
-
-  render() {
-    const { options, title } = this.props;
-    const { selectedOption } = this.state;
-
-    return (
-      <Dropdown onSelect={this.handleSelect}>
-        <Dropdown.Toggle variant="light" id="dropdown-basic">
-          {selectedOption || title}
-        </Dropdown.Toggle>
-
-        <Dropdown.Menu>
-          {options.map((option, index) => (
-            <Dropdown.Item eventKey={option} key={index}>
-              {option}
-            </Dropdown.Item>
-          ))}
-        </Dropdown.Menu>
-      </Dropdown>
-    );
-  }
+  return (
+    <Dropdown>
+      <Dropdown.Toggle variant="primary" id="dropdown-basic">
+        {selectedMetric.name}
+      </Dropdown.Toggle>
+      <Dropdown.Menu>
+        {/* Map over metrics array to generate dropdown items */}
+        {metrics.map(metric => (
+          <Dropdown.Item key={metric.name} onClick={() => handleMetricSelect(metric)}>
+            {metric.name}
+          </Dropdown.Item>
+        ))}
+      </Dropdown.Menu>
+    </Dropdown>
+  );
 }
 
-export default DropdownMenu;
+export default MetricDropdown;
