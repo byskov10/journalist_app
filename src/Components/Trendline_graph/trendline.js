@@ -23,14 +23,33 @@ const options = (data) => ({
     }
 })
 
-const Linechart = () => {
-  const [selectedMetric, setSelectedMetric] = useState({ name: 'Visits', min: 0, max: 100000 });
+const options_2 = (data) => ({
+  chart: {
+    type: 'line'
+  },
+  series: [{
+      yAxis: 0,
+      data: data
+  }],
+  title: {
+    text: ''
+  }
+})
 
+const Linechart = () => {
+  const [selectedMetric, setSelectedMetric] = useState({ name: 'Ingen sammenligning'});
+
+  // Handle metric selection
+  function handleMetricChange(metric) {
+    setSelectedMetric(metric);
+  }
 
   return (
     <Container fluid>
       <h3 className="headline">Trendline</h3>
-      <MetricDropdown selectedMetric={selectedMetric} onMetricChange={handleMetricChange} />
+      <MetricDropdown
+        selectedMetric={selectedMetric}
+        onMetricChange={handleMetricChange} />
       <HighchartsReact 
         highcharts={Highcharts}
         options={options(data)} />

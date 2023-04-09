@@ -3,6 +3,7 @@ import { Dropdown } from 'react-bootstrap';
 
 // Define metrics
 const metrics = [
+  { name: 'Ingen sammenligning'},
   { name: 'Visits', min: 0, max: 100000 },
   { name: 'Bounce rates', min: 0, max: 100 },
   { name: 'Visit duration', min: 0, max: 3600 }
