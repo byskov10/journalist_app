@@ -21,7 +21,7 @@ function Layout() {
             Metrics
           </Row>
           <Row className='' style={{ height: '60%'}}>
-            <Linechart />
+            <Linechart className='linechart'/>
           </Row>
         </Col>
         <Col lg={8} className='bg-info'>
