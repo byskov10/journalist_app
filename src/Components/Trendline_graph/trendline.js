@@ -1,31 +1,29 @@
-import HighchartsReact from "highcharts-react-official"
-import Highcharts from "highcharts"
+import HighchartsReact from "highcharts-react-official";
+import Highcharts from "highcharts";
+import data from './data_input.json';
+import './trendline.css';
 
-const options = () => {
+const options = (data) => ({
     credits: {
         enabled: false
-    }
+    },
     series: [{
-        data: [
-            [0, 1],
-            [1, 2],
-            [2, 3],
-            [3, 5],
-            [4, 8],
-            [5, 13],
-            [6, 21],
-            [7, 34],
-            [8, 55],
-            [9, 89]
-        ]
-    }]
-}
+        data: data
+    }],
+    title: {
+      text: ''
+    }
+})
 
 const Linechart = () => {
-  return <HighchartsReact 
+  return (
+  <>
+  <h3 className="headline">Trendline</h3>
+  <HighchartsReact 
     highcharts={Highcharts} 
-    options={options()} 
+    options={options(data)} 
   />
-}
+  </>
+)}
 
 export default Linechart;
