@@ -33,7 +33,7 @@ function Layout() {
             <MetricSelector />
           </Row>
           <Row className='' style={{ height: '60%'}}>
-            <Linechart />
+            <Linechart className='linechart'/>
           </Row>
         </Col>
         <Col lg={8} className=''>
