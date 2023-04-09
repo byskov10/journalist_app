@@ -26,7 +26,7 @@ const Linechart = () => {
   return (
     <Container fluid>
       <h3 className="headline">Trendline</h3>
-      <MetricDropdown />
+      <MetricDropdown selectedMetric={selectedMetric} onMetricChange={handleMetricChange} />
       <HighchartsReact 
         highcharts={Highcharts}
         options={options(data)} />
