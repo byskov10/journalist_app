@@ -2,14 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
-import SearchBar from './Components/Searchbar/Searchbar';
+import Linechart from './Components/Trendline_graph/trendline';
 
 function Layout() {
   return (
     <Container fluid className='vh-100'>
       <Row style={{ height: '13%'}}>
         <Col lg={8} className="bg-primary">
-          <Row><SearchBar /></Row>
+          <Row>Searchbar</Row>
         </Col>
         <Col lg={4} className="bg-secondary">
           <Row>Dragbar</Row>
@@ -20,8 +20,8 @@ function Layout() {
           <Row className='bg-success'style={{ height: '40%'}}>
             Metrics
           </Row>
-          <Row className='bg-warning' style={{ height: '60%'}}>
-            Trendline
+          <Row className='' style={{ height: '60%'}}>
+            <Linechart />
           </Row>
         </Col>
         <Col lg={8} className='bg-info'>
