@@ -2,6 +2,7 @@ import HighchartsReact from "highcharts-react-official";
 import Highcharts from "highcharts";
 import data from './data_input.json';
 import { Container, Row, Col } from 'react-bootstrap';
+import { useState } from 'react';
 import './trendline.css';
 import MetricDropdown from './dropdown.js'
 
@@ -23,6 +24,9 @@ const options = (data) => ({
 })
 
 const Linechart = () => {
+  const [selectedMetric, setSelectedMetric] = useState({ name: 'Visits', min: 0, max: 100000 });
+
+
   return (
     <Container fluid>
       <h3 className="headline">Trendline</h3>
