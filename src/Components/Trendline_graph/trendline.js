@@ -3,7 +3,7 @@ import Highcharts from "highcharts";
 import data from './data_input.json';
 import { Container, Row, Col } from 'react-bootstrap';
 import './trendline.css';
-import DropdownMenu from './dropdown.js'
+import MetricDropdown from './dropdown.js'
 
 const options = (data) => ({
     chart: {
@@ -26,9 +26,7 @@ const Linechart = () => {
   return (
     <Container fluid>
       <h3 className="headline">Trendline</h3>
-      <DropdownMenu
-        options={['Option 1', 'Option 2', 'Option 3']}
-        title="Select an option" />
+      <MetricDropdown />
       <HighchartsReact 
         highcharts={Highcharts}
         options={options(data)} />
