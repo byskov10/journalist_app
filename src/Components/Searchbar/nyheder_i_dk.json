@@ -27,6 +27,54 @@
         "dato": "2023-04-02",
         "kilde": "Ekstra Bladet",
         "kategori": "Kriminalitet"
-      }
-
+      },
+        {
+          "overskrift": "Ny dansk lov forbyder burka og niqab i det offentlige rum",
+          "beskrivelse": "En ny lov, der træder i kraft i dag, forbyder bæring af burka og niqab i det offentlige rum i Danmark.",
+          "dato": "2023-05-01",
+          "kilde": "Berlingske",
+          "kategori": "Samfund"
+        },
+        {
+          "overskrift": "Danmark vil sætte mål for cirkulær økonomi",
+          "beskrivelse": "Regeringen vil lancere et nyt initiativ for at reducere spild og øge genanvendelse og genbrug i Danmark.",
+          "dato": "2023-05-03",
+          "kilde": "DR Nyheder",
+          "kategori": "Krigen i Ukraine"
+        },
+        {
+          "overskrift": "Voldsomt jordskælv rammer Iran",
+          "beskrivelse": "Et jordskælv med en styrke på 7,2 ramte Iran tidligt i morges, og mindst 50 personer meldes døde.",
+          "dato": "2023-05-04",
+          "kilde": "TV2 Nyheder",
+          "kategori": "Israelkonflikten"
+        },
+        {
+          "overskrift": "Dansk forsker opdager ny kræftbehandling",
+          "beskrivelse": "En dansk forsker fra Aarhus Universitet har opdaget en ny behandling, der kan forbedre kræftpatienters overlevelse markant.",
+          "dato": "2023-05-05",
+          "kilde": "Politiken",
+          "kategori": "Forskning"
+        },
+        {
+          "overskrift": "Togulykke i Sverige kræver mindst 10 liv",
+          "beskrivelse": "Et togspor i Sverige kollapsede, og mindst 10 personer blev dræbt, mens mange flere blev såret.",
+          "dato": "2023-05-06",
+          "kilde": "Ekstra Bladet",
+          "kategori": "Science"
+        },
+        {
+          "overskrift": "Regeringen vil forbyde salg af benzinbiler fra 2030",
+          "beskrivelse": "Regeringen præsenterer et nyt lovforslag, der vil forbyde salg af nye benzin- og dieselbiler fra 2030.",
+          "dato": "2023-05-07",
+          "kilde": "DR Nyheder",
+          "kategori": "Sport"
+        },
+        {
+          "overskrift": "Danmark sender humanitær hjælp til Yemen",
+          "beskrivelse": "Danmark vil sende 200 millioner kroner i humanitær hjælp til Yemen for at hjælpe de mange mennesker, der lider under krigen i landet.",
+          "dato": "2023-05-08",
+          "kilde": "TV2 Nyheder",
+          "kategori": "Vejret"}
+      
     ]

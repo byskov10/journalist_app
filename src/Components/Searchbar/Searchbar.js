@@ -53,7 +53,6 @@ function SearchBar({placeholder, data}) {
       </div>
       <div className='searchInputs'>
         <input type="text" placeholder={placeholder} onChange={handleFilter}/>
-        <div className='searcIcon'></div>
       </div>
       {filteredData.length !== 0 && (
       <div className='dataResult'>

@@ -6,9 +6,10 @@ import SearchBar from './Components/Searchbar/Searchbar';
 import nyheder from './Components/Searchbar/nyheder_i_dk.json';
 
 function Layout() {
+  
   return (
     <Container fluid className='vh-100'>
-      <Row style={{ height: '13%'}} className='bg-primary'>
+      <Row style={{ height: '13%'}} className='light'>
         <Col lg={8}>
           <Row>
             <SearchBar placeholder="Skriv et emne" data={nyheder}/>
