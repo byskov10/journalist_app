@@ -6,8 +6,9 @@ import nyheder from './Components/Searchbar/nyheder_i_dk.json';
 import { useState } from 'react';
 import Bubble from './Components/Bubble_viz/Bubble_chart/bubblechart';
 import data_emne from './Components/Bubble_viz/Bubble_chart/data.json';
-import SearchBar from './Components/Searchbar/Searchbar';
+import Linechart from './Components/Trendline_graph/trendline';
 import MetricSelector from './Components/Metric_selector/MetricSelector';
+import SearchBar from './Components/Searchbar/Searchbar';
 
 function Layout() {
 
@@ -20,12 +21,9 @@ function Layout() {
   
   return (
     <Container fluid className='vh-100'>
-      <Row style={{ height: '13%'}} className='light'>
-        <Col lg={8}>
-          <Row>
-            <SearchBar data={nyheder} selectedTopic={selectedTopic} setSelectedTopic={setSelectedTopic} />
-            <Container>Du har valgt: {selectedTopic}</Container>
-          </Row>
+      <Row style={{ height: '13%'}}>
+        <Col lg={8} className="bg-primary">
+          <Row><SearchBar /></Row>
         </Col>
         <Col xs={4}></Col>
       </Row>
@@ -34,8 +32,8 @@ function Layout() {
           <Row style={{ height: '40%'}}>
             <MetricSelector />
           </Row>
-          <Row className='bg-warning' style={{ height: '60%'}}>
-            Trendline
+          <Row className='' style={{ height: '60%'}}>
+            <Linechart />
           </Row>
         </Col>
         <Col lg={8} className=''>
