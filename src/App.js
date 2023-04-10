@@ -4,15 +4,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import SearchBar from './Components/Searchbar/Searchbar';
 import nyheder from './Components/Searchbar/nyheder_i_dk.json';
+import { useState } from 'react';
 
 function Layout() {
+  const [selectedKategori, setSelectedKategori] = useState(null);
   
   return (
     <Container fluid className='vh-100'>
       <Row style={{ height: '13%'}} className='light'>
         <Col lg={8}>
           <Row>
-            <SearchBar placeholder="Skriv et emne" data={nyheder}/>
+            <SearchBar data={nyheder} selectedKategori={selectedKategori} setSelectedKategori={setSelectedKategori} />
+            <Container>Du har valgt: {selectedKategori}</Container>
           </Row>
         </Col>
         <Col lg={4} className="bg-secondary">
