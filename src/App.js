@@ -7,15 +7,15 @@ import nyheder from './Components/Searchbar/nyheder_i_dk.json';
 import { useState } from 'react';
 
 function Layout() {
-  const [selectedKategori, setSelectedKategori] = useState(null);
+  const [selectedTopic, setSelectedTopic] = useState(null);
   
   return (
     <Container fluid className='vh-100'>
       <Row style={{ height: '13%'}} className='light'>
         <Col lg={8}>
           <Row>
-            <SearchBar data={nyheder} selectedKategori={selectedKategori} setSelectedKategori={setSelectedKategori} />
-            <Container>Du har valgt: {selectedKategori}</Container>
+            <SearchBar data={nyheder} selectedTopic={selectedTopic} setSelectedTopic={setSelectedTopic} />
+            <Container>Du har valgt: {selectedTopic}</Container>
           </Row>
         </Col>
         <Col lg={4} className="bg-secondary">

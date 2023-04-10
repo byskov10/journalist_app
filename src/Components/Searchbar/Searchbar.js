@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import './Searchbar.css'
 
-function SearchBar({data, setSelectedKategori, selectedKategori}) {
+function SearchBar({data, setSelectedTopic, selectedTopic}) {
   const [filteredData, setFilteredData] = useState([]);
 
   const handleFilter = (event) => {
     const searchWord = event.target.value;
     const newFilter = data.filter((value) => {
-      return value.kategori.toLowerCase().includes(searchWord.toLowerCase());
+      return value.topic.toLowerCase().includes(searchWord.toLowerCase());
     });
     
     if (searchWord === "") {
@@ -16,8 +16,8 @@ function SearchBar({data, setSelectedKategori, selectedKategori}) {
       setFilteredData(newFilter);
     }
   }
-  const handleSelect = (kategori) => {
-    setSelectedKategori(kategori); // save selected kategori to state
+  const handleSelect = (topic) => {
+    setSelectedTopic(topic); // save selected kategori to state
     setFilteredData([]);
     const searchInput = document.querySelector('.searchInputs input');
     if (searchInput) {
@@ -37,8 +37,8 @@ function SearchBar({data, setSelectedKategori, selectedKategori}) {
         {
         filteredData.slice(0, 15).map((value, key) => {
           return (
-            <a className='dataItem' onClick={() => handleSelect(value.kategori)}>
-              <p>{value.kategori}</p>
+            <a className='dataItem' onClick={() => handleSelect(value.topic)}>
+              <p>{value.topic}</p>
             </a>
           );
         })}
