@@ -1,81 +1,33 @@
 [
     {
-    "name": "A",
+    "name": "Hovedemne",
     "data": [
     {
-    "name": "A.1",
-    "value": 2
-    },
+    "name": "Krigen i Ukraine",
+    "value": 10000
+    }]},
     {
-    "name": "A.2",
-    "value": 10
-    },
-    {
-    "name": "A.3",
-    "value": 9
-    },
-    {
-    "name": "A.4",
-    "value": 12
-    }
-    ]
-    },
-    {
-    "name": "B",
+    "name": "Antal artikler",
     "data": [
     {
-    "name": "B.1",
-    "value": 2
+    "name": "Ukraine",
+    "value": 2304
     },
     {
-    "name": "B.2",
-    "value": 1
+    "name": "Nato",
+    "value": 4953
     },
     {
-    "name": "B.3",
-    "value": 8
+    "name": "Wagnergruppen",
+    "value": 5032
     },
     {
-    "name": "B.4",
-    "value": 7
+    "name": "krigsstrategi",
+    "value": 1023
     },
     {
-    "name": "B.5",
-    "value": 5
-    }
-    ]
-    },
-    {
-    "name": "C",
-    "data": [
-    {
-    "name": "C.1",
-    "value": 11
-    },
-    {
-    "name": "C.2",
-    "value": 7
-    },
-    {
-    "name": "C.3",
-    "value": 2
-    }
-    ]
-    },
-    {
-    "name": "D",
-    "data": [
-    {
-    "name": "D.1",
-    "value": 7
-    },
-    {
-    "name": "D.2",
-    "value": 4
-    },
-    {
-    "name": "D.3",
-    "value": 9
+    "name": "tanks",
+    "value": 3045
     }
     ]
     }

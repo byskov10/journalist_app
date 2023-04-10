@@ -1,34 +1,54 @@
 [
     {
-    "name": "Hovedemne",
-    "data": [
-    {
     "name": "Krigen i Ukraine",
-    "value": 10000
-    }]},
-    {
-    "name": "Antal artikler",
-    "data": [
-    {
-    "name": "Ukraine",
-    "value": 2304
+    "data": 
+        [
+        {
+        "word": "Ukraine",
+        "value": 2304
+        },
+        {
+        "word": "Nato",
+        "value": 4953
+        },
+        {
+        "word": "Wagnergruppen",
+        "value": 5032
+        },
+        {
+        "word": "krigsstrategi",
+        "value": 1023
+        },
+        {
+        "word": "tanks",
+        "value": 3045
+        }]
     },
     {
-    "name": "Nato",
-    "value": 4953
-    },
-    {
-    "name": "Wagnergruppen",
-    "value": 5032
-    },
-    {
-    "name": "krigsstrategi",
-    "value": 1023
-    },
-    {
-    "name": "tanks",
-    "value": 3045
-    }
-    ]
-    }
-    ]
+    "name": "Coronakrisen",
+    "data": 
+        [
+        {
+        "word": "Vaccination",
+        "value": 5304
+        },
+        {
+        "word": "Pandemi",
+        "value": 2304
+        },
+        {
+        "word": "sygdom",
+        "value": 7030
+        },
+        {
+        "word": "Wuhan",
+        "value": 4050
+        },
+        {
+        "word": "influenza",
+        "value": 1203
+        }
+        ]
+}
+]
+
