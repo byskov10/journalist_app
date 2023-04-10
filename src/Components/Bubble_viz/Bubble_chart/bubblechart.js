@@ -4,6 +4,7 @@ import _ from 'lodash';
 import HighchartsExporting from 'highcharts/modules/exporting';
 import HighchartsAccessibility from 'highcharts/modules/accessibility';
 import HighchartsMore from 'highcharts/highcharts-more';
+import { useState } from 'react';
 
 //https://betterprogramming.pub/meeting-more-chart-types-bubble-packed-bubble-stream-graph-and-cylinder-7f625c88047d
 
@@ -33,7 +34,7 @@ const getOptions = () => ({
       useSimulation: false,
       dataLabels: {
         enabled: true,
-        format: '{point.name}',
+        format: '{point.word}',
       },
       enableMouseTracking: true,
       events:  {
@@ -50,17 +51,26 @@ const getOptions = () => ({
 
 function Bubble({setSelectedword, data}) {
   
+  const [TopicWord, setTopicWord] = useState("Krigen i Ukraine")
+
+  const FilterData = (name) => {
+    const newWordArray = data.filter((topic) => {
+      return topic.name === name;
+    });
+    return newWordArray;
+  }
+
+
   // Funktion som tager event-objektet for når en bruger klikker på en bubble i bubble chartet
   // Event objektet er et objekt med alt info om de events der er sket. Her går den ind i envent-objektet og derefter "point" og derfra tager den navnet (navnet på bubblen).
   function word_func (event) {
     if (event.point.name !=='Krigen i Ukraine') {
       // selectedword bliver defineret i child komponentet, dvs. Apps.js
-      return setSelectedword(event.point.name)
-  }}
-  selectedwordfunc = word_func
-
+      return setSelectedword(event.point.name);
+  }};
+  selectedwordfunc = word_func;
   //data bliver lagt ind ved child komponentet, dvs. Apps.js. Det er en af paramtrene i Bubble-funktionen
-  data_used = data
+  data_used = FilterData(TopicWord);
 
   return (
     <HighchartsReact highcharts={Highcharts} options={getOptions()} />
