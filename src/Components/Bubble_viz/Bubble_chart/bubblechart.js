@@ -39,7 +39,6 @@ const getOptions = () => ({
       enableMouseTracking: true,
       events:  {
                 click: selectedwordfunc
-
       }
     },
   },
@@ -63,10 +62,10 @@ function Bubble({setSelectedword, data}) {
 
   // Funktion som tager event-objektet for når en bruger klikker på en bubble i bubble chartet
   // Event objektet er et objekt med alt info om de events der er sket. Her går den ind i envent-objektet og derefter "point" og derfra tager den navnet (navnet på bubblen).
-  function word_func (event) {
-    if (event.point.name !=='Krigen i Ukraine') {
+  const word_func = (event) => {
+    if (event.point.name !==TopicWord) {
       // selectedword bliver defineret i child komponentet, dvs. Apps.js
-      return setSelectedword(event.point.name);
+      return setSelectedword(event.point.word);
   }};
   selectedwordfunc = word_func;
   //data bliver lagt ind ved child komponentet, dvs. Apps.js. Det er en af paramtrene i Bubble-funktionen
