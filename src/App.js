@@ -6,6 +6,7 @@ import nyheder from './Components/Searchbar/nyheder_i_dk.json';
 import { useState } from 'react';
 import Bubble from './Components/Bubble_viz/Bubble_chart/bubblechart';
 import data_emne from './Components/Bubble_viz/Bubble_chart/data.json';
+import SearchBar from './Components/Metric_selector/Metric_selector';
 import MetricSelector from './Components/Metric_selector/MetricSelector';
 
 function Layout() {
@@ -46,7 +47,7 @@ function Layout() {
   );
 }
 
-export default GridExample;
+export default Layout;
 
 
 
