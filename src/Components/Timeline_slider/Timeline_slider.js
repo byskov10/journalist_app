@@ -1,31 +1,47 @@
 import React, { useState } from 'react';
-import { Form } from 'react-bootstrap';
-import InputRange from 'react-input-range';
-import 'react-input-range/lib/css/index.css';
+import { Range } from 'react-range';
+import './Timeline_slider.css';
 
-function DualThumbSlider() {
-  const [value, setValue] = useState({ min: 2019, max: 2022 });
+const STEP = 1;
+const MIN = 1900;
+const MAX = 2023;
 
-  const handleChange = (newValue) => {
-    setValue(newValue);
+const TimelineSlider = ({ onChange }) => {
+  const [values, setValues] = useState([MIN, MAX]);
+
+  const handleChange = (newValues) => {
+    setValues(newValues);
+    onChange(newValues);
   };
 
   return (
-    <Form style={{ width: "90%", textAlign: "center" }}>
-      <Form.Group controlId="formRange">
-        <Form.Label style={{ padding: "1em" }}>Tidsperiode</Form.Label>
-        <InputRange 
-          minValue={2018} 
-          maxValue={2023} 
-          value={value} 
-          onChange={handleChange} 
-        />
-        <Form.Text>
-          Årstal: {value.min} - {value.max}
-        </Form.Text>
-      </Form.Group>
-    </Form>
+    <div className="timeline-slider">
+      <Range
+        values={values}
+        step={STEP}
+        min={MIN}
+        max={MAX}
+        onChange={handleChange}
+        renderTrack={({ props, children }) => (
+          <div
+            className="timeline-slider__track"
+            {...props}
+            style={{
+              ...props.style,
+            }}
+          >
+            {children}
+          </div>
+        )}
+        renderThumb={({ props }) => (
+          <div
+            className="timeline-slider__thumb"
+            {...props}
+          />
+        )}
+      />
+    </div>
   );
-}
+};
 
-export default DualThumbSlider;
+export default TimelineSlider;
