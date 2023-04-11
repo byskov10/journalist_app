@@ -22,8 +22,9 @@ function Layout() {
   return (
     <Container fluid className='vh-100'>
       <Row style={{ height: '13%'}}>
-        <Col lg={8} className="bg-primary">
-          <Row><SearchBar /></Row>
+        <Col lg={8} >
+          <SearchBar data={nyheder} selectedTopic={selectedTopic} setSelectedTopic={setSelectedTopic} />
+          <Container>Du har valgt: {selectedTopic}</Container>
         </Col>
         <Col xs={4}></Col>
       </Row>
