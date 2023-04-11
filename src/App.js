@@ -2,7 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import TimelineSlider from './Components/Metric_selector/MetricSlider';
+import Slide from './Components/Metric_selector/SliderLogics';
 
 function GridExample() {
   return (
@@ -13,7 +13,7 @@ function GridExample() {
       <Row style={{ height: "60%" }}>
         <Col xs={4}></Col>
         <Col xs={4} style={{ backgroundColor: "#f9f9f9", borderRadius: "15px", boxShadow: "4px 4px 8px rgba(0, 0, 0, 0.25)" }}>
-          <TimelineSlider />
+          <Slide />
         </Col>
         <Col xs={4}></Col>
       </Row>
