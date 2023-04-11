@@ -1,44 +1,47 @@
-import React, { useState } from 'react';
-import Slider from 'rc-slider';
-import 'rc-slider/assets/index.css';
+import React, { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "react-bootstrap-range-slider/dist/react-bootstrap-range-slider.css";
+import RangeSlider from "react-bootstrap-range-slider";
 
-// Helper function to format date as YYYY-MM
-function formatDate(date) {
-  const year = date.getFullYear();
-  const month = String(date.getMonth() + 1).padStart(2, '0');
-  return `${year}-${month}`;
-}
-
-// TimelineSlider component
 function TimelineSlider() {
-  const [sliderValue, setSliderValue] = useState(new Date('2018-01-01'));
+  const [value, setValue] = useState([2018, 2023]);
 
-  // Generate marks for each year and month
-  const marks = {};
-  let currentDate = new Date('2018-01-01');
-  const endDate = new Date('2023-12-31');
-  while (currentDate <= endDate) {
-    marks[formatDate(currentDate)] = formatDate(currentDate);
-    currentDate.setMonth(currentDate.getMonth() + 1);
-  }
+  const handleChange = (event) => {
+    setValue(event.target.value);
+  };
 
-  // Handle slider value changes
-  function handleSliderChange(value) {
-    setSliderValue(new Date(value));
-  }
+  const minLabel = (
+    <div className="text-muted">{`Min: ${value[0]}`}</div>
+  );
+  const maxLabel = (
+    <div className="text-muted">{`Max: ${value[1]}`}</div>
+  );
+  const valueLabel = (
+    <div className="font-weight-bold">{`${value[0]} - ${value[1]}`}</div>
+  );
 
   return (
-    <div>
-      <Slider
-        value={sliderValue}
-        min={new Date('2018-01-01').getTime()}
-        max={new Date('2023-12-31').getTime()}
-        onChange={handleSliderChange}
-        marks={marks}
-        step={86400000} // one day in milliseconds
-        tipFormatter={(value) => formatDate(new Date(value))}
-        style={{ width: '80%', margin: '0 auto' }}
-      />
+    <div className="container-fluid mt-5">
+      <div className="row">
+        <div className="col">
+          <RangeSlider
+            min={2018}
+            max={2023}
+            step={1}
+            value={value}
+            onChange={handleChange}
+            variant="primary"
+            size="lg"
+            tooltip="on"
+            tooltipLabel={(value) => `${value}`}
+            tooltipPlacement="top"
+            tooltipStyle={{ backgroundColor: "#007bff", borderColor: "#007bff" }}
+            allowOverlap
+            range
+            labels={{ min: minLabel, max: maxLabel, value: valueLabel }}
+          />
+        </div>
+      </div>
     </div>
   );
 }
