@@ -8,6 +8,8 @@ import { useState } from 'react';
 import Bubble from './Components/Bubble_viz/Bubble_chart/bubblechart';
 import { useState } from 'react';
 import data_emne from './Components/Bubble_viz/Bubble_chart/data.json';
+import SearchBar from './Components/Searchbar/Searchbar';
+import nyheder from './Components/Searchbar/nyheder_i_dk.json';
 
 function Layout() {
 
