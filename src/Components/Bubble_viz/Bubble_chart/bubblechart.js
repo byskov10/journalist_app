@@ -48,9 +48,7 @@ const getOptions = () => ({
   },
 });
 
-function Bubble({setSelectedword, data}) {
-  
-  const [TopicWord, setTopicWord] = useState("Krigen i Ukraine")
+function Bubble({setSelectedword, TopicWord, data}) {
 
   const FilterData = (name) => {
     const newWordArray = data.filter((topic) => {
