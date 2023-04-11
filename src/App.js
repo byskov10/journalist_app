@@ -6,7 +6,7 @@ import nyheder from './Components/Searchbar/nyheder_i_dk.json';
 import { useState } from 'react';
 import Bubble from './Components/Bubble_viz/Bubble_chart/bubblechart';
 import data_emne from './Components/Bubble_viz/Bubble_chart/data.json';
-import SearchBar from './Components/Metric_selector/Metric_selector';
+import SearchBar from './Components/Searchbar/Searchbar';
 import MetricSelector from './Components/Metric_selector/MetricSelector';
 
 function Layout() {
@@ -31,8 +31,8 @@ function Layout() {
       </Row>
       <Row style={{ height: '87%'}}>
         <Col lg={4}>
-          <Row className='bg-success'style={{ height: '40%'}}>
-            Metrics
+          <Row style={{ height: '40%'}}>
+            <MetricSelector />
           </Row>
           <Row className='bg-warning' style={{ height: '60%'}}>
             Trendline
