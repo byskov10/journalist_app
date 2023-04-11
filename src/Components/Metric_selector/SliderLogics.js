@@ -1,17 +1,14 @@
-import TimelineSlider from "./MetricSlider";
+import React, { useState } from 'react';
+import MetricSlider from './MetricSlider';
 
-function Slide() {
-    const handleYearChange = (yearRange) => {
-        console.log(`Selected year range: ${yearRange[0]} - ${yearRange[1]}`);
-      };
-    
-      return (
-        <div>
-          <h1>Timeline Slider Example</h1>
-          <TimelineSlider onYearChange={handleYearChange} />
-        </div>
-      );
-    }
-    
-  export default Slide;
-  
+function MetricSelector() {
+  const [selectedMetric] = useState({ name: 'Visits', min: 2015, max: 2023 });
+
+  return (
+    <div>
+      <MetricSlider selectedMetric={selectedMetric} />
+    </div>
+  );
+}
+
+export default MetricSelector;

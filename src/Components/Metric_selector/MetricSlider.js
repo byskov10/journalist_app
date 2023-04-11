@@ -1,39 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
 
-const MIN_YEAR = 2015;
-const MAX_YEAR = 2023;
+// MetricSlider component
+function MetricSlider(props) {
+  const { selectedMetric } = props;
+  const [sliderValues, setSliderValues] = useState([selectedMetric.min, selectedMetric.max]);
 
-function TimelineSlider(props) {
-  const { onYearChange } = props;
-
-  const [yearRange, setYearRange] = useState([MIN_YEAR, MAX_YEAR]);
-
-  const handleYearChange = (newRange) => {
-    setYearRange(newRange);
-    onYearChange(newRange);
-  };
+  // Handle slider value changes
+  function handleSliderChange(values) {
+    setSliderValues(values);
+  }
 
   return (
     <div>
       <Slider
-        min={MIN_YEAR}
-        max={MAX_YEAR}
-        range={true}
-        value={yearRange}
-        onChange={handleYearChange}
-        step={1}
-        marks={{
-          [MIN_YEAR]: MIN_YEAR,
-          [MAX_YEAR]: MAX_YEAR,
-        }}
+        value={sliderValues}
+        min={selectedMetric.min}
+        max={selectedMetric.max}
+        onChange={handleSliderChange}
+        range
+        style={{ width: '90%', paddingTop: '30px' }}
       />
       <div>
-        {yearRange[0]} - {yearRange[1]}
+        <span style={{ float: 'right' }}>{sliderValues[1]}</span>
+        <span>{sliderValues[0]}</span>
       </div>
     </div>
   );
 }
 
-export default TimelineSlider;
+export default MetricSlider;
