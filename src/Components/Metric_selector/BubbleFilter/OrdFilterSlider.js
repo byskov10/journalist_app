@@ -16,7 +16,7 @@ class OrdSlider extends Component {
     return (
       <div className="mka__range-alignment">
         <div className="mka__range-text">
-          <p>Antal Bobler: {sliderValues[0]} - {sliderValues[1]}</p>
+          <p>Vælg antal ord: {sliderValues[0]} - {sliderValues[1]}</p>
         </div>
         <div className="mka__range-btn-align">
           <div className="mka__range-width">

@@ -4,7 +4,7 @@ import Range from "rc-slider";
 import "rc-slider/assets/index.css";
 
 class BubbleSlider extends Component {
-  state = { sliderValues: [1, 100] };
+  state = { sliderValues: [50] };
 
   handleChange = (sliderValues) => {
     this.setState({ sliderValues });
@@ -16,14 +16,14 @@ class BubbleSlider extends Component {
     return (
       <div className="mka__range-alignment">
         <div className="mka__range-text">
-          <p>Antal Bobler: {sliderValues[0]} - {sliderValues[1]}</p>
+          <p>Antal Bobler: {sliderValues[0]}</p>
         </div>
         <div className="mka__range-btn-align">
           <div className="mka__range-width">
             <Range
               range
               onChange={this.handleChange}
-              defaultValue={[0, 100]}
+              defaultValue={[50]}
               min={0}
               max={100}
               //min og maks skal komme an på hvor mange bobler der er
