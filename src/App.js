@@ -22,19 +22,19 @@ function Layout() {
   
   return (
     <Container fluid className='vh-100'>
-      <Row style={{ height: '13%'}}>
-        <Col lg={8} >
+      <Row style={{ height: '13%'}} >
+        <Col lg={8} className='square border' >
           <SearchBar data={nyheder} selectedTopic={SelectedTopic} setSelectedTopic={setSelectedTopic} />
           <Container>Du har valgt: {SelectedTopic}</Container>
         </Col>
-        <Col xs={4}></Col>
+        <Col xs={4} className='square border' ></Col>
       </Row>
       <Row style={{ height: '87%'}}>
         <Col lg={4}>
-          <Row style={{ height: '40%'}}>
+          <Row style={{ height: '40%'}} className='square border' >
             <MetricSelector />
           </Row>
-          <Row className='' style={{ height: '60%'}}>
+          <Row className='square border' style={{ height: '60%'}}>
             <Linechart className='linechart'/>
           </Row>
         </Col>
