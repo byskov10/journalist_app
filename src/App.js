@@ -12,8 +12,8 @@ function GridExample() {
       </Row>
       <Row style={{ height: "60%" }}>
         <Col xs={4}></Col>
-        <Col xs={4} style={{ backgroundColor: "#f9f9f9", borderRadius: "15px", boxShadow: "4px 4px 8px rgba(0, 0, 0, 0.25)" }}>
-          <h1>Tidsperiode</h1>
+        <Col xs={4}  style={{ backgroundColor: "#f9f9f9", borderRadius: "15px", boxShadow: "4px 4px 8px rgba(0, 0, 0, 0.25)" }}>
+          <h2>Tidsperiode</h2>
           <MetricSelector />
         </Col>
         <Col xs={4}></Col>

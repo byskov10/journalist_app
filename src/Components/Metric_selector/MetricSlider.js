@@ -20,7 +20,6 @@ function MetricSlider(props) {
         max={selectedMetric.max}
         onChange={handleSliderChange}
         range
-        style={{ width: '90%', paddingTop: '30px' }}
       />
       <div>
         <span style={{ float: 'right' }}>{sliderValues[1]}</span>
