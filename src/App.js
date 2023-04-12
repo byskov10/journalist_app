@@ -17,8 +17,6 @@ function Layout() {
   const [SelectedTopic, setSelectedTopic] = useState(null);
   // Hook for det ord, brugeren har trykket på i bubble chart
   const [SelectedWord, setSelectedWord] = useState("");
-  // Emnet bliver til det brugeren har skrevet ind
-  const [TopicWord, setTopicWord] = useState(SelectedTopic)
   
   return (
     <Container fluid className='vh-100'>
