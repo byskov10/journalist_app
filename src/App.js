@@ -100,7 +100,7 @@ function Layout() {
       <Card>
         <Card.Body className='d-flex flex-column'>
           <Card.Title>Bubble Chart</Card.Title>
-          <Bubble setSelectedword={setSelectedWord} data={TopicData} />
+          <Bubble TopicWord={SelectedTopic} data={topic_data} />
           <Card.Text></Card.Text>
           <Card.Text>Du har trykket på: {SelectedWord}</Card.Text>
         </Card.Body>
