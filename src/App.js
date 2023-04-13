@@ -9,6 +9,8 @@ import topic_data from './Components/Bubble_viz/Bubble_chart/data.json';
 import Linechart from './Components/Trendline_graph/trendline';
 import MetricSelector from './Components/Metric_selector/MetricSelector';
 import SearchBar from './Components/Searchbar/Searchbar';
+import BubbleSlider from './Components/Bubble_selector/Bubble_selector';
+import WordSlider from './Components/Word_slider/Word_slider';
 
 function Layout() {
   // Hook for det data vi skal bruge
@@ -17,6 +19,9 @@ function Layout() {
   const [SelectedTopic, setSelectedTopic] = useState(null);
   // Hook for det ord, brugeren har trykket på i bubble chart
   const [SelectedWord, setSelectedWord] = useState("");
+  //bubbleslider sender antal af bobler
+  //default 5 bobler
+  //const [BubblesAmount, setBubblesAmount]= useState(5);
   
   return (
     <Container fluid className='d-flex flex-column' style={{height: '100vh'}}>
@@ -75,6 +80,7 @@ function Layout() {
           <Card.Body className='d-flex flex-row'>
             <Card.Title>
               Sliders
+              <BubbleSlider></BubbleSlider>
             </Card.Title>
           </Card.Body>
         </Card>
@@ -84,15 +90,17 @@ function Layout() {
           <Card.Body className='d-flex flex-row'>
             <Card.Title>
               Sliders
+              <WordSlider></WordSlider>
             </Card.Title>
           </Card.Body>
         </Card>
         </Col>
       </Row>
       <Row>
-      <Card className='h-100'>
+      <Card>
         <Card.Body className='d-flex flex-column'>
           <Card.Title>Bubble Chart</Card.Title>
+          <Bubble setSelectedword={setSelectedWord} data={TopicData} />
           <Card.Text></Card.Text>
           <Card.Text>Du har trykket på: {SelectedWord}</Card.Text>
         </Card.Body>
