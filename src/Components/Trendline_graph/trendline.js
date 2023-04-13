@@ -20,20 +20,13 @@ const options = (data) => ({
     }],
     title: {
       text: ''
+    },
+    credits: {
+        enabled: false
+    },
+    legend: {
+        enabled: false
     }
-})
-
-const options_2 = (data) => ({
-  chart: {
-    type: 'line'
-  },
-  series: [{
-      yAxis: 0,
-      data: data
-  }],
-  title: {
-    text: ''
-  }
 })
 
 const Linechart = () => {
@@ -46,13 +39,23 @@ const Linechart = () => {
 
   return (
     <Container fluid>
-      <h3 className="headline">Trendline</h3>
-      <MetricDropdown
-        selectedMetric={selectedMetric}
-        onMetricChange={handleMetricChange} />
+    <Row>
+      <Col>
+        <h3 className="headline">Trendline</h3>
+      </Col>
+      <Col>
+        <MetricDropdown
+         selectedMetric={selectedMetric}
+         onMetricChange={handleMetricChange} />
+      </Col>
+    </Row>
+    <Row>
+      <Col>
       <HighchartsReact 
         highcharts={Highcharts}
         options={options(data)} />
+        </Col>
+    </Row>
     </Container>
 )}
 

@@ -6,3 +6,7 @@
     stroke-width: 0;
     fill-opacity: 0;
 }
+
+ .card-margin {
+    margin: 10px;
+ }
