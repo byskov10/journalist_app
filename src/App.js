@@ -1,35 +1,47 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import SearchBar from './Components/Searchbar/Searchbar';
+//import MetricSelector from './Components/Metric_selector/MetricSelector';
+import BubbleSlider from './Components/Metric_selector/BubbleFilter/BubbleFilterSlider_one';
+import OrdSlider from './Components/Metric_selector/BubbleFilter/OrdFilterSlider';
 
-function Layout() {
+function GridExample() {
   return (
-    <Container fluid className='vh-100'>
-      <Row style={{ height: '13%'}}>
-        <Col lg={8} className="bg-primary">
-          <Row><SearchBar /></Row>
-        </Col>
-        <Col lg={4} className="bg-secondary">
-          <Row>Dragbar</Row>
-        </Col>
+    <Container style={{ height: "100vh" }}>
+      <Row style={{ height: "20%" }}>
+        <Col></Col>
       </Row>
-      <Row style={{ height: '87%'}}>
-        <Col lg={4}>
-          <Row className='bg-success'style={{ height: '40%'}}>
-            Metrics
-          </Row>
-          <Row className='bg-warning' style={{ height: '60%'}}>
-            Trendline
-          </Row>
+      <Row style={{ height: "20%" }}>
+        <Col xs={4}></Col>
+        <Col xs={4} className="d-flex justify-content-center align-items-center" style={{ backgroundColor: "#f9f9f9", borderRadius: "15px", boxShadow: "4px 4px 8px rgba(0, 0, 0, 0.25)" }}>
         </Col>
-        <Col lg={8} className='bg-info'>
-          <Row>Bubblechart</Row>
+        <Col xs={4}></Col>
+      </Row>
+      <Row style={{ height: "20%" }}>
+        <Col xs={4}></Col>
+        <Col xs={4} className="d-flex justify-content-center align-items-center" style={{ backgroundColor: "#f9f9f9", borderRadius: "15px", boxShadow: "4px 4px 8px rgba(0, 0, 0, 0.25)" }}>
+        <BubbleSlider/>
         </Col>
+        <Col xs={4}></Col>
+      </Row>
+      <Row style={{ height: "20%" }}>
+        <Col xs={4}></Col>
+        <Col xs={4} className="d-flex justify-content-center align-items-center" style={{ backgroundColor: "#f9f9f9", borderRadius: "15px", boxShadow: "4px 4px 8px rgba(0, 0, 0, 0.25)" }}>
+        <OrdSlider/>
+        </Col>
+        <Col xs={4}></Col>
+      </Row>
+
+      <Row style={{ height: "10%" }}>
+        <Col></Col>
       </Row>
     </Container>
   );
 }
 
-export default Layout;
+export default GridExample;
+
+
+
+//          <MetricSelector />
