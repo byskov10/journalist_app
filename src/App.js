@@ -19,88 +19,66 @@ function Layout() {
   const [SelectedWord, setSelectedWord] = useState("");
   
   return (
-    <Container fluid className='d-flex flex-column' style={{height: '100vh'}}>
-  <Row className='flex-grow-1'>
-    <Col lg={4} className='p-0'>
-      <Card className='h-100'>
-        <Card.Body className='d-flex flex-column'>
-          <Card.Text><SearchBar data={nyheder} selectedTopic={SelectedTopic} setSelectedTopic={setSelectedTopic} /></Card.Text>
-          <Card.Text>Du har valgt: {SelectedTopic}</Card.Text>
-        </Card.Body>
-      </Card>
+<Container fluid className='d-flex flex-column' style={{height: '100vh'}}>
+  <Row style={{border: 'solid black 1px', height: '100%'}}>
+    <Col xs={12} md={4} className='p-0' style={{border: 'solid black 1px'}}>
+      <SearchBar data={nyheder} selectedTopic={SelectedTopic} setSelectedTopic={setSelectedTopic} />
     </Col>
-    <Col xs={4} className='p-0'>
-      <Card className='h-100'>
-        <Card.Body></Card.Body>
-      </Card>
+    <Col xs={12} md={4} className='p-0' style={{border: 'solid black 1px'}}>
+      <p>Timeline</p>
     </Col>
-    <Col xs={4} className='p-0'>
-      <Card className='h-100'>
-        <Card.Body></Card.Body>
-      </Card>
+    <Col xs={12} md={4} className='p-0' style={{border: 'solid black 1px'}}>
+      <p>Profile</p>
     </Col>
   </Row>
-  <Row className='flex-grow-1'>
-    <Col lg={4}>
-      <Row>
-      <Card className='h-100'>
-        <Card.Body className='d-flex flex-column'>
-          <Card.Title>Metric Selector</Card.Title>
-          <Card.Text><MetricSelector /></Card.Text>
-        </Card.Body>
-      </Card>
+  <Row className='flex-grow-1' style={{paddingBottom: '20px', paddingTop: '20px'}}>
+    <Col xs={12} md={4}>
+      <Row className='MetricSelector' style={{paddingBottom: '10px'}}>
+        <Col>
+          <Card className='h-100 reset-card-styles'>
+            <Card.Body className='d-flex flex-column'>
+              <Card.Title>Metric Selector</Card.Title>
+              <Card.Text><MetricSelector /></Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
       </Row>
-      <Row>
-      <Card className='h-100'>
-      {/* Denne her skal muligvis være row */}
-        <Card.Body className='d-flex flex-column'>
-          <Card.Text className='flex-grow-1'><Linechart className='linechart' /></Card.Text>
-        </Card.Body>
-      </Card>
+      <Row className='LineChart' style={{paddingTop: '10px'}}>
+        <Col>
+          <Card className='h-100 reset-card-styles'>
+            {/* Denne her skal muligvis være row */}
+            <Card.Body className='d-flex flex-column'>
+              <Card.Text className='flex-grow-1'><Linechart className='linechart' /></Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
       </Row>
     </Col>
-    <Col lg={8}>
-      <Row>
-        <Card className='h-100'>
-          <Card.Body className='d-flex flex-row'>
-            <Card.Title>
-              Searchbar
-            </Card.Title>
-          </Card.Body>
-        </Card>
-      </Row>
-      <Row>
-        <Col className='p-0' xs={12} lg={6}>
-        <Card className='h-100'>
-          <Card.Body className='d-flex flex-row'>
-            <Card.Title>
-              Sliders
-            </Card.Title>
-          </Card.Body>
-        </Card>
-        </Col>
-        <Col className='p-0' xs={12} lg={6}>
-        <Card className='h-100'>
-          <Card.Body className='d-flex flex-row'>
-            <Card.Title>
-              Sliders
-            </Card.Title>
-          </Card.Body>
-        </Card>
-        </Col>
-      </Row>
-      <Row>
-      <Card className='h-100'>
-        <Card.Body className='d-flex flex-column'>
-          <Card.Title>Bubble Chart</Card.Title>
-          <Card.Text></Card.Text>
-          <Card.Text>Du har trykket på: {SelectedWord}</Card.Text>
-        </Card.Body>
+    <Col xs={12} md={8}>
+      <Card className='h-100 reset-card-styles'>
+        <Row>
+          <Col>
+            <p>Searchbar</p>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs={12} md={6}>
+            <p>Slider</p>
+          </Col>
+          <Col xs={12} md={6}>
+            <p>Slider</p>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <p>Bubble</p>
+          </Col>
+        </Row>
       </Card>
-      </Row>
     </Col>
   </Row>
 </Container>
+
 
 
   );

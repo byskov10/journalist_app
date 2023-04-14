@@ -23,9 +23,6 @@ const options = (data) => ({
     },
     credits: {
         enabled: false
-    },
-    legend: {
-        enabled: false
     }
 })
 

@@ -20,7 +20,7 @@ function MetricDropdown(props) {
 
   return (
     <Dropdown>
-      <Dropdown.Toggle variant="primary" id="dropdown-basic">
+      <Dropdown.Toggle variant="primary" size="sm" id="dropdown-basic">
         {selectedMetric.name}
       </Dropdown.Toggle>
       <Dropdown.Menu>

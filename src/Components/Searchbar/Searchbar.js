@@ -26,9 +26,6 @@ function SearchBar({data, setSelectedTopic, selectedTopic}) {
   };
   return (
     <div className='search'>
-      <div>
-        <h3>Søg på emne</h3>
-      </div>
       <div className='searchInputs'>
         <input type="text" placeholder="Skriv et emne" onChange={handleFilter}/>
       </div>

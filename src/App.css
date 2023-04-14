@@ -10,3 +10,11 @@
  .card-margin {
     margin: 10px;
  }
+
+ .reset-card-styles {
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1) !important;
+    border: none !important;
+    border-radius: 25px !important;
+  }
+  
+  
