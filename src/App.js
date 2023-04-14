@@ -21,13 +21,13 @@ function Layout() {
   return (
 <Container fluid className='d-flex flex-column' style={{height: '100vh'}}>
   <Row style={{border: 'solid black 1px', height: '100%'}}>
-    <Col xs={12} md={4} className='p-0' style={{border: 'solid black 1px'}}>
+    <Col xs={12} md={4} className=' p-0' style={{border: 'solid black 1px'}}>
       <SearchBar data={nyheder} selectedTopic={SelectedTopic} setSelectedTopic={setSelectedTopic} />
     </Col>
-    <Col xs={12} md={4} className='p-0' style={{border: 'solid black 1px'}}>
+    <Col xs={12} md={4} className='d-flex align-items-center justify-content-center p-0' style={{border: 'solid black 1px'}}>
       <p>Timeline</p>
     </Col>
-    <Col xs={12} md={4} className='p-0' style={{border: 'solid black 1px'}}>
+    <Col xs={12} md={4} className='d-flex align-items-center justify-content-center p-0' style={{border: 'solid black 1px'}}>
       <p>Profile</p>
     </Col>
   </Row>
