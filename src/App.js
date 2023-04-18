@@ -9,6 +9,8 @@ import topic_data from './Components/Bubble_viz/Bubble_chart/data.json';
 import Linechart from './Components/Trendline_graph/trendline';
 import MetricSelector from './Components/Metric_selector/MetricSelector';
 import SearchBar from './Components/Searchbar/Searchbar';
+import UserProfilePicture from './Components/UserProfile/UserProfile';
+import userImage from './Components/UserProfile/nerd.png';
 
 function Layout() {
   // Hook for det data vi skal bruge
@@ -17,18 +19,19 @@ function Layout() {
   const [SelectedTopic, setSelectedTopic] = useState(null);
   // Hook for det ord, brugeren har trykket på i bubble chart
   const [SelectedWord, setSelectedWord] = useState("");
+
   
   return (
-<Container fluid className='d-flex flex-column' style={{height: '100vh'}}>
-  <Row style={{border: 'solid black 1px', height: '100%'}}>
-    <Col xs={12} md={4} className=' p-0' style={{border: 'solid black 1px'}}>
+<Container fluid className='d-flex flex-column my-container' style={{height: '100vh'}}>
+  <Row className='NavBar' style={{height: '100%'}}>
+    <Col xs={12} md={4} className='d-flex align-items-center justify-content-center p-0'>
       <SearchBar data={nyheder} selectedTopic={SelectedTopic} setSelectedTopic={setSelectedTopic} />
     </Col>
-    <Col xs={12} md={4} className='d-flex align-items-center justify-content-center p-0' style={{border: 'solid black 1px'}}>
+    <Col xs={12} md={4} className='d-flex align-items-center justify-content-center p-0'>
       <p>Timeline</p>
     </Col>
-    <Col xs={12} md={4} className='d-flex align-items-center justify-content-center p-0' style={{border: 'solid black 1px'}}>
-      <p>Profile</p>
+    <Col xs={12} md={4} className='d-flex align-items-center justify-content-center p-0'>
+    <UserProfilePicture userName='Pivert' userImage={userImage} />
     </Col>
   </Row>
   <Row className='flex-grow-1' style={{paddingBottom: '20px', paddingTop: '20px'}}>
