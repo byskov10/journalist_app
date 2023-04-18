@@ -28,7 +28,12 @@ function SearchBar({data, setSelectedTopic, selectedTopic}) {
   return (
     <div className='search'>
       <div className='searchInputs'>
-        <input type="text" placeholder="Skriv et emne.." onChange={handleFilter}/>
+        <form>
+          <button style={{border: 'none', background: 'none'}}>
+            <SearchIcon />
+          </button>
+          <input type="search" placeholder="Skriv et emne.." onChange={handleFilter}/>
+        </form>
       </div>
       {filteredData.length !== 0 && (
       <div className='dataResult'>

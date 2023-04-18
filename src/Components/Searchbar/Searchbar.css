@@ -1,35 +1,34 @@
-.search input {
+form {
     background-color: rgb(225, 230, 231);
     border: 0;
     border-radius: 25px;
     font-size: 14px;
-    padding: 15px;
+    padding: 5px;
     height: 10%;
     width: 100%;
 }
-  
-.searchIcon {
-    height: 60px;
-    width: 50px;
-    background-color: white;
-    display: grid;
-    place-items: center;
-}
+
+input[type="search"] {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 7px 8px;
+    font-size: 14px;
+    color: inherit;
+    border: 1px solid transparent;
+    border-radius: inherit;
+  }
   
 input:focus {
     outline: none;
-}
-
-.searchIcon svg {
-    font-size: 35px;
 }
 
 .dataResult {
     position: absolute;
     z-index: 9999;
     margin-top: 5px;
-    width: 300px;
-    height: 200px;
+    width: 20%;
+    height: auto;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     overflow: hidden;
@@ -58,16 +57,7 @@ a {
   
 a:hover {
     background-color: lightgrey;
+    cursor: pointer;
 }
 
-.searchIcon {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  .searchInputs input::placeholder {
-    color: transparent;
-  }
   
