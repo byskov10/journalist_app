@@ -1,13 +1,11 @@
 .search input {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(225, 230, 231);
     border: 0;
-    border-radius: 2px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    font-size: 18px;
+    border-radius: 25px;
+    font-size: 14px;
     padding: 15px;
-    height: 30px;
-    width: 300px;
+    height: 10%;
+    width: 100%;
 }
   
 .searchIcon {
@@ -36,6 +34,7 @@ input:focus {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     overflow: hidden;
     overflow-y: auto;
+    border-radius: 2%;
 }
 
 .dataResult::-webkit-scrollbar {
@@ -60,3 +59,15 @@ a {
 a:hover {
     background-color: lightgrey;
 }
+
+.searchIcon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .searchInputs input::placeholder {
+    color: transparent;
+  }
+  
