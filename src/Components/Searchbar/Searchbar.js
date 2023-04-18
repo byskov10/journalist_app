@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Searchbar.css'
+import SearchIcon from './SearchIcon';
 
 function SearchBar({data, setSelectedTopic, selectedTopic}) {
   const [filteredData, setFilteredData] = useState([]);
@@ -27,7 +28,7 @@ function SearchBar({data, setSelectedTopic, selectedTopic}) {
   return (
     <div className='search'>
       <div className='searchInputs'>
-        <input type="text" placeholder="Skriv et emne" onChange={handleFilter}/>
+        <input type="text" placeholder="Skriv et emne.." onChange={handleFilter}/>
       </div>
       {filteredData.length !== 0 && (
       <div className='dataResult'>

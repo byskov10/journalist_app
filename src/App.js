@@ -24,13 +24,13 @@ function Layout() {
   return (
 <Container fluid className='d-flex flex-column my-container' style={{height: '100vh'}}>
   <Row className='NavBar' style={{height: '100%'}}>
-    <Col xs={12} md={4} className='d-flex align-items-center justify-content-center p-0'>
+    <Col xs={12} md={4} className='d-flex align-items-center justify-content-left p-10'>
       <SearchBar data={nyheder} selectedTopic={SelectedTopic} setSelectedTopic={setSelectedTopic} />
     </Col>
     <Col xs={12} md={4} className='d-flex align-items-center justify-content-center p-0'>
       <p>Timeline</p>
     </Col>
-    <Col xs={12} md={4} className='d-flex align-items-center justify-content-center p-0'>
+    <Col xs={12} md={4} className='d-flex align-items-center justify-content-center p-0' style={{border: 'solid black 1px'}}>
     <UserProfilePicture userName='Pivert' userImage={userImage} />
     </Col>
   </Row>
