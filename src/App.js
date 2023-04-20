@@ -29,10 +29,10 @@ function Layout() {
     <Col xs={12} md={4} className='d-flex align-items-center justify-content-left p-10'>
       <SearchBar data={nyheder} selectedTopic={selectedTopic} setSelectedTopic={setSelectedTopic} />
     </Col>
-    <Col xs={12} md={4} className='d-flex align-items-center justify-content-center p-0'>
+    <Col xs={12} md={4} className='d-flex align-items-center justify-content-center'>
       <p>Timeline</p>
     </Col>
-    <Col xs={12} md={4} className='d-flex align-items-center justify-content-center p-0'>
+    <Col xs={12} md={4} className='d-flex align-items-center justify-content-center'>
     <UserProfilePicture userName='Pivert' userImage={userImage} />
     </Col>
   </Row>
