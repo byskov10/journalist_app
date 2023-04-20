@@ -12,7 +12,7 @@ function BubbleSlider({BubbleAmount, setBubbleAmount}) {
   return (
     <div>
             <p>Value: {BubbleAmount}</p>
-      <Slider min={0} max={1000} value={BubbleAmount} onChange={handleSliderChange} />
+      <Slider min={0} max={500} value={BubbleAmount} onChange={handleSliderChange} />
     </div>
   );
 }
