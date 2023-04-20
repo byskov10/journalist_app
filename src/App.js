@@ -36,7 +36,7 @@ function Layout() {
       <SearchBar data={nyheder} selectedTopic={selectedTopic} setSelectedTopic={setSelectedTopic} />
     </Col>
     <Col xs={12} md={4} className='d-flex align-items-center justify-content-center'>
-      <TimeSlider />
+      <p>Timeline</p>
     </Col>
     <Col xs={12} md={4} className='d-flex align-items-center justify-content-center'>
     <UserProfilePicture userName='Pivert' userImage={userImage} />
