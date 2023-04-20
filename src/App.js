@@ -13,6 +13,7 @@ import UserProfilePicture from './Components/UserProfile/UserProfile';
 import userImage from './Components/UserProfile/nerd.png';
 import TimeSlider from './Components/Timeline/TimeSlider';
 import BubbleSlider from './Components/Bubble_amount_selector.js/Bubble_amount_selector';
+import WordSlider from './Components/Word_slider/Word_slider';
 
 function Layout() {
   // Hook for det data vi skal bruge
@@ -71,7 +72,7 @@ function Layout() {
             <BubbleSlider />
           </Col>
           <Col xs={12} md={6}>
-            <p>Slider</p>
+            <WordSlider />
           </Col>
         </Row>
         <Row>
