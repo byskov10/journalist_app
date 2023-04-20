@@ -76,8 +76,7 @@ function Layout() {
         </Row>
         <Row>
           <Col>
-          <Bubble TopicWord={selectedTopic} data={topic_data} />
-          <div>{console.log(selectedTopic)}</div>
+          <Bubble TopicWord={selectedTopic} data={topic_data} setSelectedWord={setSelectedWord} />
           </Col>
         </Row>
       </Card>

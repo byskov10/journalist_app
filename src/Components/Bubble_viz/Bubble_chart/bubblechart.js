@@ -48,7 +48,7 @@ const getOptions = () => ({
   },
 });
 
-function Bubble({setSelectedword, TopicWord, data}) {
+function Bubble({setSelectedWord, TopicWord, data}) {
 
   const FilterData = (name) => {
     const newWordArray = data.filter((topic) => {
@@ -63,7 +63,7 @@ function Bubble({setSelectedword, TopicWord, data}) {
   const word_func = (event) => {
     if (event.point.name !==TopicWord) {
       // selectedword bliver defineret i child komponentet, dvs. Apps.js
-      return setSelectedword(event.point.word);
+      return setSelectedWord(event.point.word);
   }};
   selectedwordfunc = word_func;
   //data bliver lagt ind ved child komponentet, dvs. Apps.js. Det er en af paramtrene i Bubble-funktionen
