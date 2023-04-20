@@ -49,8 +49,13 @@ function Layout() {
           <Col>
             <BubbleSearchBox />
           </Col>
-          <Col>
-          Dropdown
+        </Row>
+        <Row>
+          <Col xs={12} md={6}>
+            <BubbleSlider></BubbleSlider>
+          </Col>
+          <Col xs={12} md={6}>
+            <WordSlider></WordSlider>
           </Col>
         </Row>
         <Row>
