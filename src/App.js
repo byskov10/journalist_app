@@ -12,6 +12,7 @@ import SearchBar from './Components/Searchbar/Searchbar';
 import UserProfilePicture from './Components/UserProfile/UserProfile';
 import userImage from './Components/UserProfile/nerd.png';
 import YearSlider from './Components/Timeline/TimeSlider';
+import BubbleSearchBox from './Components/BubbleSearchBox/BubbleSearch';
 
 function Layout() {
   // Hook for det data vi skal bruge
@@ -62,7 +63,7 @@ function Layout() {
       <Card className='h-100 reset-card-styles'>
         <Row>
           <Col>
-            <p>Searchbar</p>
+            <BubbleSearchBox />
           </Col>
         </Row>
         <Row>
