@@ -48,7 +48,7 @@ const getOptions = () => ({
   },
 });
 
-function Bubble({setSelectedword, TopicWord, BubbleAmount, data}) {
+function Bubble({setSelectedWord, TopicWord, BubbleAmount, data}) {
 
   const FilterData = (name, b) => {
     const newWordArray = data.filter((topic) => {
