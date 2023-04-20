@@ -15,6 +15,7 @@ import BubbleSlider from './Components/Bubble_amount_selector/Bubble_amount_sele
 import WordSlider from './Components/Word_slider/Word_slider';
 import TimeSlider from './Components/Timeline/TimeSlider';
 import BubbleSlider from './Components/Bubble_amount_selector.js/Bubble_amount_selector';
+import WordSlider from './Components/Word_slider/Word_slider';
 
 function Layout() {
   // Hook for det data vi skal bruge
