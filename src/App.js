@@ -11,6 +11,7 @@ import MetricSelector from './Components/Metric_selector/MetricSelector';
 import SearchBar from './Components/Searchbar/Searchbar';
 import UserProfilePicture from './Components/UserProfile/UserProfile';
 import userImage from './Components/UserProfile/nerd.png';
+import TimeSlider from './Components/Timeline/TimeSlider';
 
 function Layout() {
   // Hook for det data vi skal bruge
@@ -28,7 +29,7 @@ function Layout() {
       <SearchBar data={nyheder} selectedTopic={SelectedTopic} setSelectedTopic={setSelectedTopic} />
     </Col>
     <Col xs={12} md={4} className='d-flex align-items-center justify-content-center'>
-      <p>Timeline</p>
+      <TimeSlider />
     </Col>
     <Col xs={12} md={4} className='d-flex align-items-center justify-content-center'>
     <UserProfilePicture userName='Pivert' userImage={userImage} />
