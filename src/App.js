@@ -30,7 +30,7 @@ function Layout() {
     <Col xs={12} md={4} className='d-flex align-items-center justify-content-center p-0'>
       <p>Timeline</p>
     </Col>
-    <Col xs={12} md={4} className='d-flex align-items-center justify-content-center p-0' style={{border: 'solid black 1px'}}>
+    <Col xs={12} md={4} className='d-flex align-items-center justify-content-center p-0'>
     <UserProfilePicture userName='Pivert' userImage={userImage} />
     </Col>
   </Row>
