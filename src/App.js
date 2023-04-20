@@ -69,7 +69,7 @@ function Layout() {
         </Row>
         <Row>
           <Col xs={12} md={6}>
-            <BubbleSlider />
+            <BubbleSlider BubbleAmount={BubbleAmount} setBubbleAmount={setBubbleAmount} />
           </Col>
           <Col xs={12} md={6}>
             <WordSlider />
