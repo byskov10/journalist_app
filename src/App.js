@@ -11,6 +11,8 @@ import MetricSelector from './Components/Metric_selector/MetricSelector';
 import SearchBar from './Components/Searchbar/Searchbar';
 import BubbleSlider from './Components/Bubble_selector/Bubble_selector';
 import WordSlider from './Components/Word_slider/Word_slider';
+//
+import InputComponent from './Components/User_input/user_input';
 
 function Layout() {
   // Hook for det data vi skal bruge
@@ -21,7 +23,7 @@ function Layout() {
   const [SelectedWord, setSelectedWord] = useState("");
   //bubbleslider sender antal af bobler
   //default 5 bobler
-  //const [BubblesAmount, setBubblesAmount]= useState(5);
+  const [BubbleNumber, setBubbleNumber]= useState(5);
   
   return (
     <Container fluid className='d-flex flex-column' style={{height: '100vh'}}>
@@ -100,9 +102,11 @@ function Layout() {
       <Card>
         <Card.Body className='d-flex flex-column'>
           <Card.Title>Bubble Chart</Card.Title>
-          <Bubble TopicWord={SelectedTopic} data={topic_data} />
-          <Card.Text></Card.Text>
+          <Bubble TopicWord={"Coronavirus"} BubbleAmount={4} data={topic_data} />
+          <Card.Text> Vi skal få filter til styre BubbleAmount </Card.Text>
+          <InputComponent></InputComponent>
           <Card.Text>Du har trykket på: {SelectedWord}</Card.Text>
+
         </Card.Body>
       </Card>
       </Row>

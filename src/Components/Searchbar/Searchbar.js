@@ -35,6 +35,7 @@ function SearchBar({data, setSelectedTopic, selectedTopic}) {
       {filteredData.length !== 0 && (
       <div className='dataResult'>
         {
+          //Sker der noget her??? 
         filteredData.slice(0, 15).map((value, key) => {
           return (
             <a className='dataItem' onClick={() => handleSelect(value.topic)}>
