@@ -10,7 +10,7 @@ import Linechart from './Components/Trendline_graph/trendline';
 import MetricSelector from './Components/Metric_selector/MetricSelector';
 import SearchBar from './Components/Searchbar/Searchbar';
 import UserProfilePicture from './Components/UserProfile/UserProfile';
-import userImage from './Components/UserProfile/nerd.png';
+import userImage from './Components/UserProfile/soren.jpeg';
 import BubbleSlider from './Components/Bubble_amount_selector/Bubble_amount_selector';
 import WordSlider from './Components/Word_slider/Word_slider';
 
@@ -33,7 +33,7 @@ function Layout() {
       <p>Timeline</p>
     </Col>
     <Col xs={12} md={4} className='d-flex align-items-center justify-content-center'>
-    <UserProfilePicture userName='Pivert' userImage={userImage} />
+    <UserProfilePicture userName='Søren' userImage={userImage} />
     </Col>
   </Row>
   <Row className='flex-grow-1' style={{paddingBottom: '20px', paddingTop: '20px'}}>
@@ -77,6 +77,7 @@ function Layout() {
         <Row>
           <Col>
           <Bubble TopicWord={selectedTopic} data={topic_data} setSelectedWord={setSelectedWord} />
+          <div>{SelectedWord}</div>
           </Col>
         </Row>
       </Card>
