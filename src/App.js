@@ -69,7 +69,7 @@ function Layout() {
         </Row>
         <Row>
           <Col xs={12} md={6}>
-            <BubbleSlider BubbleAmount={BubbleAmount} setBubbleAmount={setBubbleAmount} />
+            <BubbleSlider />
           </Col>
           <Col xs={12} md={6}>
             <WordSlider />
@@ -77,8 +77,7 @@ function Layout() {
         </Row>
         <Row>
           <Col>
-          <Bubble TopicWord={selectedTopic} BubbleAmount={BubbleAmount} data={topic_data} setSelectedWord={setSelectedWord} />
-          <div>{SelectedWord}</div>
+            <h3>Bubble</h3>
           </Col>
         </Row>
       </Card>

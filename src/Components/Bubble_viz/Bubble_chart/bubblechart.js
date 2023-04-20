@@ -48,14 +48,26 @@ const getOptions = () => ({
   },
 });
 
-function Bubble({setSelectedword, TopicWord, data}) {
+function Bubble({setSelectedWord, TopicWord, BubbleAmount, data}) {
 
-  const FilterData = (name) => {
+  const FilterData = (name, b) => {
     const newWordArray = data.filter((topic) => {
       return topic.name === name;
     });
-    return newWordArray;
-  }
+    
+    if (newWordArray.length === 0) {
+      return []; // If topic with the given name doesn't exist, return empty array
+    }
+  //hvis der ikke køres noget filter køres functionen ikke
+    if (name !== null) {
+      // antal defineres i slice! - virker
+      const newData = newWordArray[0].data.slice(0, b);
+      newWordArray[0].data = newData;
+    }
+  
+    return newWordArray // Return first two objects of the data array
+  };
+
 
 
   // Funktion som tager event-objektet for når en bruger klikker på en bubble i bubble chartet
@@ -63,11 +75,11 @@ function Bubble({setSelectedword, TopicWord, data}) {
   const word_func = (event) => {
     if (event.point.name !==TopicWord) {
       // selectedword bliver defineret i child komponentet, dvs. Apps.js
-      return setSelectedword(event.point.word);
+      return setSelectedWord(event.point.word);
   }};
   selectedwordfunc = word_func;
   //data bliver lagt ind ved child komponentet, dvs. Apps.js. Det er en af paramtrene i Bubble-funktionen
-  data_used = FilterData(TopicWord);
+  data_used = FilterData(TopicWord,BubbleAmount);
 
   return (
     <HighchartsReact highcharts={Highcharts} options={getOptions()} />
