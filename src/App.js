@@ -23,7 +23,7 @@ function Layout() {
   
   return (
 <Container fluid className='d-flex flex-column my-container' style={{height: '100vh'}}>
-  <Row className='NavBar' style={{height: '100%'}}>
+  <Row className='NavBar'>
     <Col xs={12} md={4} className='d-flex align-items-center justify-content-left p-10'>
       <SearchBar data={nyheder} selectedTopic={SelectedTopic} setSelectedTopic={setSelectedTopic} />
     </Col>
