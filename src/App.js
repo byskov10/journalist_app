@@ -11,12 +11,14 @@ import MetricSelector from './Components/Metric_selector/MetricSelector';
 import SearchBar from './Components/Searchbar/Searchbar';
 import UserProfilePicture from './Components/UserProfile/UserProfile';
 import userImage from './Components/UserProfile/nerd.png';
+import BubbleSlider from './Components/Bubble_amount_selector/Bubble_amount_selector';
+import WordSlider from './Components/Word_slider/Word_slider';
 
 function Layout() {
   // Hook for det data vi skal bruge
   const [TopicData, setData] = useState(topic_data);
   // Hook med det emne, brugeren skriver ind i searchbox
-  const [SelectedTopic, setSelectedTopic] = useState(null);
+  const [selectedTopic, setSelectedTopic] = useState(null);
   // Hook for det ord, brugeren har trykket på i bubble chart
   const [SelectedWord, setSelectedWord] = useState("");
 
@@ -25,7 +27,7 @@ function Layout() {
 <Container fluid className='d-flex flex-column my-container' style={{height: '100vh'}}>
   <Row className='NavBar' style={{height: '100%'}}>
     <Col xs={12} md={4} className='d-flex align-items-center justify-content-left p-10'>
-      <SearchBar data={nyheder} selectedTopic={SelectedTopic} setSelectedTopic={setSelectedTopic} />
+      <SearchBar data={nyheder} selectedTopic={selectedTopic} setSelectedTopic={setSelectedTopic} />
     </Col>
     <Col xs={12} md={4} className='d-flex align-items-center justify-content-center p-0'>
       <p>Timeline</p>
@@ -66,15 +68,16 @@ function Layout() {
         </Row>
         <Row>
           <Col xs={12} md={6}>
-            <p>Slider</p>
+            <BubbleSlider></BubbleSlider>
           </Col>
           <Col xs={12} md={6}>
-            <p>Slider</p>
+            <WordSlider></WordSlider>
           </Col>
         </Row>
         <Row>
           <Col>
-            <p>Bubble</p>
+          <Bubble TopicWord={selectedTopic} data={topic_data} />
+          <div>{console.log(selectedTopic)}</div>
           </Col>
         </Row>
       </Card>
