@@ -41,33 +41,14 @@ function Layout() {
     </Col>
   </Row>
   <Row className='flex-grow-1' style={{paddingBottom: '20px', paddingTop: '20px'}}>
-    <Col xs={12} md={4}>
-      <Row className='MetricSelector' style={{paddingBottom: '10px'}}>
-        <Col>
-          <Card className='h-100 reset-card-styles'>
-            <Card.Body className='d-flex flex-column'>
-              <Card.Title>Metric Selector</Card.Title>
-              <Card.Text><MetricSelector /></Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-      <Row className='LineChart' style={{paddingTop: '10px'}}>
-        <Col>
-          <Card className='h-100 reset-card-styles'>
-            {/* Denne her skal muligvis være row */}
-            <Card.Body className='d-flex flex-column'>
-              <Card.Text className='flex-grow-1'><Linechart className='linechart' /></Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-    </Col>
-    <Col xs={12} md={8}>
+    <Col className='FirstColumn' xs={12} md={8}>
       <Card className='h-100 reset-card-styles'>
         <Row>
           <Col>
             <BubbleSearchBox />
+          </Col>
+          <Col>
+          Dropdown
           </Col>
         </Row>
         <Row>
@@ -84,6 +65,28 @@ function Layout() {
           </Col>
         </Row>
       </Card>
+    </Col>
+    <Col className='SecondColumn' xs={12} md={4}>
+    <Card className='h-100 reset-card-styles'>
+        <Col>
+
+            <Card.Body className='d-flex flex-column'>
+              <Card.Title>Metric Selector</Card.Title>
+              <Card.Text><MetricSelector /></Card.Text>
+            </Card.Body>
+
+        </Col>
+
+
+        <Col>
+
+            {/* Denne her skal muligvis være row */}
+            <Card.Body className='d-flex flex-column'>
+              <Card.Text className='flex-grow-1'><Linechart className='linechart' /></Card.Text>
+            </Card.Body>
+
+        </Col>
+        </Card>
     </Col>
   </Row>
 </Container>
