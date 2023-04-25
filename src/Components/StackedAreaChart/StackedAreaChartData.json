@@ -1,0 +1,27 @@
+[
+    {
+      "date": "2022-01-01",
+      "apples": 10,
+      "oranges": 20,
+      "bananas": 15
+    },
+    {
+      "date": "2022-02-01",
+      "apples": 20,
+      "oranges": 15,
+      "bananas": 10
+    },
+    {
+      "date": "2022-03-01",
+      "apples": 15,
+      "oranges": 25,
+      "bananas": 5
+    },
+    {
+      "date": "2022-04-01",
+      "apples": 25,
+      "oranges": 10,
+      "bananas": 20
+    }
+  ]
+  

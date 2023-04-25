@@ -7,7 +7,7 @@ import { useState } from 'react';
 import Bubble from './Components/Bubble_viz/Bubble_chart/bubblechart';
 import topic_data from './Components/Bubble_viz/Bubble_chart/data.json';
 import Linechart from './Components/Trendline_graph/trendline';
-import MetricSelector from './Components/Metric_selector/MetricSelector';
+import MetricDropdown from './Components/Metric_selector/MetricDropdown';
 import SearchBar from './Components/Searchbar/Searchbar';
 import UserProfilePicture from './Components/UserProfile/UserProfile';
 import userImage from './Components/UserProfile/nerd.png';
@@ -15,6 +15,8 @@ import TimeSlider from './Components/Timeline/TimeSlider';
 import BubbleSlider from './Components/Bubble_amount_selector.js/Bubble_amount_selector';
 import WordSlider from './Components/Word_slider/Word_slider';
 import BubbleSearchBox from './Components/BubbleSearchBox/BubbleSearch';
+import StackedChart from './Components/StackedAreaChart/StackedChart';
+
 
 function Layout() {
   // Hook for det data vi skal bruge
@@ -26,7 +28,7 @@ function Layout() {
 
   
   return (
-<Container fluid className='d-flex flex-column my-container' style={{height: '100vh'}}>
+<Container fluid className='d-flex flex-column my-container' style={{height: '120vh'}}>
   <Row className='NavBar'>
     <Col xs={12} md={4} className='d-flex align-items-center justify-content-left'>
       <SearchBar data={nyheder} selectedTopic={SelectedTopic} setSelectedTopic={setSelectedTopic} />
@@ -50,37 +52,37 @@ function Layout() {
           </Col>
         </Row>
         <Row>
-          <Col xs={12} md={6}>
+          <Col>
             <BubbleSlider />
           </Col>
-          <Col xs={12} md={6}>
+          <Col>
             <WordSlider />
           </Col>
         </Row>
-        <Row>
+        <Row style={{ height: '100%', alignContent: 'center', textAlign: 'center' }}>
           <Col>
             <h3>Bubble</h3>
           </Col>
         </Row>
       </Card>
-    </Col>
-    <Col className='SecondColumn' xs={12} md={4}>
-    <Card className='h-100 reset-card-styles'>
-        <Col>
-
-            <Card.Body className='d-flex flex-column'>
-              <Card.Title>Metric Selector</Card.Title>
-              <Card.Text><MetricSelector /></Card.Text>
-            </Card.Body>
-
         </Col>
+        <Col className='SecondColumn' xs={12} md={4}>
+        <Card className='h-100 reset-card-styles'>
+        <Col style={{border: 'solid 1px black'}}>
 
+{/* Denne her skal muligvis være row */}
+          <Card.Body className='d-flex flex-column' >
+            <Card.Title className='flex-grow-1'>
+              
+            </Card.Title>
+          </Card.Body>
 
-        <Col>
+            </Col>
+            <Col style={{border: 'solid 1px black'}}>
 
-            {/* Denne her skal muligvis være row */}
             <Card.Body className='d-flex flex-column'>
-              <Card.Text className='flex-grow-1'><Linechart className='linechart' /></Card.Text>
+              <Card.Title>Artikler</Card.Title>
+              <Card.Text></Card.Text>
             </Card.Body>
 
         </Col>
