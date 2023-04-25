@@ -50,24 +50,23 @@ const getOptions = () => ({
 
 function Bubble({setSelectedWord, TopicWord, BubbleAmount, data}) {
 
-  const FilterData = (name, b) => {
+  const FilterData = (name, n) => {
     const newWordArray = data.filter((topic) => {
       return topic.name === name;
     });
-    
+  
     if (newWordArray.length === 0) {
       return []; // If topic with the given name doesn't exist, return empty array
     }
-  //hvis der ikke køres noget filter køres functionen ikke
-    if (name !== null) {
-      // antal defineres i slice! - virker
-      const newData = newWordArray[0].data.slice(0, b);
-      newWordArray[0].data = newData;
-    }
   
-    return newWordArray // Return first two objects of the data array
+    // Sort the data array by value in descending order
+    const sortedData = newWordArray[0].data.sort((a, b) => b.value - a.value);
+  
+    // Return the first n objects with the highest value
+    return sortedData.slice(0, n);
   };
-
+  
+  
 
 
   // Funktion som tager event-objektet for når en bruger klikker på en bubble i bubble chartet
