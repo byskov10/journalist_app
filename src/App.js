@@ -27,12 +27,15 @@ function Layout() {
   }
   // Hook for det data vi skal bruge
   const [TopicData, setData] = useState(topic_data);
-  // Hook med det emne, brugeren skriver ind i searchbox
+  // Hook med det emne, brugeren skriver ind i topic searchbox
   const [SelectedTopic, setSelectedTopic] = useState(null);
+  // Hook med det ord, brugeren skriver ind i bubble searchbox
+  const [SearchWord, setSearchWord] = useState("")
   // Hook for det ord, brugeren har trykket på i bubble chart
   const [SelectedWord, setSelectedWord] = useState("");
   //Hook for slider der kontrollerer antal bobler
   const [BubbleAmount, setBubbleAmount]= useState(1000);
+  const [debouncedBubbleAmount, setDebouncedBubbleAmount] = useState(BubbleAmount);
 
   
   return (
@@ -53,7 +56,7 @@ function Layout() {
       <Card className='h-100 reset-card-styles'>
         <Row>
           <Col>
-            <BubbleSearchBox data={topic_data} />
+            <BubbleSearchBox searchWord={SearchWord} setSearchWord={setSearchWord} />
           </Col>
           <Col>
           <MetricDropdown  selectedMetric={selectedMetric} onMetricChange={handleMetricChange} />
@@ -61,14 +64,19 @@ function Layout() {
         </Row>
         <Row>
           <Col>
-            <BubbleSlider BubbleAmount={BubbleAmount} setBubbleAmount={setBubbleAmount}></BubbleSlider>
+            <BubbleSlider 
+              BubbleAmount={BubbleAmount}
+              setBubbleAmount={setBubbleAmount}
+              debouncedBubbleAmount={debouncedBubbleAmount}
+              setDebouncedBubbleAmount={setDebouncedBubbleAmount}>
+            </BubbleSlider>
           </Col>
           <Col>
             <WordSlider />
           </Col>
         </Row>
         <Row>
-          <Bubble TopicWord={SelectedTopic} BubbleAmount={BubbleAmount} data={topic_data} setSelectedWord={setSelectedWord} />
+          <Bubble TopicWord={SelectedTopic} BubbleAmount={BubbleAmount} data={topic_data} setSelectedWord={setSelectedWord} searchWord={SearchWord} />
           <div>{SelectedWord}</div>
         </Row>
       </Card>

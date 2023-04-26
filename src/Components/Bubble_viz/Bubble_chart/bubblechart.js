@@ -48,9 +48,9 @@ const getOptions = () => ({
   },
 });
 
-function Bubble({setSelectedWord, TopicWord, BubbleAmount, data}) {
+function Bubble({setSelectedWord, TopicWord, BubbleAmount, data, searchWord}) {
 
-  const FilterData = (name, b) => {
+  const FilterData = (name, bubbleamount) => {
     const newWordArray = data.filter((topic) => {
       return topic.name === name;
     });
@@ -61,10 +61,16 @@ function Bubble({setSelectedWord, TopicWord, BubbleAmount, data}) {
     
     const sortedData = newWordArray[0].data.sort((a, b) => b.value - a.value);
 
-  
-    const newData = [...newWordArray[0].data]; // Make a copy of the data array
-    if (name !== null) {
-      newData.splice(b); // Use splice to remove items from the end of the array
+    if (searchWord.length === 0) {
+      var newData = [...newWordArray[0].data]; // Make a copy of the data array
+      if (name !== null) {
+        newData.splice(bubbleamount); // Use splice to remove items from the end of the array
+      }
+    } else {
+      var dataset = [...newWordArray[0].data];
+      var newData = dataset.filter((topic) => {
+        return topic.word.toLowerCase().includes(searchWord.toLowerCase());
+      });
     }
   
     return { ...sortedData[0], data: newData }; // Return an object with the updated data array

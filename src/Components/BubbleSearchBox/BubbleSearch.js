@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
 import './BubbleSearch.css';
 
-function BubbleSearchBox({data}) {
-  const [searchWord, setSearchWord] = useState("")
+function BubbleSearchBox({searchWord, setSearchWord}) {
+  //const [searchWord, setSearchWord] = useState("")
   
   const handleFilter = (event) => {
     const searchedWord = event.target.value;
-    const newFilter = data.filter((value) => {
-      return value.data.word.toLowerCase().includes(searchWord.toLowerCase());
-    });
+    return setSearchWord(searchedWord)
   }
 
   return (
