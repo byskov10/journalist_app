@@ -25,6 +25,8 @@ function Layout() {
   const [SelectedTopic, setSelectedTopic] = useState(null);
   // Hook for det ord, brugeren har trykket på i bubble chart
   const [SelectedWord, setSelectedWord] = useState("");
+  //Hook for slider der kontrollerer antal bobler
+  const [BubbleAmount, setBubbleAmount]= useState(1000);
 
   
   return (
@@ -53,16 +55,15 @@ function Layout() {
         </Row>
         <Row>
           <Col>
-            <BubbleSlider />
+            <BubbleSlider BubbleAmount={BubbleAmount} setBubbleAmount={setBubbleAmount}></BubbleSlider>
           </Col>
           <Col>
             <WordSlider />
           </Col>
         </Row>
-        <Row style={{ height: '100%', alignContent: 'center', textAlign: 'center' }}>
-          <Col>
-            <h3>Bubble</h3>
-          </Col>
+        <Row>
+          <Bubble TopicWord={SelectedTopic} BubbleAmount={BubbleAmount} data={topic_data} setSelectedWord={setSelectedWord} />
+          <div>{console.log(SelectedTopic)}</div>
         </Row>
       </Card>
         </Col>

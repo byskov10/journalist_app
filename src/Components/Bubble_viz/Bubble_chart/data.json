@@ -1,28 +1,1876 @@
 [
     {
-    "name": "Krigen i Ukraine",
-    "data": 
-        [
-        {
-        "word": "Ukraine",
-        "value": 2304
-        },
-        {
-        "word": "Nato",
-        "value": 4953
-        },
-        {
-        "word": "Wagnergruppen",
-        "value": 5032
-        },
-        {
-        "word": "krigsstrategi",
-        "value": 1023
-        },
-        {
-        "word": "tanks",
-        "value": 3045
-        }]
+        "name": "Krigen i Ukraine",
+        "data": [
+            {
+                "word": "gik",
+                "value": 5
+            },
+            {
+                "word": "ankom",
+                "value": 5
+            },
+            {
+                "word": "genforenet",
+                "value": 5
+            },
+            {
+                "word": "arbejdskraft",
+                "value": 5
+            },
+            {
+                "word": "ambassade",
+                "value": 5
+            },
+            {
+                "word": "arbejdstilladelse",
+                "value": 5
+            },
+            {
+                "word": "fungerende",
+                "value": 5
+            },
+            {
+                "word": "barn",
+                "value": 5
+            },
+            {
+                "word": "fsb",
+                "value": 5
+            },
+            {
+                "word": "beslutning",
+                "value": 5
+            },
+            {
+                "word": "franske",
+                "value": 5
+            },
+            {
+                "word": "frans",
+                "value": 5
+            },
+            {
+                "word": "forventet",
+                "value": 5
+            },
+            {
+                "word": "forts\u00e6tte",
+                "value": 5
+            },
+            {
+                "word": "avis",
+                "value": 5
+            },
+            {
+                "word": "inde",
+                "value": 5
+            },
+            {
+                "word": "0",
+                "value": 5
+            },
+            {
+                "word": "momentum",
+                "value": 5
+            },
+            {
+                "word": "regionerne",
+                "value": 5
+            },
+            {
+                "word": "krigsb\u00f8rn",
+                "value": 5
+            },
+            {
+                "word": "krigsforbrydelser",
+                "value": 5
+            },
+            {
+                "word": "stedet",
+                "value": 5
+            },
+            {
+                "word": "slet",
+                "value": 5
+            },
+            {
+                "word": "sigtet",
+                "value": 5
+            },
+            {
+                "word": "stod",
+                "value": 5
+            },
+            {
+                "word": "masha",
+                "value": 5
+            },
+            {
+                "word": "overv\u00e5gningsfly",
+                "value": 5
+            },
+            {
+                "word": "medarbejdere",
+                "value": 5
+            },
+            {
+                "word": "organisationen",
+                "value": 5
+            },
+            {
+                "word": "luftforsvar",
+                "value": 5
+            },
+            {
+                "word": "journal",
+                "value": 5
+            },
+            {
+                "word": "plads",
+                "value": 5
+            },
+            {
+                "word": "soldat",
+                "value": 5
+            },
+            {
+                "word": "sandsynligvis",
+                "value": 5
+            },
+            {
+                "word": "manden",
+                "value": 5
+            },
+            {
+                "word": "tallet",
+                "value": 5
+            },
+            {
+                "word": "lys",
+                "value": 5
+            },
+            {
+                "word": "kontrollerer",
+                "value": 5
+            },
+            {
+                "word": "tal",
+                "value": 5
+            },
+            {
+                "word": "sat",
+                "value": 5
+            },
+            {
+                "word": "t",
+                "value": 5
+            },
+            {
+                "word": "l\u00e6nge",
+                "value": 5
+            },
+            {
+                "word": "l\u00f8ber",
+                "value": 5
+            },
+            {
+                "word": "sl\u00e5r",
+                "value": 5
+            },
+            {
+                "word": "s\u00f8rensen",
+                "value": 5
+            },
+            {
+                "word": "planer",
+                "value": 5
+            },
+            {
+                "word": "s\u00f8n",
+                "value": 5
+            },
+            {
+                "word": "stille",
+                "value": 5
+            },
+            {
+                "word": "klar",
+                "value": 5
+            },
+            {
+                "word": "kirkeg\u00e5rden",
+                "value": 5
+            },
+            {
+                "word": "paven",
+                "value": 5
+            },
+            {
+                "word": "opslag",
+                "value": 5
+            },
+            {
+                "word": "midlertidigt",
+                "value": 5
+            },
+            {
+                "word": "optagelser",
+                "value": 5
+            },
+            {
+                "word": "statsborgere",
+                "value": 5
+            },
+            {
+                "word": "nielsen",
+                "value": 5
+            },
+            {
+                "word": "lang",
+                "value": 5
+            },
+            {
+                "word": "n\u00f8dvendigt",
+                "value": 5
+            },
+            {
+                "word": "study",
+                "value": 5
+            },
+            {
+                "word": "sp\u00f8rgsm\u00e5l",
+                "value": 5
+            },
+            {
+                "word": "russian",
+                "value": 5
+            },
+            {
+                "word": "offensiven",
+                "value": 5
+            },
+            {
+                "word": "mulighed",
+                "value": 5
+            },
+            {
+                "word": "trussel",
+                "value": 5
+            },
+            {
+                "word": "officielt",
+                "value": 5
+            },
+            {
+                "word": "skabe",
+                "value": 5
+            },
+            {
+                "word": "sikkert",
+                "value": 5
+            },
+            {
+                "word": "oleksij",
+                "value": 5
+            },
+            {
+                "word": "institute",
+                "value": 5
+            },
+            {
+                "word": "svar",
+                "value": 5
+            },
+            {
+                "word": "krasnodar",
+                "value": 5
+            },
+            {
+                "word": "opdateres",
+                "value": 5
+            },
+            {
+                "word": "straffedomstol",
+                "value": 5
+            },
+            {
+                "word": "missiler",
+                "value": 5
+            },
+            {
+                "word": "sv\u00e6rere",
+                "value": 5
+            },
+            {
+                "word": "kr\u00e6ver",
+                "value": 5
+            },
+            {
+                "word": "milit\u00e6ranalytikeren",
+                "value": 5
+            },
+            {
+                "word": "pr\u00e6cis",
+                "value": 5
+            },
+            {
+                "word": "januar",
+                "value": 5
+            },
+            {
+                "word": "stat",
+                "value": 5
+            },
+            {
+                "word": "operationer",
+                "value": 5
+            },
+            {
+                "word": "luftb\u00e5rne",
+                "value": 5
+            },
+            {
+                "word": "fjenden",
+                "value": 6
+            },
+            {
+                "word": "familie",
+                "value": 6
+            },
+            {
+                "word": "lange",
+                "value": 6
+            },
+            {
+                "word": "lejren",
+                "value": 6
+            },
+            {
+                "word": "steder",
+                "value": 6
+            },
+            {
+                "word": "uger",
+                "value": 6
+            },
+            {
+                "word": "forhandlinger",
+                "value": 6
+            },
+            {
+                "word": "angrebet",
+                "value": 6
+            },
+            {
+                "word": "fokus",
+                "value": 6
+            },
+            {
+                "word": "stand",
+                "value": 6
+            },
+            {
+                "word": "finneb\u00f8rn",
+                "value": 6
+            },
+            {
+                "word": "territorium",
+                "value": 6
+            },
+            {
+                "word": "maria",
+                "value": 6
+            },
+            {
+                "word": "l\u00e6kkede",
+                "value": 6
+            },
+            {
+                "word": "nuv\u00e6rende",
+                "value": 6
+            },
+            {
+                "word": "m\u00e6rsk",
+                "value": 6
+            },
+            {
+                "word": "m\u00e6nd",
+                "value": 6
+            },
+            {
+                "word": "offensive",
+                "value": 6
+            },
+            {
+                "word": "center",
+                "value": 6
+            },
+            {
+                "word": "m\u00e5de",
+                "value": 6
+            },
+            {
+                "word": "chefen",
+                "value": 6
+            },
+            {
+                "word": "civile",
+                "value": 6
+            },
+            {
+                "word": "billeder",
+                "value": 6
+            },
+            {
+                "word": "vej",
+                "value": 6
+            },
+            {
+                "word": "vinteroffensiv",
+                "value": 6
+            },
+            {
+                "word": "ministeriet",
+                "value": 6
+            },
+            {
+                "word": "delt",
+                "value": 6
+            },
+            {
+                "word": "demin",
+                "value": 6
+            },
+            {
+                "word": "milit\u00e6ranalytiker",
+                "value": 6
+            },
+            {
+                "word": "opfordrer",
+                "value": 6
+            },
+            {
+                "word": "mennesker",
+                "value": 6
+            },
+            {
+                "word": "optagelserne",
+                "value": 6
+            },
+            {
+                "word": "mediet",
+                "value": 6
+            },
+            {
+                "word": "behandling",
+                "value": 6
+            },
+            {
+                "word": "begyndt",
+                "value": 6
+            },
+            {
+                "word": "dr\u00e6bte",
+                "value": 6
+            },
+            {
+                "word": "d\u00e5rligt",
+                "value": 6
+            },
+            {
+                "word": "begyndelsen",
+                "value": 6
+            },
+            {
+                "word": "efterretningstjeneste",
+                "value": 6
+            },
+            {
+                "word": "pave",
+                "value": 6
+            },
+            {
+                "word": "s\u00f8ndag",
+                "value": 6
+            },
+            {
+                "word": "tab",
+                "value": 6
+            },
+            {
+                "word": "befolkning",
+                "value": 6
+            },
+            {
+                "word": "bbc",
+                "value": 6
+            },
+            {
+                "word": "form",
+                "value": 6
+            },
+            {
+                "word": "byerne",
+                "value": 6
+            },
+            {
+                "word": "gr\u00e6nse",
+                "value": 6
+            },
+            {
+                "word": "harpoon",
+                "value": 6
+            },
+            {
+                "word": "situationen",
+                "value": 6
+            },
+            {
+                "word": "19",
+                "value": 6
+            },
+            {
+                "word": "september",
+                "value": 6
+            },
+            {
+                "word": "kameraet",
+                "value": 6
+            },
+            {
+                "word": "invasionen",
+                "value": 6
+            },
+            {
+                "word": "kroner",
+                "value": 6
+            },
+            {
+                "word": "200",
+                "value": 6
+            },
+            {
+                "word": "kort",
+                "value": 6
+            },
+            {
+                "word": "fors\u00f8gt",
+                "value": 6
+            },
+            {
+                "word": "for\u00e6ldrene",
+                "value": 6
+            },
+            {
+                "word": "fors\u00f8gte",
+                "value": 6
+            },
+            {
+                "word": "forts\u00e6tter",
+                "value": 6
+            },
+            {
+                "word": "gruppens",
+                "value": 6
+            },
+            {
+                "word": "2023",
+                "value": 6
+            },
+            {
+                "word": "gennemf\u00f8rt",
+                "value": 6
+            },
+            {
+                "word": "fremg\u00e5r",
+                "value": 6
+            },
+            {
+                "word": "udtalelse",
+                "value": 6
+            },
+            {
+                "word": "slaget",
+                "value": 6
+            },
+            {
+                "word": "slagmarken",
+                "value": 6
+            },
+            {
+                "word": "hj\u00e6lpe",
+                "value": 6
+            },
+            {
+                "word": "serhii",
+                "value": 6
+            },
+            {
+                "word": "skyde",
+                "value": 6
+            },
+            {
+                "word": "13",
+                "value": 6
+            },
+            {
+                "word": "hente",
+                "value": 6
+            },
+            {
+                "word": "times",
+                "value": 6
+            },
+            {
+                "word": "h\u00f8jere",
+                "value": 6
+            },
+            {
+                "word": "f\u00e6ngsel",
+                "value": 6
+            },
+            {
+                "word": "samarbejde",
+                "value": 6
+            },
+            {
+                "word": "shmyhal",
+                "value": 6
+            },
+            {
+                "word": "skrev",
+                "value": 6
+            },
+            {
+                "word": "forsvar",
+                "value": 6
+            },
+            {
+                "word": "forskellige",
+                "value": 6
+            },
+            {
+                "word": "belgorod",
+                "value": 7
+            },
+            {
+                "word": "melding",
+                "value": 7
+            },
+            {
+                "word": "mariupol",
+                "value": 7
+            },
+            {
+                "word": "bekr\u00e6ftet",
+                "value": 7
+            },
+            {
+                "word": "31",
+                "value": 7
+            },
+            {
+                "word": "droner",
+                "value": 7
+            },
+            {
+                "word": "dokument",
+                "value": 7
+            },
+            {
+                "word": "24",
+                "value": 7
+            },
+            {
+                "word": "grund",
+                "value": 7
+            },
+            {
+                "word": "rolle",
+                "value": 7
+            },
+            {
+                "word": "direkte",
+                "value": 7
+            },
+            {
+                "word": "skyldes",
+                "value": 7
+            },
+            {
+                "word": "hentet",
+                "value": 7
+            },
+            {
+                "word": "skete",
+                "value": 7
+            },
+            {
+                "word": "cherevatyi",
+                "value": 7
+            },
+            {
+                "word": "street",
+                "value": 7
+            },
+            {
+                "word": "citerer",
+                "value": 7
+            },
+            {
+                "word": "inden",
+                "value": 7
+            },
+            {
+                "word": "oktober",
+                "value": 7
+            },
+            {
+                "word": "oleksii",
+                "value": 7
+            },
+            {
+                "word": "torsdag",
+                "value": 7
+            },
+            {
+                "word": "helbred",
+                "value": 7
+            },
+            {
+                "word": "beskrevet",
+                "value": 7
+            },
+            {
+                "word": "vitalij",
+                "value": 7
+            },
+            {
+                "word": "20",
+                "value": 7
+            },
+            {
+                "word": "guardian",
+                "value": 7
+            },
+            {
+                "word": "millioner",
+                "value": 7
+            },
+            {
+                "word": "sergej",
+                "value": 7
+            },
+            {
+                "word": "situation",
+                "value": 7
+            },
+            {
+                "word": "sikre",
+                "value": 7
+            },
+            {
+                "word": "desuden",
+                "value": 7
+            },
+            {
+                "word": "vinde",
+                "value": 7
+            },
+            {
+                "word": "kineserne",
+                "value": 7
+            },
+            {
+                "word": "marinka",
+                "value": 7
+            },
+            {
+                "word": "ungarn",
+                "value": 7
+            },
+            {
+                "word": "familier",
+                "value": 7
+            },
+            {
+                "word": "udsat",
+                "value": 7
+            },
+            {
+                "word": "afp",
+                "value": 7
+            },
+            {
+                "word": "post",
+                "value": 7
+            },
+            {
+                "word": "premierminister",
+                "value": 7
+            },
+            {
+                "word": "eksempel",
+                "value": 7
+            },
+            {
+                "word": "fly",
+                "value": 7
+            },
+            {
+                "word": "wall",
+                "value": 7
+            },
+            {
+                "word": "war",
+                "value": 7
+            },
+            {
+                "word": "samfund",
+                "value": 7
+            },
+            {
+                "word": "pr\u00e6sidenten",
+                "value": 7
+            },
+            {
+                "word": "forbindelse",
+                "value": 7
+            },
+            {
+                "word": "lejeh\u00e6r",
+                "value": 7
+            },
+            {
+                "word": "r\u00e5dgiver",
+                "value": 7
+            },
+            {
+                "word": "lavrov",
+                "value": 7
+            },
+            {
+                "word": "forsvare",
+                "value": 7
+            },
+            {
+                "word": "uge",
+                "value": 7
+            },
+            {
+                "word": "specialstyrker",
+                "value": 7
+            },
+            {
+                "word": "formentlig",
+                "value": 7
+            },
+            {
+                "word": "regering",
+                "value": 7
+            },
+            {
+                "word": "regioner",
+                "value": 7
+            },
+            {
+                "word": "save",
+                "value": 7
+            },
+            {
+                "word": "v\u00e6k",
+                "value": 7
+            },
+            {
+                "word": "antallet",
+                "value": 7
+            },
+            {
+                "word": "frontlinjen",
+                "value": 7
+            },
+            {
+                "word": "fremskridt",
+                "value": 7
+            },
+            {
+                "word": "l\u00f8bet",
+                "value": 7
+            },
+            {
+                "word": "klart",
+                "value": 7
+            },
+            {
+                "word": "80",
+                "value": 7
+            },
+            {
+                "word": "l\u00e6kket",
+                "value": 7
+            },
+            {
+                "word": "erobret",
+                "value": 7
+            },
+            {
+                "word": "sejr",
+                "value": 8
+            },
+            {
+                "word": "r\u00e6kke",
+                "value": 8
+            },
+            {
+                "word": "kampfly",
+                "value": 8
+            },
+            {
+                "word": "udenrigsministerium",
+                "value": 8
+            },
+            {
+                "word": "zhanna",
+                "value": 8
+            },
+            {
+                "word": "offentliggjort",
+                "value": 8
+            },
+            {
+                "word": "tiden",
+                "value": 8
+            },
+            {
+                "word": "centrum",
+                "value": 8
+            },
+            {
+                "word": "tass",
+                "value": 8
+            },
+            {
+                "word": "l\u00f8d",
+                "value": 8
+            },
+            {
+                "word": "m\u00e5l",
+                "value": 8
+            },
+            {
+                "word": "spionage",
+                "value": 8
+            },
+            {
+                "word": "500",
+                "value": 8
+            },
+            {
+                "word": "f\u00e6lles",
+                "value": 8
+            },
+            {
+                "word": "tvivl",
+                "value": 8
+            },
+            {
+                "word": "h\u00e6ndelsen",
+                "value": 8
+            },
+            {
+                "word": "hoveder",
+                "value": 8
+            },
+            {
+                "word": "d\u00f8de",
+                "value": 8
+            },
+            {
+                "word": "livet",
+                "value": 8
+            },
+            {
+                "word": "halv\u00f8en",
+                "value": 8
+            },
+            {
+                "word": "pentagon",
+                "value": 8
+            },
+            {
+                "word": "adskilt",
+                "value": 8
+            },
+            {
+                "word": "fast",
+                "value": 8
+            },
+            {
+                "word": "avdiivka",
+                "value": 8
+            },
+            {
+                "word": "fredag",
+                "value": 8
+            },
+            {
+                "word": "kalder",
+                "value": 8
+            },
+            {
+                "word": "journalist",
+                "value": 8
+            },
+            {
+                "word": "talte",
+                "value": 8
+            },
+            {
+                "word": "votanovskij",
+                "value": 8
+            },
+            {
+                "word": "tilbageholdt",
+                "value": 8
+            },
+            {
+                "word": "isw",
+                "value": 8
+            },
+            {
+                "word": "interview",
+                "value": 8
+            },
+            {
+                "word": "kontrol",
+                "value": 8
+            },
+            {
+                "word": "16",
+                "value": 8
+            },
+            {
+                "word": "dansk",
+                "value": 8
+            },
+            {
+                "word": "samt",
+                "value": 8
+            },
+            {
+                "word": "side",
+                "value": 9
+            },
+            {
+                "word": "beskytte",
+                "value": 9
+            },
+            {
+                "word": "news",
+                "value": 9
+            },
+            {
+                "word": "omr\u00e5det",
+                "value": 9
+            },
+            {
+                "word": "2022",
+                "value": 9
+            },
+            {
+                "word": "sanktioner",
+                "value": 9
+            },
+            {
+                "word": "belarus",
+                "value": 9
+            },
+            {
+                "word": "personer",
+                "value": 9
+            },
+            {
+                "word": "100",
+                "value": 9
+            },
+            {
+                "word": "peskov",
+                "value": 9
+            },
+            {
+                "word": "arbejde",
+                "value": 9
+            },
+            {
+                "word": "sky",
+                "value": 9
+            },
+            {
+                "word": "lokale",
+                "value": 9
+            },
+            {
+                "word": "kontakt",
+                "value": 9
+            },
+            {
+                "word": "s\u00e6rligt",
+                "value": 9
+            },
+            {
+                "word": "fald",
+                "value": 9
+            },
+            {
+                "word": "mor",
+                "value": 9
+            },
+            {
+                "word": "tale",
+                "value": 9
+            },
+            {
+                "word": "m\u00f8de",
+                "value": 9
+            },
+            {
+                "word": "datter",
+                "value": 9
+            },
+            {
+                "word": "donbas",
+                "value": 9
+            },
+            {
+                "word": "kendt",
+                "value": 9
+            },
+            {
+                "word": "mistet",
+                "value": 9
+            },
+            {
+                "word": "tid",
+                "value": 9
+            },
+            {
+                "word": "gruppe",
+                "value": 9
+            },
+            {
+                "word": "kursk",
+                "value": 9
+            },
+            {
+                "word": "kuleba",
+                "value": 9
+            },
+            {
+                "word": "tog",
+                "value": 9
+            },
+            {
+                "word": "kreml",
+                "value": 9
+            },
+            {
+                "word": "hj\u00e6lp",
+                "value": 10
+            },
+            {
+                "word": "daglige",
+                "value": 10
+            },
+            {
+                "word": "opdatering",
+                "value": 10
+            },
+            {
+                "word": "independent",
+                "value": 10
+            },
+            {
+                "word": "yevhen",
+                "value": 10
+            },
+            {
+                "word": "mezhevoy",
+                "value": 10
+            },
+            {
+                "word": "s\u00f8ge",
+                "value": 10
+            },
+            {
+                "word": "eu",
+                "value": 10
+            },
+            {
+                "word": "tabstal",
+                "value": 10
+            },
+            {
+                "word": "anders",
+                "value": 10
+            },
+            {
+                "word": "\u00f8nsker",
+                "value": 10
+            },
+            {
+                "word": "fn",
+                "value": 10
+            },
+            {
+                "word": "gr\u00e6nsen",
+                "value": 10
+            },
+            {
+                "word": "ukrainerne",
+                "value": 10
+            },
+            {
+                "word": "puck",
+                "value": 10
+            },
+            {
+                "word": "poulsen",
+                "value": 10
+            },
+            {
+                "word": "sikkerhed",
+                "value": 10
+            },
+            {
+                "word": "talt",
+                "value": 10
+            },
+            {
+                "word": "afvist",
+                "value": 10
+            },
+            {
+                "word": "troels",
+                "value": 10
+            },
+            {
+                "word": "videoen",
+                "value": 10
+            },
+            {
+                "word": "sted",
+                "value": 10
+            },
+            {
+                "word": "lund",
+                "value": 10
+            },
+            {
+                "word": "pic",
+                "value": 10
+            },
+            {
+                "word": "taget",
+                "value": 10
+            },
+            {
+                "word": "reznikov",
+                "value": 11
+            },
+            {
+                "word": "hjem",
+                "value": 11
+            },
+            {
+                "word": "terttu",
+                "value": 11
+            },
+            {
+                "word": "s\u00e5kaldte",
+                "value": 11
+            },
+            {
+                "word": "andersen",
+                "value": 11
+            },
+            {
+                "word": "land",
+                "value": 11
+            },
+            {
+                "word": "tetzlaff",
+                "value": 11
+            },
+            {
+                "word": "\u00f8jeblikket",
+                "value": 11
+            },
+            {
+                "word": "fors\u00f8ger",
+                "value": 11
+            },
+            {
+                "word": "jorden",
+                "value": 11
+            },
+            {
+                "word": "st\u00f8tte",
+                "value": 11
+            },
+            {
+                "word": "kherson",
+                "value": 11
+            },
+            {
+                "word": "kilometer",
+                "value": 11
+            },
+            {
+                "word": "washington",
+                "value": 11
+            },
+            {
+                "word": "fred",
+                "value": 11
+            },
+            {
+                "word": "suslov",
+                "value": 11
+            },
+            {
+                "word": "sende",
+                "value": 11
+            },
+            {
+                "word": "betyder",
+                "value": 11
+            },
+            {
+                "word": "omr\u00e5der",
+                "value": 11
+            },
+            {
+                "word": "kampe",
+                "value": 11
+            },
+            {
+                "word": "dele",
+                "value": 11
+            },
+            {
+                "word": "\u00e5rige",
+                "value": 11
+            },
+            {
+                "word": "virksomheder",
+                "value": 11
+            },
+            {
+                "word": "navalnyj",
+                "value": 11
+            },
+            {
+                "word": "modoffensiv",
+                "value": 11
+            },
+            {
+                "word": "milit\u00e6re",
+                "value": 11
+            },
+            {
+                "word": "bes\u00f8g",
+                "value": 11
+            },
+            {
+                "word": "vladimir",
+                "value": 11
+            },
+            {
+                "word": "gange",
+                "value": 12
+            },
+            {
+                "word": "avisen",
+                "value": 12
+            },
+            {
+                "word": "angiveligt",
+                "value": 12
+            },
+            {
+                "word": "st\u00f8rre",
+                "value": 12
+            },
+            {
+                "word": "frem",
+                "value": 12
+            },
+            {
+                "word": "leder",
+                "value": 12
+            },
+            {
+                "word": "v\u00e6bnede",
+                "value": 12
+            },
+            {
+                "word": "evan",
+                "value": 12
+            },
+            {
+                "word": "lederen",
+                "value": 13
+            },
+            {
+                "word": "invasion",
+                "value": 13
+            },
+            {
+                "word": "tos",
+                "value": 13
+            },
+            {
+                "word": "alexander",
+                "value": 13
+            },
+            {
+                "word": "f\u00e5et",
+                "value": 13
+            },
+            {
+                "word": "krig",
+                "value": 13
+            },
+            {
+                "word": "fort\u00e6ller",
+                "value": 13
+            },
+            {
+                "word": "krigens",
+                "value": 13
+            },
+            {
+                "word": "tropper",
+                "value": 13
+            },
+            {
+                "word": "landets",
+                "value": 13
+            },
+            {
+                "word": "udenrigsminister",
+                "value": 13
+            },
+            {
+                "word": "procent",
+                "value": 13
+            },
+            {
+                "word": "verden",
+                "value": 13
+            },
+            {
+                "word": "chertilina",
+                "value": 13
+            },
+            {
+                "word": "danske",
+                "value": 13
+            },
+            {
+                "word": "myndigheder",
+                "value": 13
+            },
+            {
+                "word": "marts",
+                "value": 13
+            },
+            {
+                "word": "februar",
+                "value": 14
+            },
+            {
+                "word": "efterretninger",
+                "value": 14
+            },
+            {
+                "word": "volodymyr",
+                "value": 14
+            },
+            {
+                "word": "finland",
+                "value": 14
+            },
+            {
+                "word": "folk",
+                "value": 14
+            },
+            {
+                "word": "milit\u00e6r",
+                "value": 15
+            },
+            {
+                "word": "gershkovich",
+                "value": 15
+            },
+            {
+                "word": "nyhedsbureau",
+                "value": 15
+            },
+            {
+                "word": "vesten",
+                "value": 15
+            },
+            {
+                "word": "st\u00e5r",
+                "value": 15
+            },
+            {
+                "word": "medie",
+                "value": 15
+            },
+            {
+                "word": "tidspunkt",
+                "value": 15
+            },
+            {
+                "word": "h\u00e6vder",
+                "value": 15
+            },
+            {
+                "word": "nyhedsbureauet",
+                "value": 15
+            },
+            {
+                "word": "tirsdag",
+                "value": 16
+            },
+            {
+                "word": "for\u00e6ldre",
+                "value": 16
+            },
+            {
+                "word": "gruppen",
+                "value": 16
+            },
+            {
+                "word": "talsmand",
+                "value": 16
+            },
+            {
+                "word": "langt",
+                "value": 16
+            },
+            {
+                "word": "onsdag",
+                "value": 16
+            },
+            {
+                "word": "telegram",
+                "value": 16
+            },
+            {
+                "word": "sociale",
+                "value": 16
+            },
+            {
+                "word": "m\u00e5neder",
+                "value": 16
+            },
+            {
+                "word": "oplyser",
+                "value": 17
+            },
+            {
+                "word": "cnn",
+                "value": 17
+            },
+            {
+                "word": "dokumenterne",
+                "value": 17
+            },
+            {
+                "word": "dmitrij",
+                "value": 17
+            },
+            {
+                "word": "april",
+                "value": 17
+            },
+            {
+                "word": "vestlige",
+                "value": 17
+            },
+            {
+                "word": "v\u00e5ben",
+                "value": 17
+            },
+            {
+                "word": "\u00f8stlige",
+                "value": 17
+            },
+            {
+                "word": "internationale",
+                "value": 18
+            },
+            {
+                "word": "jevgenij",
+                "value": 18
+            },
+            {
+                "word": "dage",
+                "value": 18
+            },
+            {
+                "word": "donetsk",
+                "value": 18
+            },
+            {
+                "word": "dokumenter",
+                "value": 18
+            },
+            {
+                "word": "sendt",
+                "value": 19
+            },
+            {
+                "word": "kyiv",
+                "value": 19
+            },
+            {
+                "word": "samtidig",
+                "value": 19
+            },
+            {
+                "word": "h\u00e6r",
+                "value": 19
+            },
+            {
+                "word": "putin",
+                "value": 19
+            },
+            {
+                "word": "forsvarsminister",
+                "value": 19
+            },
+            {
+                "word": "s",
+                "value": 20
+            },
+            {
+                "word": "forsvarsministerium",
+                "value": 20
+            },
+            {
+                "word": "mandag",
+                "value": 21
+            },
+            {
+                "word": "reuters",
+                "value": 21
+            },
+            {
+                "word": "viser",
+                "value": 21
+            },
+            {
+                "word": "offensiv",
+                "value": 22
+            },
+            {
+                "word": "zelenskyj",
+                "value": 22
+            },
+            {
+                "word": "regionen",
+                "value": 22
+            },
+            {
+                "word": "angreb",
+                "value": 22
+            },
+            {
+                "word": "seneste",
+                "value": 23
+            },
+            {
+                "word": "1",
+                "value": 23
+            },
+            {
+                "word": "nato",
+                "value": 23
+            },
+            {
+                "word": "mener",
+                "value": 24
+            },
+            {
+                "word": "kina",
+                "value": 24
+            },
+            {
+                "word": "moskva",
+                "value": 24
+            },
+            {
+                "word": "twitter",
+                "value": 25
+            },
+            {
+                "word": "landet",
+                "value": 25
+            },
+            {
+                "word": "video",
+                "value": 25
+            },
+            {
+                "word": "britiske",
+                "value": 25
+            },
+            {
+                "word": "usa",
+                "value": 26
+            },
+            {
+                "word": "b\u00f8rnene",
+                "value": 26
+            },
+            {
+                "word": "krim",
+                "value": 27
+            },
+            {
+                "word": "lande",
+                "value": 27
+            },
+            {
+                "word": "lyder",
+                "value": 28
+            },
+            {
+                "word": "russere",
+                "value": 28
+            },
+            {
+                "word": "medier",
+                "value": 29
+            },
+            {
+                "word": "ukrainsk",
+                "value": 29
+            },
+            {
+                "word": "wagner",
+                "value": 32
+            },
+            {
+                "word": "prigozjin",
+                "value": 32
+            },
+            {
+                "word": "russerne",
+                "value": 33
+            },
+            {
+                "word": "000",
+                "value": 35
+            },
+            {
+                "word": "soldater",
+                "value": 37
+            },
+            {
+                "word": "2",
+                "value": 38
+            },
+            {
+                "word": "sidste",
+                "value": 39
+            },
+            {
+                "word": "amerikanske",
+                "value": 40
+            },
+            {
+                "word": "styrker",
+                "value": 42
+            },
+            {
+                "word": "pr\u00e6sident",
+                "value": 42
+            },
+            {
+                "word": "danmark",
+                "value": 44
+            },
+            {
+                "word": "tv",
+                "value": 46
+            },
+            {
+                "word": "ruslands",
+                "value": 46
+            },
+            {
+                "word": "sagde",
+                "value": 47
+            },
+            {
+                "word": "russisk",
+                "value": 48
+            },
+            {
+                "word": "byen",
+                "value": 48
+            },
+            {
+                "word": "ukraines",
+                "value": 49
+            },
+            {
+                "word": "bakhmut",
+                "value": 56
+            },
+            {
+                "word": "blevet",
+                "value": 64
+            },
+            {
+                "word": "krigen",
+                "value": 69
+            },
+            {
+                "word": "skriver",
+                "value": 74
+            },
+            {
+                "word": "b\u00f8rn",
+                "value": 74
+            },
+            {
+                "word": "ukrainske",
+                "value": 125
+            },
+            {
+                "word": "if\u00f8lge",
+                "value": 142
+            },
+            {
+                "word": "rusland",
+                "value": 195
+            },
+            {
+                "word": "ukraine",
+                "value": 208
+            },
+            {
+                "word": "russiske",
+                "value": 228
+            }
+        ]
     },
     {
     "name": "Coronavirus",
@@ -51,4 +1899,3 @@
         ]
 }
 ]
-

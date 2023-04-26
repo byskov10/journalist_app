@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import './Searchbar.css'
 import SearchIcon from './SearchIcon';
 
-function SearchBar({ data }) {
+function SearchBar({ data, selectedTopic, setSelectedTopic }) {
   const [searchInput, setSearchInput] = useState("");
-  const [selectedTopic, setSelectedTopic] = useState("");
+  // const [selectedTopic, setSelectedTopic] = useState("");
   const [filteredData, setFilteredData] = useState([]);
   const [showCross, setShowCross] = useState(false); // new state variable
 
