@@ -35,7 +35,6 @@ function Layout() {
   const [SelectedWord, setSelectedWord] = useState("");
   //Hook for slider der kontrollerer antal bobler
   const [BubbleAmount, setBubbleAmount]= useState(1000);
-  const [debouncedBubbleAmount, setDebouncedBubbleAmount] = useState(BubbleAmount);
 
   
   return (
@@ -48,7 +47,7 @@ function Layout() {
       <TimeSlider />
     </Col>
     <Col xs={12} md={4} className='d-flex align-items-center justify-content-center'>
-    <UserProfilePicture userName='Pivert' userImage={userImage} />
+    <UserProfilePicture userName='Jogirt' userImage={userImage} />
     </Col>
   </Row>
   <Row className='flex-grow-1' style={{paddingBottom: '20px', paddingTop: '20px'}}>
@@ -66,9 +65,7 @@ function Layout() {
           <Col>
             <BubbleSlider 
               BubbleAmount={BubbleAmount}
-              setBubbleAmount={setBubbleAmount}
-              debouncedBubbleAmount={debouncedBubbleAmount}
-              setDebouncedBubbleAmount={setDebouncedBubbleAmount}>
+              setBubbleAmount={setBubbleAmount}>
             </BubbleSlider>
           </Col>
           <Col>
@@ -84,7 +81,6 @@ function Layout() {
         <Col className='SecondColumn' xs={12} md={4}>
         <Card className='h-100 reset-card-styles'>
         <Col style={{border: 'solid 1px black'}}>
-
 {/* Denne her skal muligvis være row */}
           <Card.Body className='d-flex flex-column' >
             <Card.Title className='flex-grow-1'>
