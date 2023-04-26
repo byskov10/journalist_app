@@ -53,7 +53,7 @@ function Layout() {
       <Card className='h-100 reset-card-styles'>
         <Row>
           <Col>
-            <BubbleSearchBox />
+            <BubbleSearchBox data={topic_data} />
           </Col>
           <Col>
           <MetricDropdown  selectedMetric={selectedMetric} onMetricChange={handleMetricChange} />
