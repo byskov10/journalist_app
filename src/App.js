@@ -34,7 +34,7 @@ function Layout() {
   // Hook for det ord, brugeren har trykket på i bubble chart
   const [SelectedWord, setSelectedWord] = useState("");
   //Hook for slider der kontrollerer antal bobler
-  const [BubbleAmount, setBubbleAmount]= useState(1000);
+  const [BubbleAmount, setBubbleAmount]= useState(100);
 
   
   return (
