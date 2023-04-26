@@ -54,19 +54,24 @@ function Bubble({setSelectedWord, TopicWord, BubbleAmount, data}) {
     const newWordArray = data.filter((topic) => {
       return topic.name === name;
     });
-    
+  
     if (newWordArray.length === 0) {
       return []; // If topic with the given name doesn't exist, return empty array
     }
-  //hvis der ikke køres noget filter køres functionen ikke
+    
+    const sortedData = newWordArray[0].data.sort((a, b) => b.value - a.value);
+
+  
+    const newData = [...newWordArray[0].data]; // Make a copy of the data array
     if (name !== null) {
-      // antal defineres i slice! - virker
-      const newData = newWordArray[0].data.slice(0, b);
-      newWordArray[0].data = newData;
+      newData.splice(b); // Use splice to remove items from the end of the array
     }
   
-    return newWordArray // Return first two objects of the data array
+    return { ...sortedData[0], data: newData }; // Return an object with the updated data array
   };
+  
+  
+  
 
 
 
