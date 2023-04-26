@@ -7,7 +7,7 @@ import { useState } from 'react';
 import Bubble from './Components/Bubble_viz/Bubble_chart/bubblechart';
 import topic_data from './Components/Bubble_viz/Bubble_chart/data.json';
 import Linechart from './Components/Trendline_graph/trendline';
-import MetricDropdown from './Components/Metric_selector/MetricDropdown';
+//import MetricDropdown from './Components/Metric_selector/MetricDropdown';
 import SearchBar from './Components/Searchbar/Searchbar';
 import UserProfilePicture from './Components/UserProfile/UserProfile';
 import userImage from './Components/UserProfile/nerd.png';
@@ -16,9 +16,15 @@ import BubbleSlider from './Components/Bubble_amount_selector.js/Bubble_amount_s
 import WordSlider from './Components/Word_slider/Word_slider';
 import BubbleSearchBox from './Components/BubbleSearchBox/BubbleSearch';
 import StackedChart from './Components/StackedAreaChart/StackedChart';
+import MetricDropdown from './Components/Trendline_graph/dropdown';
 
 
 function Layout() {
+  const [selectedMetric, setSelectedMetric] = useState({ name: 'Ingen sammenligning'});
+    // Handle metric selection
+  function handleMetricChange(metric) {
+    setSelectedMetric(metric);
+  }
   // Hook for det data vi skal bruge
   const [TopicData, setData] = useState(topic_data);
   // Hook med det emne, brugeren skriver ind i searchbox
@@ -50,7 +56,7 @@ function Layout() {
             <BubbleSearchBox />
           </Col>
           <Col>
-          Dropdown
+          <MetricDropdown  selectedMetric={selectedMetric} onMetricChange={handleMetricChange} />
           </Col>
         </Row>
         <Row>
@@ -63,7 +69,7 @@ function Layout() {
         </Row>
         <Row>
           <Bubble TopicWord={SelectedTopic} BubbleAmount={BubbleAmount} data={topic_data} setSelectedWord={setSelectedWord} />
-          <div>{console.log(SelectedTopic)}</div>
+          <div>{SelectedWord}</div>
         </Row>
       </Card>
         </Col>
@@ -74,7 +80,6 @@ function Layout() {
 {/* Denne her skal muligvis være row */}
           <Card.Body className='d-flex flex-column' >
             <Card.Title className='flex-grow-1'>
-              
             </Card.Title>
           </Card.Body>
 
