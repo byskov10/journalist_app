@@ -40,11 +40,11 @@ const Linechart = () => {
       <Col>
         <h3 className="headline">Trendline</h3>
       </Col>
-      <Col>
+      {/* <Col>
         <MetricDropdown
          selectedMetric={selectedMetric}
          onMetricChange={handleMetricChange} />
-      </Col>
+      </Col> */}
     </Row>
     <Row>
       <Col>
