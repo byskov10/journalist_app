@@ -15,7 +15,9 @@ import TimeSlider from './Components/Timeline/TimeSlider';
 import BubbleSlider from './Components/Bubble_amount_selector.js/Bubble_amount_selector';
 import WordSlider from './Components/Word_slider/Word_slider';
 import BubbleSearchBox from './Components/BubbleSearchBox/BubbleSearch';
-import StackedChart from './Components/StackedAreaChart/StackedChart';
+import SteamGraphViz from './Components/SteamgraphViz/SteamGraphViz';
+import LegendList from './Components/SteamgraphViz/LegendList'
+
 
 
 function Layout() {
@@ -68,25 +70,29 @@ function Layout() {
         </Col>
         <Col className='SecondColumn' xs={12} md={4}>
         <Card className='h-100 reset-card-styles'>
-        <Col style={{border: 'solid 1px black'}}>
+        <Col>
 
 {/* Denne her skal muligvis være row */}
           <Card.Body className='d-flex flex-column' >
             <Card.Title className='flex-grow-1'>
-              
+              <SteamGraphViz />
             </Card.Title>
           </Card.Body>
 
             </Col>
-            <Col style={{border: 'solid 1px black'}}>
+            <Col style={{border: 'black 1px solid'}}>
 
-            <Card.Body className='d-flex flex-column'>
-              <Card.Title>Artikler</Card.Title>
-              <Card.Text></Card.Text>
-            </Card.Body>
+{/* Denne her skal muligvis være row */}
+          <Card.Body className='d-flex flex-column' >
+            <Card.Title className='flex-grow-1'>
+              <LegendList />
+            </Card.Title>
+          </Card.Body>
 
-        </Col>
+            </Col>
+
         </Card>
+        
     </Col>
   </Row>
 </Container>

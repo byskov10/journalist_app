@@ -3,28 +3,28 @@ import Highcharts from "highcharts";
 import data from './data_input.json';
 import { Container, Row, Col } from 'react-bootstrap';
 import { useState } from 'react';
-import './trendline.css';
 import MetricDropdown from './dropdown.js'
 
 const options = (data) => ({
-    chart: {
-      type: 'line'
-    },
-    yAxis: [{}, {}],
-    series: [{
-        yAxis: 0,
-        data: data[0]
-    }, {
-      yAxis: 1,
-      data: data[1]
-    }],
-    title: {
-      text: ''
-    },
-    credits: {
-        enabled: false
-    }
+  chart: {
+    type: 'line'
+  },
+  yAxis: {},
+  series: [...Array(10)].map((_, i) => ({
+    data: data[i] ? data[i] : data[i] = data[0].map((point, j) => [j, Math.floor(Math.random() * (data[1][j][1] - data[0][j][1] + 1)) + data[0][j][1]])
+  })),
+  title: {
+    text: ''
+  },
+  credits: {
+    enabled: false
+  },
+  exporting: {
+    enabled: false
+  }
 })
+
+
 
 const Linechart = () => {
   const [selectedMetric, setSelectedMetric] = useState({ name: 'Ingen sammenligning'});
