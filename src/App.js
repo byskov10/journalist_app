@@ -48,7 +48,7 @@ function Layout() {
       <TimeSlider />
     </Col>
     <Col xs={12} md={4} className='d-flex align-items-center justify-content-center'>
-    <UserProfilePicture userName='Jogirt' userImage={userImage} />
+      <UserProfilePicture userName='Jogirt' userImage={userImage} />
     </Col>
   </Row>
   <Row className='flex-grow-1' style={{paddingBottom: '20px', paddingTop: '20px'}}>
@@ -59,7 +59,7 @@ function Layout() {
             <BubbleSearchBox searchWord={SearchWord} setSearchWord={setSearchWord} />
           </Col>
           <Col>
-          <MetricDropdown  selectedMetric={selectedMetric} onMetricChange={handleMetricChange} />
+            <MetricDropdown  selectedMetric={selectedMetric} onMetricChange={handleMetricChange} />
           </Col>
         </Row>
         <Row>
@@ -78,31 +78,24 @@ function Layout() {
           <div>{SelectedWord}</div>
         </Row>
       </Card>
-        </Col>
-        <Col className='SecondColumn' xs={12} md={4}>
-        <Card className='h-100 reset-card-styles'>
+    </Col>
+    <Col className='SecondColumn' xs={12} md={4}>
+      <Card className='h-100 reset-card-styles'>
         <Col>
-
-{/* Denne her skal muligvis være row */}
           <Card.Body className='d-flex flex-column' >
             <Card.Title className='flex-grow-1'>
               <SteamGraphViz />
             </Card.Title>
           </Card.Body>
-
-            </Col>
-            <Col style={{border: 'black 1px solid'}}>
-
-{/* Denne her skal muligvis være row */}
-          <Card.Body className='d-flex flex-column' >
-            <Card.Title className='flex-grow-1'>
-            </Card.Title>
-          </Card.Body>
-
-            </Col>
-
+        </Col>
+          <Col style={{border: 'black 1px solid'}}>
+            <Card.Body className='d-flex flex-column' >
+              <Card.Title className='flex-grow-1'>
+                <div>List</div>
+              </Card.Title>
+            </Card.Body>
+          </Col>
         </Card>
-        
     </Col>
   </Row>
 </Container>
