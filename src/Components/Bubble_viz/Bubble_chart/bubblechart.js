@@ -50,7 +50,7 @@ const getOptions = () => ({
 
 function Bubble({setSelectedWord, TopicWord, BubbleAmount, data, searchWord}) {
 
-  const FilterData = (name, b) => {
+  const FilterData = (name, bubbleamount) => {
     const newWordArray = data.filter((topic) => {
       return topic.name === name;
     });
@@ -59,30 +59,35 @@ function Bubble({setSelectedWord, TopicWord, BubbleAmount, data, searchWord}) {
       return []; // If topic with the given name doesn't exist, return empty array
     }
   
-    // Add color key to each data object based on value
-    const modifiedData = newWordArray[0].data.map((d) => ({
-      ...d,
-      color: d.value > 20 ? "red" : "blue",
-    }));
+  // Adding a color property to each data object based on its value
+  // Adding a color property to each data object based on its value
+  const maxGreenValue = 228;
+  const modifiedData = newWordArray[0].data.map((d) => {
+    const greenValue = Math.round(((maxGreenValue - d.value) / maxGreenValue) * 260);
+    const greenHex = greenValue.toString(16).padStart(2, "0");
+    const color = `#${greenHex}ff${greenHex}`;
+    return { ...d, color };
+  });
   
-    let newData = [];
+    const sortedData = newWordArray[0].data.sort((a, b) => b.value - a.value);
+  
     if (searchWord.length === 0) {
-      newData = [...modifiedData]; // Make a copy of the modified data array
+      var newData = [...modifiedData]; // Make a copy of the modified data array
       if (name !== null) {
-        newData.splice(b); // Use splice to remove items from the end of the array
+        newData.splice(bubbleamount); // Use splice to remove items from the end of the array
       }
     } else {
-      newData = modifiedData.filter((topic) => {
+      var dataset = [...newWordArray[0].data];
+      newData = dataset.filter((topic) => {
         return topic.word.toLowerCase().includes(searchWord.toLowerCase());
       });
     }
-  
-    const sortedData = newData.sort((a, b) => b.value - a.value);
-  
     return { ...sortedData[0], data: newData }; // Return an object with the updated data array
   };
   
-  
+
+
+
   // Funktion som tager event-objektet for når en bruger klikker på en bubble i bubble chartet
   // Event objektet er et objekt med alt info om de events der er sket. Her går den ind i envent-objektet og derefter "point" og derfra tager den navnet (navnet på bubblen).
   const word_func = (event) => {
