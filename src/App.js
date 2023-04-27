@@ -17,6 +17,7 @@ import WordSlider from './Components/Word_slider/Word_slider';
 import BubbleSearchBox from './Components/BubbleSearchBox/BubbleSearch';
 import StackedChart from './Components/StackedAreaChart/StackedChart';
 import MetricDropdown from './Components/Trendline_graph/dropdown';
+import SteamGraphViz from './Components/SteamgraphViz/SteamGraphViz';
 
 
 function Layout() {
@@ -34,7 +35,7 @@ function Layout() {
   // Hook for det ord, brugeren har trykket på i bubble chart
   const [SelectedWord, setSelectedWord] = useState("");
   //Hook for slider der kontrollerer antal bobler
-  const [BubbleAmount, setBubbleAmount]= useState(1000);
+  const [BubbleAmount, setBubbleAmount]= useState(150);
 
   
   return (
@@ -80,7 +81,18 @@ function Layout() {
         </Col>
         <Col className='SecondColumn' xs={12} md={4}>
         <Card className='h-100 reset-card-styles'>
-        <Col style={{border: 'solid 1px black'}}>
+        <Col>
+
+{/* Denne her skal muligvis være row */}
+          <Card.Body className='d-flex flex-column' >
+            <Card.Title className='flex-grow-1'>
+              <SteamGraphViz />
+            </Card.Title>
+          </Card.Body>
+
+            </Col>
+            <Col style={{border: 'black 1px solid'}}>
+
 {/* Denne her skal muligvis være row */}
           <Card.Body className='d-flex flex-column' >
             <Card.Title className='flex-grow-1'>
@@ -88,18 +100,13 @@ function Layout() {
           </Card.Body>
 
             </Col>
-            <Col style={{border: 'solid 1px black'}}>
 
-            <Card.Body className='d-flex flex-column'>
-              <Card.Title>Artikler</Card.Title>
-              <Card.Text></Card.Text>
-            </Card.Body>
-
-        </Col>
         </Card>
+        
     </Col>
   </Row>
 </Container>
+
 
 
 

@@ -15,7 +15,7 @@ function BubbleSlider({ BubbleAmount, setBubbleAmount, setDebouncedBubbleAmount,
       <p>Value: {BubbleAmount}</p>
       <Slider
         min={0}
-        max={500}
+        max={300}
         value={BubbleAmount}
         onChange={handleSliderChange}
       />
