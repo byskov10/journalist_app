@@ -50,7 +50,7 @@ const getOptions = () => ({
 
 function Bubble({setSelectedWord, TopicWord, BubbleAmount, data, searchWord}) {
 
-  const FilterData = (name, bubbleamount) => {
+  const FilterData = (name, b) => {
     const newWordArray = data.filter((topic) => {
       return topic.name === name;
     });
@@ -58,27 +58,31 @@ function Bubble({setSelectedWord, TopicWord, BubbleAmount, data, searchWord}) {
     if (newWordArray.length === 0) {
       return []; // If topic with the given name doesn't exist, return empty array
     }
-    
-    const sortedData = newWordArray[0].data.sort((a, b) => b.value - a.value);
-
+  
+    // Add color key to each data object based on value
+    const modifiedData = newWordArray[0].data.map((d) => ({
+      ...d,
+      color: d.value > 20 ? "red" : "blue",
+    }));
+  
+    let newData = [];
     if (searchWord.length === 0) {
-      var newData = [...newWordArray[0].data]; // Make a copy of the data array
+      newData = [...modifiedData]; // Make a copy of the modified data array
       if (name !== null) {
-        newData.splice(bubbleamount); // Use splice to remove items from the end of the array
+        newData.splice(b); // Use splice to remove items from the end of the array
       }
     } else {
-      var dataset = [...newWordArray[0].data];
-      var newData = dataset.filter((topic) => {
+      newData = modifiedData.filter((topic) => {
         return topic.word.toLowerCase().includes(searchWord.toLowerCase());
       });
     }
   
+    const sortedData = newData.sort((a, b) => b.value - a.value);
+  
     return { ...sortedData[0], data: newData }; // Return an object with the updated data array
   };
   
-
-
-
+  
   // Funktion som tager event-objektet for når en bruger klikker på en bubble i bubble chartet
   // Event objektet er et objekt med alt info om de events der er sket. Her går den ind i envent-objektet og derefter "point" og derfra tager den navnet (navnet på bubblen).
   const word_func = (event) => {
