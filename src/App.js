@@ -64,7 +64,6 @@ function Layout() {
             <BubbleSlider BubbleAmount={BubbleAmount} setBubbleAmount={setBubbleAmount}></BubbleSlider>
           </Col>
           <Col>
-            <WordSlider />
           </Col>
         </Row>
         <Row>

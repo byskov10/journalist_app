@@ -63,11 +63,16 @@ function Bubble({setSelectedWord, TopicWord, BubbleAmount, data}) {
     if (newWordArray.length === 0) {
       return []; // If topic with the given name doesn't exist, return empty array
     }
-    
-    const sortedData = newWordArray[0].data.sort((a, b) => b.value - a.value);
-
   
-    const newData = [...newWordArray[0].data]; // Make a copy of the data array
+    // Add color key to each data object based on value
+    const modifiedData = newWordArray[0].data.map((d) => ({
+      ...d,
+      color: d.value > 20 ? "red" : "blue",
+    }));
+  
+    const sortedData = modifiedData.sort((a, b) => b.value - a.value);
+  
+    const newData = [...modifiedData]; // Make a copy of the modified data array
     if (name !== null) {
       newData.splice(b); // Use splice to remove items from the end of the array
     }
