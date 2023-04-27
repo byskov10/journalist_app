@@ -17,7 +17,7 @@ function MyPlot({ data }) {
           y: "frequency",
           sort:
             sort === "Alphabetical"
-              ? null
+              ? 0
               : { x: "y", reverse: sort.startsWith("Desc") }
         }),
         Plot.ruleY([0])
