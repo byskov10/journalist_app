@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import nyheder from './Components/Searchbar/nyheder_i_dk.json';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Bubble from './Components/Bubble_viz/Bubble_chart/bubblechart';
 import topic_data from './Components/Bubble_viz/Bubble_chart/data.json';
 import Linechart from './Components/Trendline_graph/trendline';
@@ -18,6 +18,8 @@ import BubbleSearchBox from './Components/BubbleSearchBox/BubbleSearch';
 import StackedChart from './Components/StackedAreaChart/StackedChart';
 import MetricDropdown from './Components/Trendline_graph/dropdown';
 import SteamGraphViz from './Components/SteamgraphViz/SteamGraphViz';
+import WordAppear from './data/word_articleid.json';
+import ArticleList from './Components/ArticleList/ArticleList';
 
 
 function Layout() {
@@ -32,12 +34,26 @@ function Layout() {
   const [SelectedTopic, setSelectedTopic] = useState(null);
   // Hook med det ord, brugeren skriver ind i bubble searchbox
   const [SearchWord, setSearchWord] = useState("")
-  // Hook for det ord, brugeren har trykket på i bubble chart
-  const [SelectedWord, setSelectedWord] = useState("");
   //Hook for slider der kontrollerer antal bobler
   const [BubbleAmount, setBubbleAmount]= useState(150);
+  // Hook for det ord, brugeren har trykket på i bubble chart
+  const [SelectedWord, setSelectedWord] = useState("");
+  // Hook for det array med ids, for det ord brugeren har trykket på i bubble chart
+  const [WordIds, setWordIds] = useState([]);
 
+  useEffect(() => {
+    if (SelectedWord.length > 0) {
+      const basisArticleIds = WordAppear
+        .filter(obj => obj.word === SelectedWord)
+        .flatMap(obj => obj.articleids);
+      setWordIds(basisArticleIds)
+    } else {
+      setWordIds([]);
+    }
+  }, [SelectedWord, SearchWord]);
   
+  
+
   return (
 <Container fluid className='d-flex flex-column my-container' style={{height: '120vh'}}>
   <Row className='NavBar'>
@@ -76,6 +92,7 @@ function Layout() {
         <Row>
           <Bubble TopicWord={SelectedTopic} BubbleAmount={BubbleAmount} data={topic_data} setSelectedWord={setSelectedWord} searchWord={SearchWord} />
           <div>{SelectedWord}</div>
+          <div>{WordIds}</div>
         </Row>
       </Card>
     </Col>
@@ -91,7 +108,7 @@ function Layout() {
           <Col style={{border: 'black 1px solid'}}>
             <Card.Body className='d-flex flex-column' >
               <Card.Title className='flex-grow-1'>
-                <div>List</div>
+                <ArticleList/>
               </Card.Title>
             </Card.Body>
           </Col>
