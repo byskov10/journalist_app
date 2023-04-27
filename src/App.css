@@ -24,5 +24,6 @@ body {
 .NavBar {
     box-shadow: 15px 5px 20px 1px rgba(0, 0, 0, 0.1) !important;
     height: 13vh;
+    background-color: #65aafe;
 }
   

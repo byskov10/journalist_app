@@ -12,7 +12,7 @@ function BubbleSearchBox({searchWord, setSearchWord}) {
   return (
     <div className='search'>
       <div className='searchInputs'>
-        <input type="text" placeholder="Skriv et emne" className="mr-sm-2 custom-search-box" onChange={handleFilter}/>
+        <input type="text" placeholder="Søg efter et ord" className="mr-sm-2 custom-search-box" onChange={handleFilter}/>
         <div>{console.log(searchWord)}</div>
       </div>
     </div>
