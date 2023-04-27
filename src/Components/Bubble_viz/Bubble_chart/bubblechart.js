@@ -19,13 +19,13 @@ var data_used;
 
 const getOptions = () => ({
   chart: {
-    type:'packedbubble',
+    type: 'packedbubble',
     width: 1200,
     height: 700,
     backgroundColor: 'transparent',
   },
   title: {
-    text: _.startCase(""),
+    text: _.startCase("Bubblechart"),
   },
   plotOptions: {
     packedbubble: {
@@ -37,16 +37,21 @@ const getOptions = () => ({
         format: '{point.word}',
       },
       enableMouseTracking: true,
-      events:  {
-                click: selectedwordfunc
-      }
+      events: {
+        click: selectedwordfunc
+      },
+      colorKey: 'red', // encode color based on 'value' property of data points
     },
   },
-  series: data_used,
+  series:
+  data_used,
   credits: {
     enabled: false,
   },
 });
+
+
+
 
 function Bubble({setSelectedWord, TopicWord, BubbleAmount, data}) {
 
