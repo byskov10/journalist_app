@@ -4,7 +4,7 @@ import _ from 'lodash';
 import HighchartsExporting from 'highcharts/modules/exporting';
 import HighchartsAccessibility from 'highcharts/modules/accessibility';
 import HighchartsMore from 'highcharts/highcharts-more';
-import { useState } from 'react';
+//import { useState } from 'react';
 
 //https://betterprogramming.pub/meeting-more-chart-types-bubble-packed-bubble-stream-graph-and-cylinder-7f625c88047d
 
@@ -61,13 +61,15 @@ function Bubble({setSelectedWord, TopicWord, BubbleAmount, data, searchWord}) {
   
   // Adding a color property to each data object based on its value
   // Adding a color property to each data object based on its value
-  const maxGreenValue = 228;
+  const maxBlueValue = 228;
   const modifiedData = newWordArray[0].data.map((d) => {
-    const greenValue = Math.round(((maxGreenValue - d.value) / maxGreenValue) * 260);
-    const greenHex = greenValue.toString(16).padStart(2, "0");
-    const color = `#${greenHex}ff${greenHex}`;
+    const blueValue = Math.round(((maxBlueValue - d.value) / maxBlueValue) * 255);
+    const blueHex = blueValue.toString(16).padStart(2, "0");
+    const color = `#${blueHex}${blueHex}ff`;
     return { ...d, color };
   });
+  
+  
   
     const sortedData = newWordArray[0].data.sort((a, b) => b.value - a.value);
   
