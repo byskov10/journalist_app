@@ -63,3 +63,12 @@ const FilterData = (name, b) => {
   };
   
   
+
+
+  const maxGreenValue = 228;
+  const modifiedData = newWordArray[0].data.map((d) => {
+    const greenValue = Math.round(((maxGreenValue - d.value) / maxGreenValue) * 255);
+    const greenHex = greenValue.toString(16).padStart(2, "0");
+    const color = `#${greenHex}ff${greenHex}`;
+    return { ...d, color };
+  });
