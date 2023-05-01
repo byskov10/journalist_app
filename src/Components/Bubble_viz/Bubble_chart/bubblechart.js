@@ -4,7 +4,7 @@ import _ from 'lodash';
 import HighchartsExporting from 'highcharts/modules/exporting';
 import HighchartsAccessibility from 'highcharts/modules/accessibility';
 import HighchartsMore from 'highcharts/highcharts-more';
-import { useState } from 'react';
+//import { useState } from 'react';
 
 //https://betterprogramming.pub/meeting-more-chart-types-bubble-packed-bubble-stream-graph-and-cylinder-7f625c88047d
 
@@ -58,21 +58,32 @@ function Bubble({setSelectedWord, TopicWord, BubbleAmount, data, searchWord}) {
     if (newWordArray.length === 0) {
       return []; // If topic with the given name doesn't exist, return empty array
     }
-    
+  
+  // Adding a color property to each data object based on its value
+  // Adding a color property to each data object based on its value
+  const maxBlueValue = 228;
+  const modifiedData = newWordArray[0].data.map((d) => {
+    const blueValue = Math.round(((maxBlueValue - d.visits) / maxBlueValue) * 255);
+    const blueHex = blueValue.toString(16).padStart(2, "0");
+    const color = `#${blueHex}${blueHex}ff`;
+    return { ...d, color };
+  });
+  
+  
+  
     const sortedData = newWordArray[0].data.sort((a, b) => b.value - a.value);
-
+  
     if (searchWord.length === 0) {
-      var newData = [...newWordArray[0].data]; // Make a copy of the data array
+      var newData = [...modifiedData]; // Make a copy of the modified data array
       if (name !== null) {
         newData.splice(bubbleamount); // Use splice to remove items from the end of the array
       }
     } else {
       var dataset = [...newWordArray[0].data];
-      var newData = dataset.filter((topic) => {
+      newData = dataset.filter((topic) => {
         return topic.word.toLowerCase().includes(searchWord.toLowerCase());
       });
     }
-  
     return { ...sortedData[0], data: newData }; // Return an object with the updated data array
   };
   
