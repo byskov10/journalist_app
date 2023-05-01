@@ -1,51 +1,9 @@
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 import Streamgraph from 'highcharts/modules/streamgraph';
+import data from './StreamGraphData.json';
 
 Streamgraph(Highcharts);
-
-const data = [
-  {
-    name: 'Category 1',
-    data: [4, 3, 3, 2, 2, 2, 1, 1, 1, 1]
-  },
-  {
-    name: 'Category 2',
-    data: [0, 0, 1, 1, 1, 2, 2, 2, 3, 4]
-  },
-  {
-    name: 'Category 3',
-    data: [2, 2, 2, 2, 2, 2, 2, 1, 1, 1]
-  },
-  {
-    name: 'Category 4',
-    data: [0, 0, 0, 0, 1, 1, 1, 1, 2, 2]
-  },
-  {
-    name: 'Category 5',
-    data: [0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
-  },
-  {
-    name: 'Category 6',
-    data: [0, 0, 0, 0, 0, 0, 0, 0, 1, 1]
-  },
-  {
-    name: 'Category 7',
-    data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
-  },
-  {
-    name: 'Category 8',
-    data: [0, 0, 0, 0, 0, 0, 0, 1, 1, 1]
-  },
-  {
-    name: 'Category 9',
-    data: [0, 0, 0, 0, 0, 0, 1, 1, 1, 1]
-  },
-  {
-    name: 'Category 10',
-    data: [0, 0, 0, 0, 0, 1, 1, 1, 1, 1]
-  }
-];
 
 const options = {
   chart: {
@@ -55,11 +13,11 @@ const options = {
     text: 'Streamgraph with 10 Data Series'
   },
   xAxis: {
-    categories: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October'],
+    categories: data[26].Data.map(d => d.Date), // map the dates from the first item's data array
     labels: {
       align: 'left',
       reserveSpace: false,
-      rotation: 270
+      rotation: 0
     }
   },
   yAxis: {
@@ -81,10 +39,8 @@ const options = {
       curveFactor: 10
     }
   },
-  series: data
+  series: data.map(d => ({ name: d.Title, data: d.Data.map(dd => Number(dd.Visits)) })) // map each item's data array to a Highcharts-compatible data array
 };
- 
-
 
 const SteamGraphViz = () => {
   return (

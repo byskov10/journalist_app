@@ -16,7 +16,7 @@ import BubbleSlider from './Components/Bubble_amount_selector.js/Bubble_amount_s
 import WordSlider from './Components/Word_slider/Word_slider';
 import BubbleSearchBox from './Components/BubbleSearchBox/BubbleSearch';
 import SteamGraphViz from './Components/SteamgraphViz/SteamGraphViz';
-import LegendList from './Components/SteamgraphViz/LegendList'
+
 
 
 
@@ -63,7 +63,7 @@ function Layout() {
         </Row>
         <Row style={{ height: '100%', alignContent: 'center', textAlign: 'center' }}>
           <Col>
-            <h3>Bubble</h3>
+            
           </Col>
         </Row>
       </Card>
@@ -85,7 +85,7 @@ function Layout() {
 {/* Denne her skal muligvis være row */}
           <Card.Body className='d-flex flex-column' >
             <Card.Title className='flex-grow-1'>
-              <LegendList />
+              
             </Card.Title>
           </Card.Body>
 
