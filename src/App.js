@@ -95,7 +95,7 @@ function Layout() {
           <Col>
             <Card.Body className='d-flex flex-column' >
               <Card.Title className='flex-grow-1'>
-                <SteamGraphViz />
+                <SteamGraphViz wordIds={WordIds} />
               </Card.Title>
             </Card.Body>
           </Col>
