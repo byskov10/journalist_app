@@ -17,7 +17,7 @@ import WordSlider from './Components/Word_slider/Word_slider';
 import BubbleSearchBox from './Components/BubbleSearchBox/BubbleSearch';
 import StackedChart from './Components/StackedAreaChart/StackedChart';
 import MetricDropdown from './Components/Trendline_graph/dropdown';
-import SteamGraphViz from './Components/SteamgraphViz/SteamGraphViz';
+import SteamGraphViz from './Components/StreamgraphViz/StreamGraphViz';
 import ArticleList from './Components/ArticleList/ArticleList';
 import WordAppear from './data/word_articleid.json';
 
@@ -59,7 +59,6 @@ function Layout() {
       <SearchBar data={nyheder} selectedTopic={SelectedTopic} setSelectedTopic={setSelectedTopic} />
     </Col>
     <Col xs={12} md={4} className='d-flex align-items-center justify-content-center'>
-      <TimeSlider />
     </Col>
     <Col xs={12} md={4} className='d-flex align-items-center justify-content-center'>
     <UserProfilePicture userName='Jogirt' userImage={userImage} />
@@ -84,12 +83,10 @@ function Layout() {
             </BubbleSlider>
           </Col>
             <Col>
-              <WordSlider />
             </Col>
           </Row>
           <Row>
             <Bubble TopicWord={SelectedTopic} BubbleAmount={BubbleAmount} data={topic_data} setSelectedWord={setSelectedWord} searchWord={SearchWord} />
-            <div>{SelectedWord}</div>
           </Row>
       </Card>
         </Col>
@@ -102,10 +99,12 @@ function Layout() {
               </Card.Title>
             </Card.Body>
           </Col>
-            <Col style={{border: 'black 1px solid'}}>
+            <Col >
               <Card.Body className='d-flex flex-column' >
                 <Card.Title className='flex-grow-1'>
                   <ArticleList/>
+                  <div>{WordIds}</div>
+                  <div>{SelectedWord}</div>
                 </Card.Title>
               </Card.Body>
             </Col>
