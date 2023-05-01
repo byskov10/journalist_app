@@ -1,31 +1,43 @@
 import React from 'react';
 import { ListGroup, ListGroupItem } from 'react-bootstrap';
+import SteamGraphVizData from '../StreamgraphViz/StreamGraphData.json';
+import './ArticleList.css'
 
-const articles = [
-  { name: 'USA’s topgeneral i Europa: Ukraine står stærkt til en forårsoffensiv', link: 'https://nyheder.tv2.dk/udland/2023-04-27-usas-topgeneral-i-europa-ukraine-staar-staerkt-til-en-foraarsoffensiv', color: 'red' },
-  { name: 'Putin slår tilbage med nyt dekret – beslaglægger midler i europæiske energiselskaber', link: 'https://nyheder.tv2.dk/udland/2023-04-25-putin-slaar-tilbage-med-nyt-dekret-beslaglaegger-midler-i-europaeiske', color: 'blue' },
-  { name: 'Kinas Xi i samtale med Zelenskyj: Forhandling kan slutte krigen', link: 'https://nyheder.tv2.dk/udland/2023-04-26-kinas-xi-i-samtale-med-zelenskyj-forhandling-kan-slutte-krigen', color: 'green' },
-  { name: 'Kinas Xi i samtale med Zelenskyj: Forhandling kan slutte krigen', link: 'https://nyheder.tv2.dk/udland/2023-04-26-kinas-xi-i-samtale-med-zelenskyj-forhandling-kan-slutte-krigen', color: 'yellow' }
-];
+const colors = ['red', 'blue', 'green', 'purple']
 
-const ArticleList = () => (
-  <ListGroup variant='flush'>
-    {articles.map((article) => (
-      <ListGroupItem variant='light'>
-        <span
-          style={{
-            display: 'inline-block',
-            width: '10px',
-            height: '10px',
-            marginRight: '5px',
-            borderRadius: '50%',
-            backgroundColor: article.color,
-          }}
-        />
-        <a className='linktext' href={article.link}>{article.name}</a>
-      </ListGroupItem>
-    ))}
-  </ListGroup>
-);
+const articles = SteamGraphVizData.map((item) => ({
+  articleid: item.Id,
+  name: item.Title,
+  // item.Link, MANGLER
+  link: 'https://nyheder.tv2.dk/udland/2023-04-12-fange-i-ukrainsk-uniform-halshugges-paa-video-verden-skal-se-den-siger-zelenskyj',
+  color: '',
+}));
+
+
+
+const ArticleList = ({ wordIds }) => {
+  
+  const filteredArticles = articles.filter((article) => wordIds.includes(Number(article.articleid)));
+  
+  return (
+    <ListGroup variant='flush'>
+      {filteredArticles.map((article) => (
+        <ListGroupItem key={article.articleid} variant='light'>
+          <span
+            style={{
+              display: 'inline-block',
+              width: '10px',
+              height: '10px',
+              marginRight: '5px',
+              borderRadius: '50%',
+              backgroundColor: 'red',
+            }}
+          />
+          <a className='linktext' href={article.link} target='_blank' rel='noopener noreferrer'>{article.name}</a>
+        </ListGroupItem>
+      ))}
+    </ListGroup>
+  );
+};
 
 export default ArticleList;

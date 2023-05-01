@@ -10,7 +10,7 @@ import Linechart from './Components/Trendline_graph/trendline';
 //import MetricDropdown from './Components/Metric_selector/MetricDropdown';
 import SearchBar from './Components/Searchbar/Searchbar';
 import UserProfilePicture from './Components/UserProfile/UserProfile';
-import userImage from './Components/UserProfile/nerd.png';
+import userImage from './Components/UserProfile/journalist.jpg';
 import TimeSlider from './Components/Timeline/TimeSlider';
 import BubbleSlider from './Components/Bubble_amount_selector.js/Bubble_amount_selector';
 import WordSlider from './Components/Word_slider/Word_slider';
@@ -37,7 +37,7 @@ function Layout() {
   //Hook for slider der kontrollerer antal bobler
   const [BubbleAmount, setBubbleAmount]= useState(150);
   // Hook for det ord, brugeren har trykket på i bubble chart
-  const [SelectedWord, setSelectedWord] = useState("");
+  const [SelectedWord, setSelectedWord] = useState("Ingen ord nævnt");
   // Hook for det array med ids, for det ord brugeren har trykket på i bubble chart
   const [WordIds, setWordIds] = useState([]);
 
@@ -61,7 +61,7 @@ function Layout() {
     <Col xs={12} md={4} className='d-flex align-items-center justify-content-center'>
     </Col>
     <Col xs={12} md={4} className='d-flex align-items-center justify-content-center'>
-    <UserProfilePicture userName='Jogirt' userImage={userImage} />
+    <UserProfilePicture userName='Jakob' userImage={userImage} />
     </Col>
   </Row>
   <Row className='flex-grow-1' style={{paddingBottom: '20px', paddingTop: '20px'}}>
@@ -72,7 +72,7 @@ function Layout() {
             <BubbleSearchBox searchWord={SearchWord} setSearchWord={setSearchWord} />
           </Col>
           <Col>
-          <MetricDropdown  selectedMetric={selectedMetric} onMetricChange={handleMetricChange} />
+            <MetricDropdown  selectedMetric={selectedMetric} onMetricChange={handleMetricChange} />
           </Col>
         </Row>
         <Row>
@@ -103,7 +103,7 @@ function Layout() {
             <Col >
               <Card.Body className='d-flex flex-column' >
                 <Card.Title className='flex-grow-1'>
-                  <ArticleList/>
+                  <ArticleList wordIds={WordIds} />
                   <div>{WordIds}</div>
                   <div>{SelectedWord}</div>
                 </Card.Title>

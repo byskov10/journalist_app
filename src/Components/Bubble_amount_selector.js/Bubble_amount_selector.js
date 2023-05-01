@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
 import debounce from 'lodash.debounce';
+import './bubbleslider.css'
 
 function BubbleSlider({ BubbleAmount, setBubbleAmount, setDebouncedBubbleAmount, debouncedBubbleAmount }) {
   //const [debouncedBubbleAmount, setDebouncedBubbleAmount] = useState(BubbleAmount);
@@ -11,7 +12,7 @@ function BubbleSlider({ BubbleAmount, setBubbleAmount, setDebouncedBubbleAmount,
   };
 
   return (
-    <div>
+    <div className='bubbleslider'>
       <p>Value: {BubbleAmount}</p>
       <Slider
         min={0}

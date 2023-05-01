@@ -1,9 +1,10 @@
 import React from 'react';
 import { Dropdown } from 'react-bootstrap';
+import './metricdropdown.css';
 
 // Define metrics
 const metrics = [
-  { name: 'Ingen sammenligning'},
+  { name: 'Vælg metrik'},
   { name: 'Visits', min: 0, max: 100000 },
   { name: 'Bounce rates', min: 0, max: 100 },
   { name: 'Visit duration', min: 0, max: 3600 }
@@ -19,8 +20,8 @@ function MetricDropdown(props) {
   }
 
   return (
-    <Dropdown>
-      <Dropdown.Toggle variant="primary" size="sm" id="dropdown-basic">
+    <Dropdown className='metric-drowdown'>
+      <Dropdown.Toggle variant="primary" size="xl" id="dropdown-basic">
         {selectedMetric.name}
       </Dropdown.Toggle>
       <Dropdown.Menu>

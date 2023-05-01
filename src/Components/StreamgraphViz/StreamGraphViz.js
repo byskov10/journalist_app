@@ -24,7 +24,7 @@ const SteamGraphViz = ({ wordIds }) => {
       }
     },
     yAxis: {
-      visible: false
+      visible: true
     },
     legend: {
       enabled: true,
