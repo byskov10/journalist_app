@@ -6,7 +6,7 @@ import data from './StreamGraphData.json';
 Streamgraph(Highcharts);
 
 const SteamGraphViz = ({ wordIds }) => {
-  const filteredData = data.filter((d) => wordIds.includes(Number(d.Id)));
+  const filteredData = data.filter((d) => wordIds.includes(Number(d.articleid)));
 
   const options = {
     chart: {
@@ -16,7 +16,7 @@ const SteamGraphViz = ({ wordIds }) => {
       text: ''
     },
     xAxis: {
-      categories: filteredData[0]?.Data?.map((d) => d.date) || [], // map the dates from the first item's data array
+      categories: filteredData[0]?.data?.map((d) => d.date) || [], // map the dates from the first item's data array
       labels: {
         align: 'left',
         reserveSpace: false,
@@ -43,8 +43,8 @@ const SteamGraphViz = ({ wordIds }) => {
       }
     },
     series: filteredData.map((d) => ({
-      name: d.Title,
-      data: d.Data.map((dd) => Number(dd.Visits))
+      name: d.name,
+      data: d.data.map((dd) => Number(dd.visits))
     })) // map each item's data array to a Highcharts-compatible data array
   };
 

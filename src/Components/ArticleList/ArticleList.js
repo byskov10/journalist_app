@@ -6,10 +6,10 @@ import './ArticleList.css'
 const colors = ['red', 'blue', 'green', 'purple']
 
 const articles = SteamGraphVizData.map((item) => ({
-  articleid: item.Id,
-  name: item.Title,
+  articleid: item.articleid,
+  name: item.name,
   // item.Link, MANGLER
-  link: 'https://nyheder.tv2.dk/udland/2023-04-12-fange-i-ukrainsk-uniform-halshugges-paa-video-verden-skal-se-den-siger-zelenskyj',
+  link: item.articlelink,
   color: '',
 }));
 
