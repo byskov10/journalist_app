@@ -1,1783 +1,1847 @@
 [
     {
-        "Id": "1",
-        "Title": "Fange i ukrainsk uniform halshugges p\u00e5 video \u2013 verden skal se den, siger Zelenskyj",
-        "Data": [
+        "articleid": "1",
+        "name": "Fange i ukrainsk uniform halshugges p\u00e5 video \u2013 verden skal se den, siger Zelenskyj",
+        "data": [
             {
-                "Date": "06",
-                "Visits": "0"
+                "date": "06/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "07",
-                "Visits": "0"
+                "date": "06/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "08",
-                "Visits": "0"
+                "date": "07/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "09",
-                "Visits": "0"
+                "date": "08/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "10",
-                "Visits": "0"
+                "date": "09/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "11",
-                "Visits": "0"
+                "date": "10/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "12",
-                "Visits": "1168"
+                "date": "11/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "13",
-                "Visits": "9982"
+                "date": "12/04/2023",
+                "visits": "25175"
             },
             {
-                "Date": "14",
-                "Visits": "6850"
+                "date": "13/04/2023",
+                "visits": "28252"
             },
             {
-                "Date": "15",
-                "Visits": "6861"
+                "date": "14/04/2023",
+                "visits": "14222"
             },
             {
-                "Date": "16",
-                "Visits": "4717"
+                "date": "15/04/2023",
+                "visits": "37353"
             },
             {
-                "Date": "17",
-                "Visits": "9837"
+                "date": "16/04/2023",
+                "visits": "15373"
             },
             {
-                "Date": "18",
-                "Visits": "5738"
+                "date": "17/04/2023",
+                "visits": "32307"
             },
             {
-                "Date": "19",
-                "Visits": "1310"
+                "date": "18/04/2023",
+                "visits": "11023"
             },
             {
-                "Date": "20",
-                "Visits": "3191"
+                "date": "19/04/2023",
+                "visits": "44226"
+            },
+            {
+                "date": "20/04/2023",
+                "visits": "41411"
             }
         ]
     },
     {
-        "Id": "2",
-        "Title": "Ukraine forbereder tilbagetr\u00e6kning fra Bakhmut med nye skyttegrave",
-        "Data": [
+        "articleid": "2",
+        "name": "Ukraine forbereder tilbagetr\u00e6kning fra Bakhmut med nye skyttegrave",
+        "data": [
             {
-                "Date": "06",
-                "Visits": "0"
+                "date": "06/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "07",
-                "Visits": "0"
+                "date": "07/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "08",
-                "Visits": "0"
+                "date": "08/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "09",
-                "Visits": "0"
+                "date": "09/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "10",
-                "Visits": "0"
+                "date": "10/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "11",
-                "Visits": "0"
+                "date": "11/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "12",
-                "Visits": "7893"
+                "date": "12/04/2023",
+                "visits": "12061"
             },
             {
-                "Date": "13",
-                "Visits": "1016"
+                "date": "13/04/2023",
+                "visits": "15372"
             },
             {
-                "Date": "14",
-                "Visits": "9695"
+                "date": "14/04/2023",
+                "visits": "28348"
             },
             {
-                "Date": "15",
-                "Visits": "4075"
+                "date": "15/04/2023",
+                "visits": "21349"
             },
             {
-                "Date": "16",
-                "Visits": "5574"
+                "date": "16/04/2023",
+                "visits": "38215"
             },
             {
-                "Date": "17",
-                "Visits": "8767"
+                "date": "17/04/2023",
+                "visits": "31212"
             },
             {
-                "Date": "18",
-                "Visits": "2477"
+                "date": "18/04/2023",
+                "visits": "48301"
             },
             {
-                "Date": "19",
-                "Visits": "4808"
+                "date": "19/04/2023",
+                "visits": "13023"
             },
             {
-                "Date": "20",
-                "Visits": "4644"
+                "date": "20/04/2023",
+                "visits": "30220"
+            },
+            {
+                "date": "06/04/2023",
+                "visits": "0"
+            },
+            {
+                "date": "07/04/2023",
+                "visits": "0"
+            },
+            {
+                "date": "08/04/2023",
+                "visits": "0"
+            },
+            {
+                "date": "09/04/2023",
+                "visits": "0"
+            },
+            {
+                "date": "10/04/2023",
+                "visits": "0"
+            },
+            {
+                "date": "11/04/2023",
+                "visits": "0"
+            },
+            {
+                "date": "12/04/2023",
+                "visits": "47587"
+            },
+            {
+                "date": "13/04/2023",
+                "visits": "11883"
+            },
+            {
+                "date": "14/04/2023",
+                "visits": "11293"
+            },
+            {
+                "date": "15/04/2023",
+                "visits": "34233"
+            },
+            {
+                "date": "16/04/2023",
+                "visits": "10709"
+            },
+            {
+                "date": "17/04/2023",
+                "visits": "13075"
+            },
+            {
+                "date": "18/04/2023",
+                "visits": "38418"
+            },
+            {
+                "date": "19/04/2023",
+                "visits": "29996"
+            },
+            {
+                "date": "20/04/2023",
+                "visits": "13633"
             }
         ]
     },
     {
-        "Id": "3",
-        "Title": "Ruslands \"br\u00e6ndende sol\" skal redde vingeskudt luftstyrkes \u00e6re",
-        "Data": [
+        "articleid": "3",
+        "name": "Ruslands \"br\u00e6ndende sol\" skal redde vingeskudt luftstyrkes \u00e6re",
+        "data": [
             {
-                "Date": "06",
-                "Visits": "0"
+                "date": "06/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "07",
-                "Visits": "0"
+                "date": "07/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "08",
-                "Visits": "0"
+                "date": "08/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "09",
-                "Visits": "0"
+                "date": "09/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "10",
-                "Visits": "0"
+                "date": "10/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "11",
-                "Visits": "0"
+                "date": "11/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "12",
-                "Visits": "8071"
+                "date": "12/04/2023",
+                "visits": "12365"
             },
             {
-                "Date": "13",
-                "Visits": "4958"
+                "date": "13/04/2023",
+                "visits": "25576"
             },
             {
-                "Date": "14",
-                "Visits": "6706"
+                "date": "14/04/2023",
+                "visits": "22885"
             },
             {
-                "Date": "15",
-                "Visits": "6958"
+                "date": "15/04/2023",
+                "visits": "38717"
             },
             {
-                "Date": "16",
-                "Visits": "5767"
+                "date": "16/04/2023",
+                "visits": "33257"
             },
             {
-                "Date": "17",
-                "Visits": "3999"
+                "date": "17/04/2023",
+                "visits": "10130"
             },
             {
-                "Date": "18",
-                "Visits": "2420"
+                "date": "18/04/2023",
+                "visits": "23211"
             },
             {
-                "Date": "19",
-                "Visits": "9375"
+                "date": "19/04/2023",
+                "visits": "12297"
             },
             {
-                "Date": "20",
-                "Visits": "4276"
+                "date": "20/04/2023",
+                "visits": "43584"
             }
         ]
     },
     {
-        "Id": "4",
-        "Title": "Medier: L\u00e6k afsl\u00f8rer Nato-styrkers tilstedev\u00e6relse i Ukraine",
-        "Data": [
+        "articleid": "4",
+        "name": "Medier: L\u00e6k afsl\u00f8rer Nato-styrkers tilstedev\u00e6relse i Ukraine",
+        "data": [
             {
-                "Date": "06",
-                "Visits": "0"
+                "date": "06/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "07",
-                "Visits": "0"
+                "date": "07/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "08",
-                "Visits": "0"
+                "date": "08/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "09",
-                "Visits": "0"
+                "date": "09/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "10",
-                "Visits": "0"
+                "date": "10/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "11",
-                "Visits": "0"
+                "date": "11/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "12",
-                "Visits": "1642"
+                "date": "12/04/2023",
+                "visits": "15008"
             },
             {
-                "Date": "13",
-                "Visits": "7542"
+                "date": "13/04/2023",
+                "visits": "26529"
             },
             {
-                "Date": "14",
-                "Visits": "3472"
+                "date": "14/04/2023",
+                "visits": "11032"
             },
             {
-                "Date": "15",
-                "Visits": "1384"
+                "date": "15/04/2023",
+                "visits": "39970"
             },
             {
-                "Date": "16",
-                "Visits": "3311"
+                "date": "16/04/2023",
+                "visits": "37356"
             },
             {
-                "Date": "17",
-                "Visits": "4063"
+                "date": "17/04/2023",
+                "visits": "10017"
             },
             {
-                "Date": "18",
-                "Visits": "7739"
+                "date": "18/04/2023",
+                "visits": "38896"
             },
             {
-                "Date": "19",
-                "Visits": "3292"
+                "date": "19/04/2023",
+                "visits": "47995"
             },
             {
-                "Date": "20",
-                "Visits": "5230"
+                "date": "20/04/2023",
+                "visits": "24137"
             }
         ]
     },
     {
-        "Id": "5",
-        "Title": "Seneste nyt om krigen i Ukraine 12. april",
-        "Data": [
+        "articleid": "5",
+        "name": "Seneste nyt om krigen i Ukraine 12. april",
+        "data": [
             {
-                "Date": "06",
-                "Visits": "0"
+                "date": "06/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "07",
-                "Visits": "0"
+                "date": "07/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "08",
-                "Visits": "0"
+                "date": "08/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "09",
-                "Visits": "0"
+                "date": "09/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "10",
-                "Visits": "0"
+                "date": "10/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "11",
-                "Visits": "0"
+                "date": "11/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "12",
-                "Visits": "5402"
+                "date": "12/04/2023",
+                "visits": "39714"
             },
             {
-                "Date": "13",
-                "Visits": "4922"
+                "date": "13/04/2023",
+                "visits": "48262"
             },
             {
-                "Date": "14",
-                "Visits": "1920"
+                "date": "14/04/2023",
+                "visits": "33649"
             },
             {
-                "Date": "15",
-                "Visits": "1104"
+                "date": "15/04/2023",
+                "visits": "13388"
             },
             {
-                "Date": "16",
-                "Visits": "7381"
+                "date": "16/04/2023",
+                "visits": "26103"
             },
             {
-                "Date": "17",
-                "Visits": "4340"
+                "date": "17/04/2023",
+                "visits": "22385"
             },
             {
-                "Date": "18",
-                "Visits": "8469"
+                "date": "18/04/2023",
+                "visits": "30079"
             },
             {
-                "Date": "19",
-                "Visits": "4056"
+                "date": "19/04/2023",
+                "visits": "15505"
             },
             {
-                "Date": "20",
-                "Visits": "4056"
+                "date": "20/04/2023",
+                "visits": "37535"
             }
         ]
     },
     {
-        "Id": "6",
-        "Title": "Russisk oppositionsleder er alvorligt syg, siger advokat",
-        "Data": [
+        "articleid": "6",
+        "name": "Russisk oppositionsleder er alvorligt syg, siger advokat",
+        "data": [
             {
-                "Date": "06",
-                "Visits": "0"
+                "date": "06/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "07",
-                "Visits": "0"
+                "date": "07/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "08",
-                "Visits": "0"
+                "date": "08/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "09",
-                "Visits": "0"
+                "date": "09/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "10",
-                "Visits": "0"
+                "date": "10/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "11",
-                "Visits": "1992"
+                "date": "11/04/2023",
+                "visits": "30990"
             },
             {
-                "Date": "12",
-                "Visits": "7498"
+                "date": "12/04/2023",
+                "visits": "34704"
             },
             {
-                "Date": "13",
-                "Visits": "4336"
+                "date": "13/04/2023",
+                "visits": "15744"
             },
             {
-                "Date": "14",
-                "Visits": "9596"
+                "date": "14/04/2023",
+                "visits": "47349"
             },
             {
-                "Date": "15",
-                "Visits": "8516"
+                "date": "15/04/2023",
+                "visits": "48825"
             },
             {
-                "Date": "16",
-                "Visits": "8317"
+                "date": "16/04/2023",
+                "visits": "27360"
             },
             {
-                "Date": "17",
-                "Visits": "7322"
+                "date": "17/04/2023",
+                "visits": "20797"
             },
             {
-                "Date": "18",
-                "Visits": "1435"
+                "date": "18/04/2023",
+                "visits": "46169"
             },
             {
-                "Date": "19",
-                "Visits": "8133"
+                "date": "19/04/2023",
+                "visits": "40999"
             },
             {
-                "Date": "20",
-                "Visits": "8330"
+                "date": "20/04/2023",
+                "visits": "47998"
             }
         ]
     },
     {
-        "Id": "7",
-        "Title": "Russiske regioner frygter angreb \u2013 aflyser parader \"for ikke at provokere fjenden\"",
-        "Data": [
+        "articleid": "7",
+        "name": "Russiske regioner frygter angreb \u2013 aflyser parader \"for ikke at provokere fjenden\"",
+        "data": [
             {
-                "Date": "06",
-                "Visits": "0"
+                "date": "06/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "07",
-                "Visits": "0"
+                "date": "07/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "08",
-                "Visits": "0"
+                "date": "08/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "09",
-                "Visits": "0"
+                "date": "09/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "10",
-                "Visits": "0"
+                "date": "10/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "11",
-                "Visits": "9887"
+                "date": "11/04/2023",
+                "visits": "35863"
             },
             {
-                "Date": "12",
-                "Visits": "2823"
+                "date": "12/04/2023",
+                "visits": "39696"
             },
             {
-                "Date": "13",
-                "Visits": "5977"
+                "date": "13/04/2023",
+                "visits": "24033"
             },
             {
-                "Date": "14",
-                "Visits": "5080"
+                "date": "14/04/2023",
+                "visits": "16918"
             },
             {
-                "Date": "15",
-                "Visits": "2318"
+                "date": "15/04/2023",
+                "visits": "40207"
             },
             {
-                "Date": "16",
-                "Visits": "2454"
+                "date": "16/04/2023",
+                "visits": "23624"
             },
             {
-                "Date": "17",
-                "Visits": "1395"
+                "date": "17/04/2023",
+                "visits": "43528"
             },
             {
-                "Date": "18",
-                "Visits": "3127"
+                "date": "18/04/2023",
+                "visits": "37966"
             },
             {
-                "Date": "19",
-                "Visits": "8552"
+                "date": "19/04/2023",
+                "visits": "39554"
             },
             {
-                "Date": "20",
-                "Visits": "9333"
+                "date": "20/04/2023",
+                "visits": "30265"
             }
         ]
     },
     {
-        "Id": "8",
-        "Title": "Hun blev sendt til Danmark under krigen \u2013 nu gr\u00e6der hun for ukrainske b\u00f8rn",
-        "Data": [
+        "articleid": "8",
+        "name": "Hun blev sendt til Danmark under krigen \u2013 nu gr\u00e6der hun for ukrainske b\u00f8rn",
+        "data": [
             {
-                "Date": "06",
-                "Visits": "0"
+                "date": "06/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "07",
-                "Visits": "0"
+                "date": "07/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "08",
-                "Visits": "0"
+                "date": "08/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "09",
-                "Visits": "0"
+                "date": "09/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "10",
-                "Visits": "0"
+                "date": "10/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "11",
-                "Visits": "6067"
+                "date": "11/04/2023",
+                "visits": "38229"
             },
             {
-                "Date": "12",
-                "Visits": "5565"
+                "date": "12/04/2023",
+                "visits": "40854"
             },
             {
-                "Date": "13",
-                "Visits": "6679"
+                "date": "13/04/2023",
+                "visits": "43962"
             },
             {
-                "Date": "14",
-                "Visits": "3167"
+                "date": "14/04/2023",
+                "visits": "36054"
             },
             {
-                "Date": "15",
-                "Visits": "1111"
+                "date": "15/04/2023",
+                "visits": "15940"
             },
             {
-                "Date": "16",
-                "Visits": "5949"
+                "date": "16/04/2023",
+                "visits": "11086"
             },
             {
-                "Date": "17",
-                "Visits": "6320"
+                "date": "17/04/2023",
+                "visits": "33369"
             },
             {
-                "Date": "18",
-                "Visits": "6590"
+                "date": "18/04/2023",
+                "visits": "16358"
             },
             {
-                "Date": "19",
-                "Visits": "4631"
+                "date": "19/04/2023",
+                "visits": "14186"
             },
             {
-                "Date": "20",
-                "Visits": "4630"
+                "date": "20/04/2023",
+                "visits": "15987"
             }
         ]
     },
     {
-        "Id": "9",
-        "Title": "Russisk sammenst\u00f8d med britisk fly var mere alvorligt end beskrevet",
-        "Data": [
+        "articleid": "9",
+        "name": "Russisk sammenst\u00f8d med britisk fly var mere alvorligt end beskrevet",
+        "data": [
             {
-                "Date": "06",
-                "Visits": "0"
+                "date": "06/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "07",
-                "Visits": "0"
+                "date": "07/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "08",
-                "Visits": "0"
+                "date": "08/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "09",
-                "Visits": "0"
+                "date": "09/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "10",
-                "Visits": "0"
+                "date": "10/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "11",
-                "Visits": "6723"
+                "date": "11/04/2023",
+                "visits": "27696"
             },
             {
-                "Date": "12",
-                "Visits": "4230"
+                "date": "12/04/2023",
+                "visits": "16947"
             },
             {
-                "Date": "13",
-                "Visits": "3524"
+                "date": "13/04/2023",
+                "visits": "39461"
             },
             {
-                "Date": "14",
-                "Visits": "1005"
+                "date": "14/04/2023",
+                "visits": "17836"
             },
             {
-                "Date": "15",
-                "Visits": "8118"
+                "date": "15/04/2023",
+                "visits": "12844"
             },
             {
-                "Date": "16",
-                "Visits": "8201"
+                "date": "16/04/2023",
+                "visits": "31806"
             },
             {
-                "Date": "17",
-                "Visits": "1762"
+                "date": "17/04/2023",
+                "visits": "34460"
             },
             {
-                "Date": "18",
-                "Visits": "3009"
+                "date": "18/04/2023",
+                "visits": "30033"
             },
             {
-                "Date": "19",
-                "Visits": "7214"
+                "date": "19/04/2023",
+                "visits": "47892"
             },
             {
-                "Date": "20",
-                "Visits": "5899"
+                "date": "20/04/2023",
+                "visits": "39319"
             }
         ]
     },
     {
-        "Id": "10",
-        "Title": "Seneste nyt om krigen i Ukraine 11. april 2023",
-        "Data": [
+        "articleid": "10",
+        "name": "Seneste nyt om krigen i Ukraine 11. april 2023",
+        "data": [
             {
-                "Date": "06",
-                "Visits": "0"
+                "date": "06/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "07",
-                "Visits": "0"
+                "date": "07/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "08",
-                "Visits": "0"
+                "date": "08/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "09",
-                "Visits": "0"
+                "date": "09/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "10",
-                "Visits": "0"
+                "date": "10/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "11",
-                "Visits": "6765"
+                "date": "11/04/2023",
+                "visits": "24792"
             },
             {
-                "Date": "12",
-                "Visits": "5221"
+                "date": "12/04/2023",
+                "visits": "22457"
             },
             {
-                "Date": "13",
-                "Visits": "1465"
+                "date": "13/04/2023",
+                "visits": "42166"
             },
             {
-                "Date": "14",
-                "Visits": "2072"
+                "date": "14/04/2023",
+                "visits": "15585"
             },
             {
-                "Date": "15",
-                "Visits": "8920"
+                "date": "15/04/2023",
+                "visits": "22315"
             },
             {
-                "Date": "16",
-                "Visits": "4364"
+                "date": "16/04/2023",
+                "visits": "10265"
             },
             {
-                "Date": "17",
-                "Visits": "6094"
+                "date": "17/04/2023",
+                "visits": "28720"
             },
             {
-                "Date": "18",
-                "Visits": "2022"
+                "date": "18/04/2023",
+                "visits": "39386"
             },
             {
-                "Date": "19",
-                "Visits": "6805"
+                "date": "19/04/2023",
+                "visits": "43349"
             },
             {
-                "Date": "20",
-                "Visits": "4571"
+                "date": "20/04/2023",
+                "visits": "32434"
             }
         ]
     },
     {
-        "Id": "11",
-        "Title": "Forsvarsminister p\u00e5 bes\u00f8g i Ukraine: S\u00e6rligt \u00e9n dansk donation har givet ukrainerne en fordel",
-        "Data": [
+        "articleid": "11",
+        "name": "Forsvarsminister p\u00e5 bes\u00f8g i Ukraine: S\u00e6rligt \u00e9n dansk donation har givet ukrainerne en fordel",
+        "data": [
             {
-                "Date": "06",
-                "Visits": "0"
+                "date": "06/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "07",
-                "Visits": "0"
+                "date": "07/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "08",
-                "Visits": "0"
+                "date": "08/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "09",
-                "Visits": "0"
+                "date": "09/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "10",
-                "Visits": "6744"
+                "date": "10/04/2023",
+                "visits": "39996"
             },
             {
-                "Date": "11",
-                "Visits": "7428"
+                "date": "11/04/2023",
+                "visits": "18265"
             },
             {
-                "Date": "12",
-                "Visits": "9171"
+                "date": "12/04/2023",
+                "visits": "39215"
             },
             {
-                "Date": "13",
-                "Visits": "1740"
+                "date": "13/04/2023",
+                "visits": "40047"
             },
             {
-                "Date": "14",
-                "Visits": "7007"
+                "date": "14/04/2023",
+                "visits": "43494"
             },
             {
-                "Date": "15",
-                "Visits": "1768"
+                "date": "15/04/2023",
+                "visits": "14974"
             },
             {
-                "Date": "16",
-                "Visits": "1246"
+                "date": "16/04/2023",
+                "visits": "32291"
             },
             {
-                "Date": "17",
-                "Visits": "9504"
+                "date": "17/04/2023",
+                "visits": "33079"
             },
             {
-                "Date": "18",
-                "Visits": "2003"
+                "date": "18/04/2023",
+                "visits": "49416"
             },
             {
-                "Date": "19",
-                "Visits": "1482"
+                "date": "19/04/2023",
+                "visits": "32578"
             },
             {
-                "Date": "20",
-                "Visits": "7574"
+                "date": "20/04/2023",
+                "visits": "35944"
             }
         ]
     },
     {
-        "Id": "12",
-        "Title": "Rusland vil opruste luftv\u00e6rn langs gr\u00e6nsen til Finland",
-        "Data": [
+        "articleid": "12",
+        "name": "Rusland vil opruste luftv\u00e6rn langs gr\u00e6nsen til Finland",
+        "data": [
             {
-                "Date": "06",
-                "Visits": "0"
+                "date": "06/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "07",
-                "Visits": "0"
+                "date": "07/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "08",
-                "Visits": "0"
+                "date": "08/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "09",
-                "Visits": "0"
+                "date": "09/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "10",
-                "Visits": "1820"
+                "date": "10/04/2023",
+                "visits": "24345"
             },
             {
-                "Date": "11",
-                "Visits": "4689"
+                "date": "11/04/2023",
+                "visits": "18565"
             },
             {
-                "Date": "12",
-                "Visits": "2045"
+                "date": "12/04/2023",
+                "visits": "22389"
             },
             {
-                "Date": "13",
-                "Visits": "4099"
+                "date": "13/04/2023",
+                "visits": "18783"
             },
             {
-                "Date": "14",
-                "Visits": "8953"
+                "date": "14/04/2023",
+                "visits": "31326"
             },
             {
-                "Date": "15",
-                "Visits": "9502"
+                "date": "15/04/2023",
+                "visits": "19705"
             },
             {
-                "Date": "16",
-                "Visits": "8913"
+                "date": "16/04/2023",
+                "visits": "15346"
             },
             {
-                "Date": "17",
-                "Visits": "4944"
+                "date": "17/04/2023",
+                "visits": "39119"
             },
             {
-                "Date": "18",
-                "Visits": "2658"
+                "date": "18/04/2023",
+                "visits": "24883"
             },
             {
-                "Date": "19",
-                "Visits": "6532"
+                "date": "19/04/2023",
+                "visits": "25671"
             },
             {
-                "Date": "20",
-                "Visits": "6842"
+                "date": "20/04/2023",
+                "visits": "26973"
             }
         ]
     },
     {
-        "Id": "13",
-        "Title": "Seneste nyt om krigen i Ukraine 10. april",
-        "Data": [
+        "articleid": "13",
+        "name": "Seneste nyt om krigen i Ukraine",
+        "data": [
             {
-                "Date": "06",
-                "Visits": "0"
+                "date": "06/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "07",
-                "Visits": "0"
+                "date": "07/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "08",
-                "Visits": "0"
+                "date": "08/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "09",
-                "Visits": "0"
+                "date": "09/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "10",
-                "Visits": "4914"
+                "date": "10/04/2023",
+                "visits": "32731"
             },
             {
-                "Date": "11",
-                "Visits": "9750"
+                "date": "11/04/2023",
+                "visits": "24192"
             },
             {
-                "Date": "12",
-                "Visits": "3435"
+                "date": "12/04/2023",
+                "visits": "47485"
             },
             {
-                "Date": "13",
-                "Visits": "1443"
+                "date": "13/04/2023",
+                "visits": "38489"
             },
             {
-                "Date": "14",
-                "Visits": "9505"
+                "date": "14/04/2023",
+                "visits": "40142"
             },
             {
-                "Date": "15",
-                "Visits": "4772"
+                "date": "15/04/2023",
+                "visits": "45607"
             },
             {
-                "Date": "16",
-                "Visits": "2888"
+                "date": "16/04/2023",
+                "visits": "15687"
             },
             {
-                "Date": "17",
-                "Visits": "2962"
+                "date": "17/04/2023",
+                "visits": "35890"
             },
             {
-                "Date": "18",
-                "Visits": "5896"
+                "date": "18/04/2023",
+                "visits": "46177"
             },
             {
-                "Date": "19",
-                "Visits": "8462"
+                "date": "19/04/2023",
+                "visits": "35770"
             },
             {
-                "Date": "20",
-                "Visits": "2527"
+                "date": "20/04/2023",
+                "visits": "39225"
             }
         ]
     },
     {
-        "Id": "14",
-        "Title": "Russisk offensiv n\u00e6rmer sig et vendepunkt, vurderer t\u00e6nketank",
-        "Data": [
+        "articleid": "14",
+        "name": "Russisk offensiv n\u00e6rmer sig et vendepunkt, vurderer t\u00e6nketank",
+        "data": [
             {
-                "Date": "06",
-                "Visits": "0"
+                "date": "06/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "07",
-                "Visits": "0"
+                "date": "07/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "08",
-                "Visits": "0"
+                "date": "08/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "09",
-                "Visits": "4159"
+                "date": "09/04/2023",
+                "visits": "13476"
             },
             {
-                "Date": "10",
-                "Visits": "5187"
+                "date": "10/04/2023",
+                "visits": "44133"
             },
             {
-                "Date": "11",
-                "Visits": "2795"
+                "date": "11/04/2023",
+                "visits": "44797"
             },
             {
-                "Date": "12",
-                "Visits": "7934"
+                "date": "12/04/2023",
+                "visits": "12593"
             },
             {
-                "Date": "13",
-                "Visits": "1884"
+                "date": "13/04/2023",
+                "visits": "16740"
             },
             {
-                "Date": "14",
-                "Visits": "2891"
+                "date": "14/04/2023",
+                "visits": "45692"
             },
             {
-                "Date": "15",
-                "Visits": "5935"
+                "date": "15/04/2023",
+                "visits": "12857"
             },
             {
-                "Date": "16",
-                "Visits": "2433"
+                "date": "16/04/2023",
+                "visits": "25644"
             },
             {
-                "Date": "17",
-                "Visits": "6392"
+                "date": "17/04/2023",
+                "visits": "29382"
             },
             {
-                "Date": "18",
-                "Visits": "4581"
+                "date": "18/04/2023",
+                "visits": "35089"
             },
             {
-                "Date": "19",
-                "Visits": "6053"
+                "date": "19/04/2023",
+                "visits": "46075"
             },
             {
-                "Date": "20",
-                "Visits": "7166"
+                "date": "20/04/2023",
+                "visits": "25944"
             }
         ]
     },
     {
-        "Id": "15",
-        "Title": "Paven appellerede til russerne i sit p\u00e5skebudskab",
-        "Data": [
+        "articleid": "15",
+        "name": "Paven appellerede til russerne i sit p\u00e5skebudskab",
+        "data": [
             {
-                "Date": "06",
-                "Visits": "0"
+                "date": "06/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "07",
-                "Visits": "0"
+                "date": "07/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "08",
-                "Visits": "0"
+                "date": "08/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "09",
-                "Visits": "7694"
+                "date": "09/04/2023",
+                "visits": "41407"
             },
             {
-                "Date": "10",
-                "Visits": "3360"
+                "date": "10/04/2023",
+                "visits": "34244"
             },
             {
-                "Date": "11",
-                "Visits": "6091"
+                "date": "11/04/2023",
+                "visits": "36119"
             },
             {
-                "Date": "12",
-                "Visits": "8150"
+                "date": "12/04/2023",
+                "visits": "22775"
             },
             {
-                "Date": "13",
-                "Visits": "6275"
+                "date": "13/04/2023",
+                "visits": "12696"
             },
             {
-                "Date": "14",
-                "Visits": "1783"
+                "date": "14/04/2023",
+                "visits": "30709"
             },
             {
-                "Date": "15",
-                "Visits": "3766"
+                "date": "15/04/2023",
+                "visits": "29830"
             },
             {
-                "Date": "16",
-                "Visits": "9827"
+                "date": "16/04/2023",
+                "visits": "43719"
             },
             {
-                "Date": "17",
-                "Visits": "7340"
+                "date": "17/04/2023",
+                "visits": "43365"
             },
             {
-                "Date": "18",
-                "Visits": "5725"
+                "date": "18/04/2023",
+                "visits": "43767"
             },
             {
-                "Date": "19",
-                "Visits": "5749"
+                "date": "19/04/2023",
+                "visits": "17918"
             },
             {
-                "Date": "20",
-                "Visits": "5861"
+                "date": "20/04/2023",
+                "visits": "27056"
             }
         ]
     },
     {
-        "Id": "16",
-        "Title": "13-\u00e5rig ukrainsk dreng sat fri efter halvt \u00e5r i russisk lejr \u2013 TV 2 overv\u00e6rede hans genforening med mor",
-        "Data": [
+        "articleid": "16",
+        "name": "13-\u00e5rig ukrainsk dreng sat fri efter halvt \u00e5r i russisk lejr \u2013 TV 2 overv\u00e6rede hans genforening med mor",
+        "data": [
             {
-                "Date": "06",
-                "Visits": "0"
+                "date": "06/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "07",
-                "Visits": "0"
+                "date": "07/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "08",
-                "Visits": "0"
+                "date": "08/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "09",
-                "Visits": "7307"
+                "date": "09/04/2023",
+                "visits": "38762"
             },
             {
-                "Date": "10",
-                "Visits": "2648"
+                "date": "10/04/2023",
+                "visits": "45785"
             },
             {
-                "Date": "11",
-                "Visits": "8760"
+                "date": "11/04/2023",
+                "visits": "10265"
             },
             {
-                "Date": "12",
-                "Visits": "1851"
+                "date": "12/04/2023",
+                "visits": "14783"
             },
             {
-                "Date": "13",
-                "Visits": "9675"
+                "date": "13/04/2023",
+                "visits": "39350"
             },
             {
-                "Date": "14",
-                "Visits": "1722"
+                "date": "14/04/2023",
+                "visits": "25418"
             },
             {
-                "Date": "15",
-                "Visits": "2516"
+                "date": "15/04/2023",
+                "visits": "43628"
             },
             {
-                "Date": "16",
-                "Visits": "3926"
+                "date": "16/04/2023",
+                "visits": "48012"
             },
             {
-                "Date": "17",
-                "Visits": "3543"
+                "date": "17/04/2023",
+                "visits": "43824"
             },
             {
-                "Date": "18",
-                "Visits": "6209"
+                "date": "18/04/2023",
+                "visits": "36983"
             },
             {
-                "Date": "19",
-                "Visits": "9851"
+                "date": "19/04/2023",
+                "visits": "32703"
             },
             {
-                "Date": "20",
-                "Visits": "2132"
+                "date": "20/04/2023",
+                "visits": "33018"
             }
         ]
     },
     {
-        "Id": "17",
-        "Title": "Aktivist afsl\u00f8rede soldaters massegrave \u2013 nu har han forladt Rusland",
-        "Data": [
+        "articleid": "17",
+        "name": "Aktivist afsl\u00f8rede soldaters massegrave \u2013 nu har han forladt Rusland",
+        "data": [
             {
-                "Date": "06",
-                "Visits": "0"
+                "date": "06/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "07",
-                "Visits": "0"
+                "date": "07/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "08",
-                "Visits": "0"
+                "date": "08/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "09",
-                "Visits": "8991"
+                "date": "09/04/2023",
+                "visits": "43067"
             },
             {
-                "Date": "10",
-                "Visits": "2632"
+                "date": "10/04/2023",
+                "visits": "24190"
             },
             {
-                "Date": "11",
-                "Visits": "5033"
+                "date": "11/04/2023",
+                "visits": "16972"
             },
             {
-                "Date": "12",
-                "Visits": "4943"
+                "date": "12/04/2023",
+                "visits": "46850"
             },
             {
-                "Date": "13",
-                "Visits": "1238"
+                "date": "13/04/2023",
+                "visits": "42203"
             },
             {
-                "Date": "14",
-                "Visits": "2251"
+                "date": "14/04/2023",
+                "visits": "12400"
             },
             {
-                "Date": "15",
-                "Visits": "7333"
+                "date": "15/04/2023",
+                "visits": "19141"
             },
             {
-                "Date": "16",
-                "Visits": "4173"
+                "date": "16/04/2023",
+                "visits": "19412"
             },
             {
-                "Date": "17",
-                "Visits": "3050"
+                "date": "17/04/2023",
+                "visits": "49546"
             },
             {
-                "Date": "18",
-                "Visits": "2519"
+                "date": "18/04/2023",
+                "visits": "30903"
             },
             {
-                "Date": "19",
-                "Visits": "5099"
+                "date": "19/04/2023",
+                "visits": "30748"
             },
             {
-                "Date": "20",
-                "Visits": "7079"
+                "date": "20/04/2023",
+                "visits": "29030"
             }
         ]
     },
     {
-        "Id": "18",
-        "Title": "Seneste nyt om krigen i Ukraine 9. april",
-        "Data": [
+        "articleid": "18",
+        "name": "Seneste nyt om krigen i Ukraine",
+        "data": [
             {
-                "Date": "06",
-                "Visits": "0"
+                "date": "06/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "07",
-                "Visits": "0"
+                "date": "07/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "08",
-                "Visits": "0"
+                "date": "08/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "09",
-                "Visits": "1055"
+                "date": "09/04/2023",
+                "visits": "27517"
             },
             {
-                "Date": "10",
-                "Visits": "7310"
+                "date": "10/04/2023",
+                "visits": "17636"
             },
             {
-                "Date": "11",
-                "Visits": "2197"
+                "date": "11/04/2023",
+                "visits": "25235"
             },
             {
-                "Date": "12",
-                "Visits": "1458"
+                "date": "12/04/2023",
+                "visits": "41201"
             },
             {
-                "Date": "13",
-                "Visits": "8808"
+                "date": "13/04/2023",
+                "visits": "43948"
             },
             {
-                "Date": "14",
-                "Visits": "9859"
+                "date": "14/04/2023",
+                "visits": "30611"
             },
             {
-                "Date": "15",
-                "Visits": "8476"
+                "date": "15/04/2023",
+                "visits": "10419"
             },
             {
-                "Date": "16",
-                "Visits": "9108"
+                "date": "16/04/2023",
+                "visits": "32131"
             },
             {
-                "Date": "17",
-                "Visits": "2172"
+                "date": "17/04/2023",
+                "visits": "29407"
             },
             {
-                "Date": "18",
-                "Visits": "1588"
+                "date": "18/04/2023",
+                "visits": "49925"
             },
             {
-                "Date": "19",
-                "Visits": "1021"
+                "date": "19/04/2023",
+                "visits": "45567"
             },
             {
-                "Date": "20",
-                "Visits": "9087"
+                "date": "20/04/2023",
+                "visits": "36051"
             }
         ]
     },
     {
-        "Id": "19",
-        "Title": "Rusland forbereder tvangsevakuering, viser efterretninger",
-        "Data": [
+        "articleid": "19",
+        "name": "Rusland forbereder tvangsevakuering, viser efterretninger",
+        "data": [
             {
-                "Date": "06",
-                "Visits": "0"
+                "date": "06/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "07",
-                "Visits": "0"
+                "date": "07/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "08",
-                "Visits": "3311"
+                "date": "08/04/2023",
+                "visits": "15395"
             },
             {
-                "Date": "09",
-                "Visits": "2182"
+                "date": "09/04/2023",
+                "visits": "48308"
             },
             {
-                "Date": "10",
-                "Visits": "7395"
+                "date": "10/04/2023",
+                "visits": "31347"
             },
             {
-                "Date": "11",
-                "Visits": "4855"
+                "date": "11/04/2023",
+                "visits": "48432"
             },
             {
-                "Date": "12",
-                "Visits": "1910"
+                "date": "12/04/2023",
+                "visits": "47636"
             },
             {
-                "Date": "13",
-                "Visits": "9551"
+                "date": "13/04/2023",
+                "visits": "28487"
             },
             {
-                "Date": "14",
-                "Visits": "1667"
+                "date": "14/04/2023",
+                "visits": "44131"
             },
             {
-                "Date": "15",
-                "Visits": "5505"
+                "date": "15/04/2023",
+                "visits": "42825"
             },
             {
-                "Date": "16",
-                "Visits": "7501"
+                "date": "16/04/2023",
+                "visits": "11018"
             },
             {
-                "Date": "17",
-                "Visits": "2621"
+                "date": "17/04/2023",
+                "visits": "13412"
             },
             {
-                "Date": "18",
-                "Visits": "5059"
+                "date": "18/04/2023",
+                "visits": "28182"
             },
             {
-                "Date": "19",
-                "Visits": "8979"
+                "date": "19/04/2023",
+                "visits": "14767"
             },
             {
-                "Date": "20",
-                "Visits": "2694"
+                "date": "20/04/2023",
+                "visits": "49422"
             }
         ]
     },
     {
-        "Id": "20",
-        "Title": "Pentagon efterforsker 'l\u00e6kkede' dokumenter om tabstal \u2013 dansk ekspert kalder tallene fabrikerede",
-        "Data": [
+        "articleid": "20",
+        "name": "Pentagon efterforsker 'l\u00e6kkede' dokumenter om tabstal \u2013 dansk ekspert kalder tallene fabrikerede",
+        "data": [
             {
-                "Date": "06",
-                "Visits": "0"
+                "date": "06/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "07",
-                "Visits": "2193"
+                "date": "07/04/2023",
+                "visits": "42273"
             },
             {
-                "Date": "08",
-                "Visits": "8218"
+                "date": "08/04/2023",
+                "visits": "20202"
             },
             {
-                "Date": "09",
-                "Visits": "8389"
+                "date": "09/04/2023",
+                "visits": "28997"
             },
             {
-                "Date": "10",
-                "Visits": "1875"
+                "date": "10/04/2023",
+                "visits": "43773"
             },
             {
-                "Date": "11",
-                "Visits": "2470"
+                "date": "11/04/2023",
+                "visits": "16141"
             },
             {
-                "Date": "12",
-                "Visits": "6669"
+                "date": "12/04/2023",
+                "visits": "18727"
             },
             {
-                "Date": "13",
-                "Visits": "5287"
+                "date": "13/04/2023",
+                "visits": "27878"
             },
             {
-                "Date": "14",
-                "Visits": "4482"
+                "date": "14/04/2023",
+                "visits": "46199"
             },
             {
-                "Date": "15",
-                "Visits": "3248"
+                "date": "15/04/2023",
+                "visits": "47097"
             },
             {
-                "Date": "16",
-                "Visits": "8795"
+                "date": "16/04/2023",
+                "visits": "46318"
             },
             {
-                "Date": "17",
-                "Visits": "6008"
+                "date": "17/04/2023",
+                "visits": "18793"
             },
             {
-                "Date": "18",
-                "Visits": "4253"
+                "date": "18/04/2023",
+                "visits": "20161"
             },
             {
-                "Date": "19",
-                "Visits": "5160"
+                "date": "19/04/2023",
+                "visits": "42085"
             },
             {
-                "Date": "20",
-                "Visits": "1762"
+                "date": "20/04/2023",
+                "visits": "49636"
             }
         ]
     },
     {
-        "Id": "21",
-        "Title": "Ukrainske b\u00f8rn deporteres til Rusland: - Alle var venlige mod os",
-        "Data": [
+        "articleid": "21",
+        "name": "Ukrainske b\u00f8rn deporteres til Rusland: - Alle var venlige mod os",
+        "data": [
             {
-                "Date": "06",
-                "Visits": "0"
+                "date": "06/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "07",
-                "Visits": "8032"
+                "date": "07/04/2023",
+                "visits": "15249"
             },
             {
-                "Date": "08",
-                "Visits": "7979"
+                "date": "08/04/2023",
+                "visits": "11145"
             },
             {
-                "Date": "09",
-                "Visits": "9829"
+                "date": "09/04/2023",
+                "visits": "48715"
             },
             {
-                "Date": "10",
-                "Visits": "5179"
+                "date": "10/04/2023",
+                "visits": "48593"
             },
             {
-                "Date": "11",
-                "Visits": "7619"
+                "date": "11/04/2023",
+                "visits": "18673"
             },
             {
-                "Date": "12",
-                "Visits": "3102"
+                "date": "12/04/2023",
+                "visits": "43959"
             },
             {
-                "Date": "13",
-                "Visits": "1255"
+                "date": "13/04/2023",
+                "visits": "30521"
             },
             {
-                "Date": "14",
-                "Visits": "9907"
+                "date": "14/04/2023",
+                "visits": "29922"
             },
             {
-                "Date": "15",
-                "Visits": "5866"
+                "date": "15/04/2023",
+                "visits": "46023"
             },
             {
-                "Date": "16",
-                "Visits": "2253"
+                "date": "16/04/2023",
+                "visits": "26710"
             },
             {
-                "Date": "17",
-                "Visits": "6261"
+                "date": "17/04/2023",
+                "visits": "33486"
             },
             {
-                "Date": "18",
-                "Visits": "5387"
+                "date": "18/04/2023",
+                "visits": "42248"
             },
             {
-                "Date": "19",
-                "Visits": "1721"
+                "date": "19/04/2023",
+                "visits": "12635"
             },
             {
-                "Date": "20",
-                "Visits": "9150"
+                "date": "20/04/2023",
+                "visits": "20978"
             }
         ]
     },
     {
-        "Id": "22",
-        "Title": "Rusland advarer kineserne: - Kina er Vestens n\u00e6ste m\u00e5l",
-        "Data": [
+        "articleid": "22",
+        "name": "Rusland advarer kineserne: - Kina er Vestens n\u00e6ste m\u00e5l",
+        "data": [
             {
-                "Date": "06",
-                "Visits": "0"
+                "date": "06/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "07",
-                "Visits": "1376"
+                "date": "07/04/2023",
+                "visits": "45463"
             },
             {
-                "Date": "08",
-                "Visits": "3016"
+                "date": "08/04/2023",
+                "visits": "16189"
             },
             {
-                "Date": "09",
-                "Visits": "1413"
+                "date": "09/04/2023",
+                "visits": "34471"
             },
             {
-                "Date": "10",
-                "Visits": "2595"
+                "date": "10/04/2023",
+                "visits": "35130"
             },
             {
-                "Date": "11",
-                "Visits": "1111"
+                "date": "11/04/2023",
+                "visits": "10422"
             },
             {
-                "Date": "12",
-                "Visits": "9623"
+                "date": "12/04/2023",
+                "visits": "39078"
             },
             {
-                "Date": "13",
-                "Visits": "9240"
+                "date": "13/04/2023",
+                "visits": "12786"
             },
             {
-                "Date": "14",
-                "Visits": "4259"
+                "date": "14/04/2023",
+                "visits": "11065"
             },
             {
-                "Date": "15",
-                "Visits": "4150"
+                "date": "15/04/2023",
+                "visits": "48141"
             },
             {
-                "Date": "16",
-                "Visits": "5842"
+                "date": "16/04/2023",
+                "visits": "43744"
             },
             {
-                "Date": "17",
-                "Visits": "1629"
+                "date": "17/04/2023",
+                "visits": "43459"
             },
             {
-                "Date": "18",
-                "Visits": "8715"
+                "date": "18/04/2023",
+                "visits": "49675"
             },
             {
-                "Date": "19",
-                "Visits": "1664"
+                "date": "19/04/2023",
+                "visits": "12758"
             },
             {
-                "Date": "20",
-                "Visits": "4247"
+                "date": "20/04/2023",
+                "visits": "42018"
             }
         ]
     },
     {
-        "Id": "23",
-        "Title": "Rusland har genvundet momentum i Bakhmut, viser nye efterretninger",
-        "Data": [
+        "articleid": "23",
+        "name": "Rusland har genvundet momentum i Bakhmut, viser nye efterretninger",
+        "data": [
             {
-                "Date": "06",
-                "Visits": "0"
+                "date": "06/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "07",
-                "Visits": "6931"
+                "date": "07/04/2023",
+                "visits": "14533"
             },
             {
-                "Date": "08",
-                "Visits": "9793"
+                "date": "08/04/2023",
+                "visits": "38507"
             },
             {
-                "Date": "09",
-                "Visits": "3582"
+                "date": "09/04/2023",
+                "visits": "13447"
             },
             {
-                "Date": "10",
-                "Visits": "3413"
+                "date": "10/04/2023",
+                "visits": "43245"
             },
             {
-                "Date": "11",
-                "Visits": "5416"
+                "date": "11/04/2023",
+                "visits": "22814"
             },
             {
-                "Date": "12",
-                "Visits": "7629"
+                "date": "12/04/2023",
+                "visits": "47719"
             },
             {
-                "Date": "13",
-                "Visits": "4353"
+                "date": "13/04/2023",
+                "visits": "19108"
             },
             {
-                "Date": "14",
-                "Visits": "7704"
+                "date": "14/04/2023",
+                "visits": "41045"
             },
             {
-                "Date": "15",
-                "Visits": "2612"
+                "date": "15/04/2023",
+                "visits": "49455"
             },
             {
-                "Date": "16",
-                "Visits": "3921"
+                "date": "16/04/2023",
+                "visits": "39818"
             },
             {
-                "Date": "17",
-                "Visits": "7487"
+                "date": "17/04/2023",
+                "visits": "21127"
             },
             {
-                "Date": "18",
-                "Visits": "6473"
+                "date": "18/04/2023",
+                "visits": "11934"
             },
             {
-                "Date": "19",
-                "Visits": "1151"
+                "date": "19/04/2023",
+                "visits": "14085"
             },
             {
-                "Date": "20",
-                "Visits": "3832"
+                "date": "20/04/2023",
+                "visits": "43997"
             }
         ]
     },
     {
-        "Id": "24",
-        "Title": "Virksomheder har hentet hundredvis af russere til Danmark efter invasion",
-        "Data": [
+        "articleid": "24",
+        "name": "Virksomheder har hentet hundredvis af russere til Danmark efter invasion",
+        "data": [
             {
-                "Date": "06",
-                "Visits": "0"
+                "date": "06/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "07",
-                "Visits": "9893"
+                "date": "07/04/2023",
+                "visits": "49670"
             },
             {
-                "Date": "08",
-                "Visits": "7528"
+                "date": "08/04/2023",
+                "visits": "35231"
             },
             {
-                "Date": "09",
-                "Visits": "6001"
+                "date": "09/04/2023",
+                "visits": "15489"
             },
             {
-                "Date": "10",
-                "Visits": "4621"
+                "date": "10/04/2023",
+                "visits": "31494"
             },
             {
-                "Date": "11",
-                "Visits": "4831"
+                "date": "11/04/2023",
+                "visits": "37254"
             },
             {
-                "Date": "12",
-                "Visits": "7173"
+                "date": "12/04/2023",
+                "visits": "11817"
             },
             {
-                "Date": "13",
-                "Visits": "7113"
+                "date": "13/04/2023",
+                "visits": "44320"
             },
             {
-                "Date": "14",
-                "Visits": "7612"
+                "date": "14/04/2023",
+                "visits": "28917"
             },
             {
-                "Date": "15",
-                "Visits": "2129"
+                "date": "15/04/2023",
+                "visits": "20162"
             },
             {
-                "Date": "16",
-                "Visits": "7873"
+                "date": "16/04/2023",
+                "visits": "37461"
             },
             {
-                "Date": "17",
-                "Visits": "1246"
+                "date": "17/04/2023",
+                "visits": "20177"
             },
             {
-                "Date": "18",
-                "Visits": "7317"
+                "date": "18/04/2023",
+                "visits": "27740"
             },
             {
-                "Date": "19",
-                "Visits": "2145"
+                "date": "19/04/2023",
+                "visits": "41889"
             },
             {
-                "Date": "20",
-                "Visits": "9597"
+                "date": "20/04/2023",
+                "visits": "48470"
             }
         ]
     },
     {
-        "Id": "25",
-        "Title": "Krigen i Ukraine 7. april",
-        "Data": [
+        "articleid": "25",
+        "name": "Krigen i Ukraine 7. april 2023",
+        "data": [
             {
-                "Date": "06",
-                "Visits": "0"
+                "date": "06/04/2023",
+                "visits": "0"
             },
             {
-                "Date": "07",
-                "Visits": "9948"
+                "date": "07/04/2023",
+                "visits": "38563"
             },
             {
-                "Date": "08",
-                "Visits": "4577"
+                "date": "08/04/2023",
+                "visits": "13781"
             },
             {
-                "Date": "09",
-                "Visits": "2853"
+                "date": "09/04/2023",
+                "visits": "39306"
             },
             {
-                "Date": "10",
-                "Visits": "4211"
+                "date": "10/04/2023",
+                "visits": "48802"
             },
             {
-                "Date": "11",
-                "Visits": "2464"
+                "date": "11/04/2023",
+                "visits": "18245"
             },
             {
-                "Date": "12",
-                "Visits": "8404"
+                "date": "12/04/2023",
+                "visits": "20881"
             },
             {
-                "Date": "13",
-                "Visits": "8362"
+                "date": "13/04/2023",
+                "visits": "32234"
             },
             {
-                "Date": "14",
-                "Visits": "6857"
+                "date": "14/04/2023",
+                "visits": "19800"
             },
             {
-                "Date": "15",
-                "Visits": "9661"
+                "date": "15/04/2023",
+                "visits": "10745"
             },
             {
-                "Date": "16",
-                "Visits": "3784"
+                "date": "16/04/2023",
+                "visits": "10652"
             },
             {
-                "Date": "17",
-                "Visits": "2072"
+                "date": "17/04/2023",
+                "visits": "39258"
             },
             {
-                "Date": "18",
-                "Visits": "1104"
+                "date": "18/04/2023",
+                "visits": "40686"
             },
             {
-                "Date": "19",
-                "Visits": "5844"
+                "date": "19/04/2023",
+                "visits": "37327"
             },
             {
-                "Date": "20",
-                "Visits": "6112"
+                "date": "20/04/2023",
+                "visits": "43699"
             }
         ]
     },
     {
-        "Id": "26",
-        "Title": "Rusland kan mobilisere 400.000 til \u00e9t sidste angreb, advarer Putin-r\u00e5dgiver",
-        "Data": [
+        "articleid": "26",
+        "name": "Rusland kan mobilisere 400.000 til \u00e9t sidste angreb, advarer Putin-r\u00e5dgiver",
+        "data": [
             {
-                "Date": "06",
-                "Visits": "2722"
+                "date": "06/04/2023",
+                "visits": "40562"
             },
             {
-                "Date": "07",
-                "Visits": "3837"
+                "date": "07/04/2023",
+                "visits": "44981"
             },
             {
-                "Date": "08",
-                "Visits": "3792"
+                "date": "08/04/2023",
+                "visits": "25900"
             },
             {
-                "Date": "09",
-                "Visits": "3027"
+                "date": "09/04/2023",
+                "visits": "44107"
             },
             {
-                "Date": "10",
-                "Visits": "6518"
+                "date": "10/04/2023",
+                "visits": "13114"
             },
             {
-                "Date": "11",
-                "Visits": "2223"
+                "date": "11/04/2023",
+                "visits": "29858"
             },
             {
-                "Date": "12",
-                "Visits": "5140"
+                "date": "12/04/2023",
+                "visits": "34875"
             },
             {
-                "Date": "13",
-                "Visits": "7440"
+                "date": "13/04/2023",
+                "visits": "33142"
             },
             {
-                "Date": "14",
-                "Visits": "3628"
+                "date": "14/04/2023",
+                "visits": "32805"
             },
             {
-                "Date": "15",
-                "Visits": "6841"
+                "date": "15/04/2023",
+                "visits": "19788"
             },
             {
-                "Date": "16",
-                "Visits": "6748"
+                "date": "16/04/2023",
+                "visits": "14955"
             },
             {
-                "Date": "17",
-                "Visits": "9159"
+                "date": "17/04/2023",
+                "visits": "32040"
             },
             {
-                "Date": "18",
-                "Visits": "1374"
+                "date": "18/04/2023",
+                "visits": "28146"
             },
             {
-                "Date": "19",
-                "Visits": "3014"
+                "date": "19/04/2023",
+                "visits": "31011"
             },
             {
-                "Date": "20",
-                "Visits": "5621"
+                "date": "20/04/2023",
+                "visits": "38242"
             }
         ]
     },
     {
-        "Id": "27",
-        "Title": "Milit\u00e6ranalytiker kalder opsigtsv\u00e6kkende Krim-melding for \"et signal til Vesten\"",
-        "Data": [
+        "articleid": "27",
+        "name": "Milit\u00e6ranalytiker kalder opsigtsv\u00e6kkende Krim-melding for \"et signal til Vesten\"",
+        "data": [
             {
-                "Date": "06",
-                "Visits": "9136"
+                "date": "06/04/2023",
+                "visits": "15962"
             },
             {
-                "Date": "07",
-                "Visits": "7557"
+                "date": "07/04/2023",
+                "visits": "32760"
             },
             {
-                "Date": "08",
-                "Visits": "2685"
+                "date": "08/04/2023",
+                "visits": "26409"
             },
             {
-                "Date": "09",
-                "Visits": "4440"
+                "date": "09/04/2023",
+                "visits": "28455"
             },
             {
-                "Date": "10",
-                "Visits": "1531"
+                "date": "10/04/2023",
+                "visits": "24705"
             },
             {
-                "Date": "11",
-                "Visits": "9482"
+                "date": "11/04/2023",
+                "visits": "28671"
             },
             {
-                "Date": "12",
-                "Visits": "9675"
+                "date": "12/04/2023",
+                "visits": "41746"
             },
             {
-                "Date": "13",
-                "Visits": "9788"
+                "date": "13/04/2023",
+                "visits": "18183"
             },
             {
-                "Date": "14",
-                "Visits": "3938"
+                "date": "14/04/2023",
+                "visits": "32639"
             },
             {
-                "Date": "15",
-                "Visits": "1436"
+                "date": "15/04/2023",
+                "visits": "30268"
             },
             {
-                "Date": "16",
-                "Visits": "6042"
+                "date": "16/04/2023",
+                "visits": "28190"
             },
             {
-                "Date": "17",
-                "Visits": "7721"
+                "date": "17/04/2023",
+                "visits": "12118"
             },
             {
-                "Date": "18",
-                "Visits": "7907"
+                "date": "18/04/2023",
+                "visits": "33506"
             },
             {
-                "Date": "19",
-                "Visits": "2532"
+                "date": "19/04/2023",
+                "visits": "11714"
             },
             {
-                "Date": "20",
-                "Visits": "2351"
+                "date": "20/04/2023",
+                "visits": "29519"
             }
         ]
     }
