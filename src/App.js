@@ -54,8 +54,8 @@ function Layout() {
   }, [SelectedWord, SearchWord]);
   
   return (
+  <>
   <Container fluid className='d-flex flex-column my-container' style={{height: '120vh'}}>
-    <EventLogger />
   <Row className='NavBar'>
     <Col xs={12} md={4} className='d-flex align-items-center justify-content-left'>
       <SearchBar data={nyheder} selectedTopic={SelectedTopic} setSelectedTopic={setSelectedTopic} />
@@ -114,8 +114,9 @@ function Layout() {
           </Card>
       </Col>
     </Row>
+    <EventLogger />
   </Container>
-
+  </>
 
 
 
