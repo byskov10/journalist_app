@@ -20,6 +20,7 @@ import MetricDropdown from './Components/Trendline_graph/dropdown';
 import SteamGraphViz from './Components/StreamgraphViz/StreamGraphViz';
 import ArticleList from './Components/ArticleList/ArticleList';
 import WordAppear from './data/word_articleid.json';
+import EventLogger from './Components/EventLogger/EventLogger';
 
 
 function Layout() {
@@ -54,6 +55,7 @@ function Layout() {
   
   return (
   <Container fluid className='d-flex flex-column my-container' style={{height: '120vh'}}>
+    <EventLogger />
   <Row className='NavBar'>
     <Col xs={12} md={4} className='d-flex align-items-center justify-content-left'>
       <SearchBar data={nyheder} selectedTopic={SelectedTopic} setSelectedTopic={setSelectedTopic} />
