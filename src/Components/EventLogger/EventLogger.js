@@ -1,7 +1,14 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
-const EventLogger = () => {
+const EventLogger = ({selectedTopic, searchWord}) => {
   const eventsData = useRef([]);
+  const [currentTopic, setCurrentTopic] = useState(selectedTopic);
+  const [currentSearchWord, setCurrentSearchWord] = useState(searchWord);
+
+  useEffect(() => {
+    setCurrentTopic(selectedTopic);
+    setCurrentSearchWord(searchWord); // also add anotherValue as parameter to the component and to the array in the next line.
+  }, [selectedTopic, searchWord]);
 
   const logClickEvent = (event) => {
     let word;
@@ -16,9 +23,11 @@ const EventLogger = () => {
       x_page: event.pageX,
       y_page: event.pageY,
       word: word,
+      topic: currentTopic,
+      searchword: currentSearchWord,
       timestamp: new Date().toLocaleString()
     };
-    console.log(eventData);
+    console.log(currentTopic);
     eventsData.current.push(eventData);
   };
 
@@ -26,6 +35,7 @@ const EventLogger = () => {
     const eventData = {
       type: 'keypress',
       key: event.key,
+      topic: currentTopic,
       timestamp: new Date().toLocaleString()
     };
     console.log(eventData);
@@ -40,6 +50,7 @@ const EventLogger = () => {
     const eventData = {
       type: 'scroll',
       depth: scrollPercentage.toFixed(2),
+      topic: currentTopic,
       timestamp: new Date().toLocaleString()
     };
     console.log(eventData);
@@ -47,14 +58,14 @@ const EventLogger = () => {
   };
 
   const exportCSV = () => {
-    const header = 'Type,Data,X_browser,Y_browser,X_page,Y_page,ScrollDepth,TimeStamp\n';
+    const header = 'Type,Data,X_browser,Y_browser,X_page,Y_page,ScrollDepth,Topic,Searchword,TimeStamp\n';
     const csvRows = eventsData.current.map(event => {
       if (event.type === 'click') {
-        return `${event.type},${event.word},${event.x_browser},${event.y_browser},${event.x_page},${event.y_page},,${event.timestamp}`;
+        return `${event.type},${event.word},${event.x_browser},${event.y_browser},${event.x_page},${event.y_page},,${event.topic},${event.searchword},${event.timestamp}`;
       } else if (event.type === 'keypress') {
-        return `${event.type},${event.key},,,,,,${event.timestamp}`;
+        return `${event.type},${event.key},,,,,,${event.topic},${event.searchword},${event.timestamp}`;
       } else {
-        return `${event.type},,,,,,${event.depth},${event.timestamp}`;
+        return `${event.type},,,,,,${event.depth},${event.topic},${event.searchword},${event.timestamp}`;
       }
     });
     const csvData = header + csvRows.join('\n');
@@ -79,7 +90,7 @@ const EventLogger = () => {
       document.removeEventListener('keydown', logKeyboardEvent);
       document.addEventListener('scroll', logScrollEvent);
     };
-  }, []);
+  }, [currentTopic, currentSearchWord]);
 
   return (
     <div>

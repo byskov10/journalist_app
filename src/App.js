@@ -108,13 +108,14 @@ function Layout() {
                   <ArticleList wordIds={WordIds} />
                   <div>{WordIds}</div>
                   <div>{SelectedWord}</div>
+                  <div>{SelectedTopic}</div>
                 </Card.Title>
               </Card.Body>
             </Col>
           </Card>
       </Col>
     </Row>
-    <EventLogger />
+    <EventLogger selectedTopic={SelectedTopic} searchWord={SearchWord}/>
   </Container>
   </>
 
