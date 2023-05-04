@@ -45,6 +45,7 @@ function SearchBar({ data, selectedTopic, setSelectedTopic }) {
               <SearchIcon />
             </button>
             <input
+              className='TopicSearchBarInput'
               type="search"
               placeholder="Skriv et emne.."
               value={searchInput}
@@ -66,7 +67,7 @@ function SearchBar({ data, selectedTopic, setSelectedTopic }) {
                     className="dataItem"
                     onClick={() => handleSelect(value.topic)}
                   >
-                    <p>{value.topic}</p>
+                    <p className='dataItemText'>{value.topic}</p>
                   </a>
                 );
               })}
