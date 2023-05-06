@@ -1,25 +1,38 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-const EventLogger = ({selectedTopic, searchWord}) => {
+const EventLogger = ({selectedTopic, searchWord, bubbleAmount}) => {
   const eventsData = useRef([]);
   const [currentTopic, setCurrentTopic] = useState(selectedTopic);
   const [currentSearchWord, setCurrentSearchWord] = useState(searchWord);
+  const [currentBubbleAmount, setCurrentBubbleAmount] = useState(bubbleAmount);
 
   useEffect(() => {
     setCurrentTopic(selectedTopic);
     setCurrentSearchWord(searchWord); // also add anotherValue as parameter to the component and to the array in the next line.
-  }, [selectedTopic, searchWord]);
+    setCurrentBubbleAmount(bubbleAmount);
+  }, [selectedTopic, searchWord, bubbleAmount]);
 
   const logClickEvent = (event) => {
     let word;
     let click_type = 'undefined';
+    let link = '';
     // event.point.word er det ord brugeren har trykket på i bubble charten. Hvis brugeren trykker et andet sted findes point objektet ikke.
     if (event.point && event.point.word) {
       word = event.point.word;
-      click_type = 'bubble_click';
+      click_type = 'bubble';
     } else if (event.srcElement.className === 'dataItem' || event.srcElement.className === 'dataItemText') {
       word = event.target.innerText;
-      click_type = 'topicsearch_dropdown'
+      click_type = 'topicsearch_dropdown';
+    } else if (event.srcElement && event.srcElement.classList.contains('rc-slider')) {
+      word = '';
+      click_type = 'bubbleamountslider';
+    } else if (event.srcElement.className === 'TopicSearchBarInput') {
+      word = '';
+      click_type = 'topicsearch_bar';
+    } else if (event.target.className === 'linktext') {
+      word = event.target.innerText;
+      click_type = 'list_link';
+      link = event.target.href;
     }
     const eventData = {
       type: 'click',
@@ -32,6 +45,8 @@ const EventLogger = ({selectedTopic, searchWord}) => {
       class: event.target.className,
       topic: currentTopic,
       searchword: currentSearchWord,
+      bubbleamount: currentBubbleAmount,
+      list_link: link,
       timestamp: new Date().toLocaleString()
     };
     console.log(event)
@@ -78,16 +93,16 @@ const EventLogger = ({selectedTopic, searchWord}) => {
   };
 
   const exportCSV = () => {
-    const header = 'ID,Type,Clicktype,Clicked_word,Keypressed,X_browser,Y_browser,X_page,Y_page,ScrollDepth,Topic,Searchword,TimeStamp,Class,Input\n';
-    const csvRows = eventsData.current.map(event => {
+    const header = 'ID,Type,Clicktype,Clicked_word,Keypressed,X_browser,Y_browser,X_page,Y_page,ScrollDepth,Topic,Searchword,TimeStamp,Class,Input,BubbleAmount,Link\n';
+    const csvRows = eventsData.current.map((event, index) => {
       if (event.type === 'click') {
-        return `,${event.type},${event.clicktype},${event.word},,${event.x_browser},${event.y_browser},${event.x_page},${event.y_page},,${event.topic},${event.searchword},${event.timestamp},${event.class},`;
+        return `${index},${event.type},${event.clicktype},${event.word},,${event.x_browser},${event.y_browser},${event.x_page},${event.y_page},,${event.topic},${event.searchword},${event.timestamp},${event.class},,${event.bubbleamount},${event.list_link}`;
       } else if (event.type === 'keypress') {
-        return `,${event.type},,,${event.key},,,,,,${event.topic},${event.searchword},${event.timestamp},${event.class},`;
+        return `${index},${event.type},,,${event.key},,,,,,${event.topic},${event.searchword},${event.timestamp},${event.class},,,`;
       } else if (event.type === 'input') {
-        return `,${event.type},,,,,,,,,,,${event.timestamp},${event.class},${event.input}`;
+        return `${index},${event.type},,,,,,,,,,,${event.timestamp},${event.class},${event.input},,`;
       } else {
-        return `,${event.type},,,,,,,,${event.depth},,,${event.timestamp},,`;
+        return `${index},${event.type},,,,,,,,${event.depth},,,${event.timestamp},,,`;
       }
     });
     const csvData = header + csvRows.join('\n');
@@ -114,7 +129,7 @@ const EventLogger = ({selectedTopic, searchWord}) => {
       document.removeEventListener('input', logInputChangeEvent);
       document.addEventListener('scroll', logScrollEvent);
     };
-  }, [currentTopic, currentSearchWord]);
+  }, [currentTopic, currentSearchWord, currentBubbleAmount]);
 
   return (
     <div>

@@ -115,7 +115,7 @@ function Layout() {
           </Card>
       </Col>
     </Row>
-    <EventLogger selectedTopic={SelectedTopic} searchWord={SearchWord}/>
+    <EventLogger selectedTopic={SelectedTopic} searchWord={SearchWord} bubbleAmount={BubbleAmount}/>
   </Container>
   </>
 
