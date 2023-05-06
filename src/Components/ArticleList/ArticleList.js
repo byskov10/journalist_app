@@ -8,7 +8,6 @@ const colors = ['red', 'blue', 'green', 'purple']
 const articles = SteamGraphVizData.map((item) => ({
   articleid: item.articleid,
   name: item.name,
-  // item.Link, MANGLER
   link: item.articlelink,
   color: '',
 }));
