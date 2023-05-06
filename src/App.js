@@ -106,9 +106,6 @@ function Layout() {
               <Card.Body className='d-flex flex-column' >
                 <Card.Title className='flex-grow-1'>
                   <ArticleList wordIds={WordIds} />
-                  <div>{WordIds}</div>
-                  <div>{SelectedWord}</div>
-                  <div>{SelectedTopic}</div>
                 </Card.Title>
               </Card.Body>
             </Col>
