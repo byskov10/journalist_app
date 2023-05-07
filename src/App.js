@@ -21,6 +21,7 @@ import SteamGraphViz from './Components/StreamgraphViz/StreamGraphViz';
 import ArticleList from './Components/ArticleList/ArticleList';
 import WordAppear from './data/word_articleid.json';
 import EventLogger from './Components/EventLogger/EventLogger';
+import EventLoggerScroll from './Components/EventLogger/EventLogger.woscroll';
 
 
 function Layout() {
@@ -113,6 +114,7 @@ function Layout() {
       </Col>
     </Row>
     <EventLogger selectedTopic={SelectedTopic} searchWord={SearchWord} bubbleAmount={BubbleAmount}/>
+    <EventLoggerScroll selectedTopic={SelectedTopic} searchWord={SearchWord} bubbleAmount={BubbleAmount}/>
   </Container>
   </>
 

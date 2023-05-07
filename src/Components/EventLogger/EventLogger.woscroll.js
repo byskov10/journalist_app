@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-const EventLogger = ({selectedTopic, searchWord, bubbleAmount}) => {
+const EventLoggerScroll = ({selectedTopic, searchWord, bubbleAmount}) => {
   const eventsData = useRef([]);
   const [currentTopic, setCurrentTopic] = useState(selectedTopic);
   const [currentSearchWord, setCurrentSearchWord] = useState(searchWord);
@@ -92,21 +92,6 @@ const EventLogger = ({selectedTopic, searchWord, bubbleAmount}) => {
     eventsData.current.push(eventData);
   };
 
-  const logScrollEvent = (event) => {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    const scrollHeight = document.documentElement.scrollHeight;
-    const windowHeight = window.innerHeight;
-    const scrollPercentage = (scrollTop / (scrollHeight - windowHeight)) * 100;
-    const eventData = {
-      type: 'scroll',
-      depth: scrollPercentage.toFixed(2),
-      topic: currentTopic,
-      timestamp: new Date().toLocaleString()
-    };
-    console.log(eventData);
-    eventsData.current.push(eventData);
-  };
-
   const exportCSV = () => {
     const header = 'ID,Type,Clicktype,Clicked_word,Keypressed,X_browser,Y_browser,X_page,Y_page,ScrollDepth,Topic,Searchword,TimeStamp,Class,Input,SearchBar,BubbleAmount,Link\n';
     const csvRows = eventsData.current.map((event, index) => {
@@ -116,8 +101,6 @@ const EventLogger = ({selectedTopic, searchWord, bubbleAmount}) => {
         return `${index},${event.type},,,${event.key},,,,,,${event.topic},${event.searchword},${event.timestamp},${event.class},,,${event.bubbleamount},`;
       } else if (event.type === 'input') {
         return `${index},${event.type},,,,,,,,,${event.topic},${event.searchword},${event.timestamp},${event.class},${event.input},${event.searchbar},${event.bubbleamount},`;
-      } else {
-        return `${index},${event.type},,,,,,,,${event.depth},,,${event.timestamp},,,,`;
       }
     });
     const csvData = header + csvRows.join('\n');
@@ -126,7 +109,7 @@ const EventLogger = ({selectedTopic, searchWord, bubbleAmount}) => {
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.download = 'events_data.csv';
+    link.download = 'events_withoutscroll_data.csv';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -136,21 +119,19 @@ const EventLogger = ({selectedTopic, searchWord, bubbleAmount}) => {
     document.addEventListener('click', logClickEvent);
     document.addEventListener('keydown', logKeyboardEvent);
     document.addEventListener('input', logInputChangeEvent);
-    document.addEventListener('scroll', logScrollEvent);
 
     return () => {
       document.removeEventListener('click', logClickEvent);
       document.removeEventListener('keydown', logKeyboardEvent);
       document.removeEventListener('input', logInputChangeEvent);
-      document.addEventListener('scroll', logScrollEvent);
     };
   }, [currentTopic, currentSearchWord, currentBubbleAmount]);
 
   return (
     <div>
-      <button onClick={exportCSV}>Export Events to CSV</button>
+      <button onClick={exportCSV}>Export Events Without Scroll to CSV</button>
     </div>
   );
 };
 
-export default EventLogger;
+export default EventLoggerScroll;
