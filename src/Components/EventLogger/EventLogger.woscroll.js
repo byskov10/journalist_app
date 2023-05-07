@@ -98,9 +98,9 @@ const EventLoggerScroll = ({selectedTopic, searchWord, bubbleAmount}) => {
       if (event.type === 'click') {
         return `${index},${event.type},${event.clicktype},${event.word},,${event.x_browser},${event.y_browser},${event.x_page},${event.y_page},,${event.topic},${event.searchword},${event.timestamp},${event.class},,,${event.bubbleamount},${event.list_link}`;
       } else if (event.type === 'keypress') {
-        return `${index},${event.type},,,${event.key},,,,,,${event.topic},${event.searchword},${event.timestamp},${event.class},,,${event.bubbleamount},`;
+        return `${index},${event.type},,,${event.key},,,,,,${event.topic},,${event.timestamp},${event.class},,,${event.bubbleamount},`;
       } else if (event.type === 'input') {
-        return `${index},${event.type},,,,,,,,,${event.topic},${event.searchword},${event.timestamp},${event.class},${event.input},${event.searchbar},${event.bubbleamount},`;
+        return `${index},${event.type},,,,,,,,,${event.topic},,${event.timestamp},${event.class},${event.input},${event.searchbar},${event.bubbleamount},`;
       }
     });
     const csvData = header + csvRows.join('\n');
