@@ -13,7 +13,7 @@ function BubbleSlider({ BubbleAmount, setBubbleAmount, setDebouncedBubbleAmount,
 
   return (
     <div className='bubbleslider'>
-      <p>Value: {BubbleAmount}</p>
+      <p>Antal bobler: {BubbleAmount}</p>
       <Slider
         min={0}
         max={300}
