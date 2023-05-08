@@ -26,4 +26,17 @@ body {
     height: 13vh;
     background-color: #65aafe;
 }
+
+.bubblechart-user-description {
+    border-radius: 25px;
+    font-size: 14px;
+    width: 75%;
+    margin-left: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.gradient-image {
+    margin-top: 2%;
+}
   

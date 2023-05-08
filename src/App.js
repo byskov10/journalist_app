@@ -1,7 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Row, Col, Card, Image } from 'react-bootstrap';
 import nyheder from './Components/Searchbar/nyheder_i_dk.json';
 import { useState, useEffect } from 'react';
 import Bubble from './Components/Bubble_viz/Bubble_chart/bubblechart';
@@ -17,6 +17,7 @@ import ArticleList from './Components/ArticleList/ArticleList';
 import WordAppear from './data/word_articleid.json';
 import EventLogger from './Components/EventLogger/EventLogger';
 import EventLoggerScroll from './Components/EventLogger/EventLogger.woscroll';
+import gradientImage from './data/legend_gradient_Tegnebræt 1.png'
 
 
 function Layout() {
@@ -70,18 +71,26 @@ function Layout() {
             <BubbleSearchBox searchWord={SearchWord} setSearchWord={setSearchWord} />
           </Col>
           <Col>
-            <MetricDropdown  selectedMetric={selectedMetric} onMetricChange={handleMetricChange} />
+            <Row>
+              <BubbleSlider 
+                BubbleAmount={BubbleAmount}
+                setBubbleAmount={setBubbleAmount}>
+              </BubbleSlider>
+            </Row>
           </Col>
         </Row>
         <Row>
           <Col>
-            <BubbleSlider 
-              BubbleAmount={BubbleAmount}
-              setBubbleAmount={setBubbleAmount}>
-            </BubbleSlider>
+            <div className='bubblechart-user-description'>
+              <div>
+                Størrelserne: antallet af gange ordet er blevet nævnt i alle artiklerne.
+              </div>
+              <div>
+                Farverne: det gennemsnitlige antal clicks per dag, artiklerne med ordet har genereret.
+              </div>
+              <Image src={gradientImage} width="187.125" height="39.75" className='gradient-image'/>
+            </div>
           </Col>
-            <Col>
-            </Col>
           </Row>
           <Row>
             <Bubble TopicWord={SelectedTopic} BubbleAmount={BubbleAmount} data={topic_data} setSelectedWord={setSelectedWord} searchWord={SearchWord} />
