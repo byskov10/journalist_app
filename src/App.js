@@ -63,7 +63,7 @@ function Layout() {
     <UserProfilePicture userName='Jakob' userImage={userImage} />
     </Col>
   </Row>
-  <Row className='flex-grow-1' style={{paddingBottom: '20px', paddingTop: '20px'}}>
+  <Row className='flex-grow-1' style={{paddingTop: '20px'}}>
     <Col className='FirstColumn' xs={12} md={8}>
       <Card className='h-100 reset-card-styles'>
         <Row>

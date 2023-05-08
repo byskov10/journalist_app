@@ -15,16 +15,25 @@ const SteamGraphViz = ({ wordIds }) => {
     title: {
       text: ''
     },
+    credits: {
+      enabled: false
+    },
+    exporting: {
+      enabled: false
+    },
+    label: {
+      onArea: false
+    },
     xAxis: {
       categories: filteredData[0]?.data?.map((d) => d.date) || [], // map the dates from the first item's data array
       labels: {
         align: 'left',
-        reserveSpace: false,
-        rotation: 0
+        reserveSpace: true,
+        rotation: 60
       }
     },
     yAxis: {
-      visible: true
+      visible: false,
     },
     legend: {
       enabled: false,

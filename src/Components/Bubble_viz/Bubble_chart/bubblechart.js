@@ -4,7 +4,6 @@ import _ from 'lodash';
 import HighchartsExporting from 'highcharts/modules/exporting';
 import HighchartsAccessibility from 'highcharts/modules/accessibility';
 import HighchartsMore from 'highcharts/highcharts-more';
-//import { useState } from 'react';
 
 //https://betterprogramming.pub/meeting-more-chart-types-bubble-packed-bubble-stream-graph-and-cylinder-7f625c88047d
 
@@ -42,6 +41,11 @@ const getOptions = () => ({
       }
     },
   },
+  tooltip: {
+    formatter: function () {
+      return '<b>' + this.point.word + '</b><br>' + 'Antal ord: ' + this.point.visits;
+    },
+  },
   series: data_used,
   credits: {
     enabled: false,
@@ -60,12 +64,16 @@ function Bubble({setSelectedWord, TopicWord, BubbleAmount, data, searchWord}) {
     }
   
   // Adding a color property to each data object based on its value
-  // Adding a color property to each data object based on its value
   const maxBlueValue = 228;
+  const minBlueValue = 50; // New minimum blue value to increase contrast
+  const range = maxBlueValue - minBlueValue;
+  const maxValue = Math.max(...newWordArray[0].data.map(d => d.visits));
+  const minValue = Math.min(...newWordArray[0].data.map(d => d.visits));
+  const logRange = Math.log10(maxValue + 1) - Math.log10(minValue + 1);
   const modifiedData = newWordArray[0].data.map((d) => {
-    const blueValue = Math.round(((maxBlueValue - d.visits) / maxBlueValue) * 255);
-    const blueHex = blueValue.toString(16).padStart(2, "0");
-    const color = `#${blueHex}${blueHex}ff`;
+    const logValue = (Math.log10(d.visits + 1) - Math.log10(minValue + 1)) / logRange;
+    const lightness = Math.round(((1 - logValue) * range) + minBlueValue);
+    const color = `hsl(240, 100%, ${lightness}%)`; // 240 is the hue for blue color
     return { ...d, color };
   });
   

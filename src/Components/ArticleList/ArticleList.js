@@ -29,7 +29,7 @@ const ArticleList = ({ wordIds }) => {
               height: '10px',
               marginRight: '5px',
               borderRadius: '50%',
-              backgroundColor: 'red',
+              backgroundColor: 'blue',
             }}
           />
           <a className='linktext' href={article.link} target='_blank' rel='noopener noreferrer'>{article.name}</a>
