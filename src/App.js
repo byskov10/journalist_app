@@ -8,7 +8,7 @@ import Bubble from './Components/Bubble_viz/Bubble_chart/bubblechart';
 import topic_data from './Components/Bubble_viz/Bubble_chart/data.json';
 import SearchBar from './Components/Searchbar/Searchbar';
 import UserProfilePicture from './Components/UserProfile/UserProfile';
-import userImage from './Components/UserProfile/journalist.jpg';
+import userImage from './Components/UserProfile/journalist.png';
 import BubbleSlider from './Components/Bubble_amount_selector.js/Bubble_amount_selector';
 import BubbleSearchBox from './Components/BubbleSearchBox/BubbleSearch';
 import MetricDropdown from './Components/Trendline_graph/dropdown';

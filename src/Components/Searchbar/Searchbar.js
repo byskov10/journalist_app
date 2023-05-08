@@ -47,7 +47,7 @@ function SearchBar({ data, selectedTopic, setSelectedTopic }) {
             <input
               className='TopicSearchBarInput'
               type="search"
-              placeholder="Skriv et emne.."
+              placeholder="Søg efter emne"
               value={searchInput}
               onChange={handleFilter}
               onKeyDown={(event) => {
