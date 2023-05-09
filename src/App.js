@@ -83,10 +83,10 @@ function Layout() {
           <Col>
             <div className='bubblechart-user-description'>
               <div>
-                Størrelserne: antallet af gange ordet er blevet nævnt i alle artiklerne.
+                Areal: Antal ord 
               </div>
               <div>
-                Farverne: det gennemsnitlige antal clicks per dag, artiklerne med ordet har genereret.
+                Farve: Clicks for artikler med ordet
               </div>
               <Image src={gradientImage} width="187.125" height="39.75" className='gradient-image'/>
             </div>
